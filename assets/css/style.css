@@ -106,4 +106,14 @@ p {
     border-radius: 0.5rem;
 }
 
+/* #collapsable-navbar-html-mobile {
+    display: none;
+} */
+
 /* Media querries */
+
+/* @media (max-width: 991.98px) {
+    #collapsable-navbar-html-mobile {
+        display: block;
+    }
+} */
