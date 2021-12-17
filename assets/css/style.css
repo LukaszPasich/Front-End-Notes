@@ -42,7 +42,7 @@ p {
 }
 
 
-/* Navigation bar */
+/* NAVBAR */
 .nav-button-text {
     font-size: calc(2rem + 1.5vw);
     font-weight: 700;
@@ -95,8 +95,8 @@ p {
 .alpha-nav-button,
 .alpha-nav-button-active {
     border-radius: 0.25rem;
-    margin: 2px 0px;
-    width: 30px;
+    margin: 3px 0px;
+    width: 32px;
 }
 
 .alpha-nav-button:hover {
@@ -116,6 +116,15 @@ p {
     border-radius: 0.5rem;
 }
 
+
+/* CONTENT */
+section > div {
+    min-height: 60vh;
+}
+
+section > div > div {
+    border-radius: 0.5rem;
+}
 
 
 /* Media querries */
