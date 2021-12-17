@@ -1,0 +1,98 @@
+/* General */
+p {
+    margin: 0px;
+}
+
+
+/* Utility classes */
+.bg-grey-111 {
+    background-color: #111;
+}
+
+.bg-grey-222 {
+    background-color: #222;
+}
+
+.bg-grey-ddd {
+    background-color: #ddd;
+}
+
+.bg-grey-eee {
+    background-color: #eee;
+}
+
+.text-grey-111 {
+    color: #111;
+}
+
+.text-grey-222 {
+    color: #222;
+}
+
+.text-grey-555 {
+    color: #555;
+}
+
+.text-grey-ddd {
+    color: #ddd;
+}
+
+.text-grey-eee {
+    color: #eee;
+}
+
+
+/* Navigation bar */
+.nav-button-text {
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 700;
+    color: #222;
+    text-decoration: none;
+}
+
+.nav-button-text-active {
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 700;
+    color: #eee;
+    text-decoration: none;
+}
+
+.nav-button,
+.nav-button-active {
+    border-radius: 0.5rem;
+}
+
+.nav-button:hover {
+    color: #222;
+    background-color: #bbb;
+    text-decoration: none;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+
+.sub-nav-button {
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+.sub-nav-button:hover {
+    background-color: #ddd;
+}
+
+.alpha-nav-button,
+.alpha-nav-button-active {
+    border-radius: 0.25rem;
+    margin: 2px 0px;
+    width: 30px;
+}
+
+.alpha-nav-button:hover {
+    text-decoration: none;
+    background-color: #ddd;
+    color: #111;
+}
+
+/* Media querries */
