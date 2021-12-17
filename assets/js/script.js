@@ -55,6 +55,26 @@ $('#nav-button-css').on('click', function() {
         }
 }});
 
+// js button
+$('#nav-button-js').on('click', function() {
+
+    $.fn.hideHtmlSubmenus();
+    $.fn.hideCssSubmenus();
+
+    if ($(window).width() > 991.98) {
+        if ( $('#collapsable-navbar-js').is(':hidden') ) {
+            $('#collapsable-navbar-js').slideDown(200);
+        } else {
+            $('#collapsable-navbar-js').hide(200);
+        }
+    } else {
+        if ( $('#collapsable-navbar-js-mobile').is(':hidden') ) {
+            $('#collapsable-navbar-js-mobile').slideDown(200);
+        } else {
+            $('#collapsable-navbar-js-mobile').hide(200);
+        }
+}});
+
 
 // innit
 $.fn.hideHtmlSubmenus();
