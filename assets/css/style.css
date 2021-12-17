@@ -60,11 +60,21 @@ p {
 .nav-button,
 .nav-button-active {
     border-radius: 0.5rem;
+    cursor: pointer;
+
 }
 
 .nav-button:hover {
-    color: #222;
     background-color: #bbb;
+    text-decoration: none;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+
+.nav-button-active:hover {
+    background-color: #333;
     text-decoration: none;
     -webkit-transition: background-color 0.3s ease-out;
     -moz-transition: background-color 0.3s ease-out;
@@ -106,14 +116,10 @@ p {
     border-radius: 0.5rem;
 }
 
-/* #collapsable-navbar-html-mobile {
-    display: none;
-} */
+
 
 /* Media querries */
 
-/* @media (max-width: 991.98px) {
-    #collapsable-navbar-html-mobile {
-        display: block;
-    }
-} */
+@media (max-width: 991.98px) {
+    
+}
