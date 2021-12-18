@@ -35,6 +35,7 @@ $('#nav-button-html').on('click', function() {
         }
 }});
 
+
 // css button
 $('#nav-button-css').on('click', function() {
 
@@ -55,6 +56,7 @@ $('#nav-button-css').on('click', function() {
         }
 }});
 
+
 // js button
 $('#nav-button-js').on('click', function() {
 
@@ -74,6 +76,9 @@ $('#nav-button-js').on('click', function() {
             $('#collapsable-navbar-js-mobile').hide(200);
         }
 }});
+
+
+// alpha-buttons
 
 
 // innit

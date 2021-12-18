@@ -3,6 +3,12 @@ p {
     margin: 0px;
 }
 
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    text-decoration: none;
+}
 
 /* Utility classes */
 .bg-grey-111 {
