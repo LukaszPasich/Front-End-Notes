@@ -86,13 +86,15 @@ $('#nav-button-js').on('click', function() {
 $('.alpha-nav-button').on('click', function(e) {
 
     var $alphaLetter = $(this).text().toLowerCase();
+    var $dataPage = $(this).attr('data-page');
+
     $('.html-tags').hide();
     $('#html-tags-' + $alphaLetter).show();
     
     console.log($alphaLetter);
+    console.log($dataPage);
 
 });
-
 
 
 // innit
