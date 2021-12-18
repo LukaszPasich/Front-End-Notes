@@ -49,6 +49,28 @@ h1 {
 
 
 /* NAVBAR */
+.icon-home {
+    font-size: 1.75rem;
+    color: #111;
+    background-color: rgba(233, 233, 233, 0.65);
+    display: inline;
+    border-radius: 50%;
+    position: relative;
+    left: -1.5rem;
+    top: 1.5rem;
+    outline: 1px solid #ddd;
+    outline-offset: -4px;
+}
+
+.icon-home:hover {
+    background-color: rgba(211, 211, 211, 0.75);
+    outline-offset: 1px;
+    -webkit-transition: background-color 0.3s ease-out, outline-offset 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out, outline-offset 0.3s ease-out; 
+    -o-transition: background-color 0.3s ease-out, outline-offset 0.3s ease-out; 
+    transition: background-color 0.3s ease-out, outline-offset 0.3s ease-out; 
+}
+
 .nav-button-text {
     font-size: calc(2rem + 1.5vw);
     font-weight: 700;
@@ -147,6 +169,13 @@ section > div {
 
 section > div > div {
     border-radius: 0.5rem;
+}
+
+
+/* FOOTER */
+.footer {
+    outline: 1px solid #ddd;
+    outline-offset: -5px;
 }
 
 
