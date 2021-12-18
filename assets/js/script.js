@@ -15,6 +15,10 @@ $.fn.hideJsSubmenus = function(){
 }
 
 
+// hide all tabs
+$('.html-tags').hide();
+
+
 // html button
 $('#nav-button-html').on('click', function() {
 
@@ -79,6 +83,16 @@ $('#nav-button-js').on('click', function() {
 
 
 // alpha-buttons
+$('.alpha-nav-button').on('click', function(e) {
+
+    var $alphaLetter = $(this).text().toLowerCase();
+    $('.html-tags').hide();
+    $('#html-tags-' + $alphaLetter).show();
+    
+    console.log($alphaLetter);
+
+});
+
 
 
 // innit
