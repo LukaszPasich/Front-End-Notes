@@ -98,17 +98,34 @@ h1 {
     background-color: #ddd;
 }
 
-.alpha-nav-button,
+.alpha-nav-button-inactive {
+    border-radius: 0.25rem;
+    margin: 3px 0px;
+    width: 32px;
+    cursor: pointer;
+    background-color: #eee;
+    text-decoration: none;
+    color: #111;
+    text-align: center;
+    display: inline-block;
+}
+
 .alpha-nav-button-active {
     border-radius: 0.25rem;
     margin: 3px 0px;
     width: 32px;
+    cursor: pointer;
+    background-color: #111;
+    text-decoration: none;
+    color: #eee;
+    text-align: center;
+    display: inline-block;
 }
 
-.alpha-nav-button:hover {
+.alpha-nav-button-inactive:hover {
     text-decoration: none;
     background-color: #ddd;
-    color: #111;
+    color: #222;
 }
 
 .alphabet-inner {

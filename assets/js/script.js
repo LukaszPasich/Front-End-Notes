@@ -15,8 +15,10 @@ $.fn.hideJsSubmenus = function(){
 }
 
 
-// hide all tabs
+// hide all tabs and show letter A first
 $('.html-tags').hide();
+$('#html-tags-a').show();
+$('div > p.alpha-nav-button:first').addClass('alpha-nav-button-active').removeClass('alpha-nav-button-inactive');
 
 
 // html button
@@ -85,14 +87,17 @@ $('#nav-button-js').on('click', function() {
 // alpha-buttons
 $('.alpha-nav-button').on('click', function(e) {
 
+    // get the letter (text) and attribute from the alpha-nav button
     var $alphaLetter = $(this).text().toLowerCase();
     var $dataPage = $(this).attr('data-page');
 
+    // reset all buttons to inactive, then add active class to the clicked on button
+    $('.alpha-nav-button').addClass('alpha-nav-button-inactive').removeClass('alpha-nav-button-active');
+    $(this).addClass('alpha-nav-button-active').removeClass('alpha-nav-button-inactive');
+
+    // reset all html tags pages, then show the page by the letter selected from alpha-nav
     $('.html-tags').hide();
     $('#html-tags-' + $alphaLetter).show();
-    
-    console.log($alphaLetter);
-    console.log($dataPage);
 
 });
 
