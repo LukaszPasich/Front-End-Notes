@@ -52,24 +52,22 @@ h1 {
 .icon-home {
     font-size: 1.65rem;
     color: #eee;
-    background-color: rgba(11, 11, 11, 0.9);
+    background-color: rgba(11, 11, 11, 1);
     display: inline;
     border-radius: 50%;
-    position: relative;
-    left: -1.75rem;
-    top: 2rem;
-    border: 2px solid #eee;
-    outline: 2px solid #eee;
-    outline-offset: -1px;
+    position: absolute;
+    transform: translateX(-20%);
+    top: -2rem;
+    border: 3px solid #eee;
 }
 
 .icon-home:hover {
-    background-color: rgba(0, 0, 0, 1);
-    border-width: 3px;
-    -webkit-transition: background-color 0.3s ease-out, border-width 0.3s ease-out;
-    -moz-transition: background-color 0.3s ease-out, border-width 0.3s ease-out; 
-    -o-transition: background-color 0.3s ease-out, border-width 0.3s ease-out; 
-    transition: background-color 0.3s ease-out, border-width 0.3s ease-out; 
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateX(5%);
+    -webkit-transition: background-color 0.3s ease-out, transform 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-out, transform 0.3s ease-in-out; 
+    -o-transition: background-color 0.3s ease-out, transform 0.3s ease-in-out; 
+    transition: background-color 0.3s ease-out, transform 0.3s ease-in-out; 
 }
 
 .nav-button-text {
