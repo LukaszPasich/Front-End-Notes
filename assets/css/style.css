@@ -170,6 +170,12 @@ section > div > div {
     border-radius: 0.5rem;
 }
 
+.element-name {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: 600;
+}
+
 
 /* FOOTER */
 .footer {
