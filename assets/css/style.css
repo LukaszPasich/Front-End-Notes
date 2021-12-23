@@ -63,7 +63,7 @@ h1 {
 
 .icon-home:hover {
     background-color: rgba(0, 0, 0, 0.9);
-    transform: translateX(5%);
+    transform: translateX(2%);
     -webkit-transition: background-color 0.3s ease-out, transform 0.3s ease-in-out;
     -moz-transition: background-color 0.3s ease-out, transform 0.3s ease-in-out; 
     -o-transition: background-color 0.3s ease-out, transform 0.3s ease-in-out; 
