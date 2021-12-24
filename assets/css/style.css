@@ -47,6 +47,9 @@ h1 {
     color: #eee;
 }
 
+.monospace {
+    font-family: monospace;
+}
 
 /* NAVBAR */
 .icon-home {
