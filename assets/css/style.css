@@ -19,6 +19,10 @@ h1 {
     background-color: #222;
 }
 
+.bg-grey-333 {
+    background-color: #333;
+}
+
 .bg-grey-ddd {
     background-color: #ddd;
 }
@@ -27,12 +31,21 @@ h1 {
     background-color: #eee;
 }
 
+
+.text-grey-000 {
+    color: #111;
+}
+
 .text-grey-111 {
     color: #111;
 }
 
 .text-grey-222 {
     color: #222;
+}
+
+.text-grey-333 {
+    color: #333;
 }
 
 .text-grey-555 {
@@ -47,9 +60,18 @@ h1 {
     color: #eee;
 }
 
-.monospace {
-    font-family: monospace;
+.text-grey-fff {
+    color: #fff;
 }
+
+.text-tomato {
+    color: #FF6347;
+}
+
+.text-salmon {
+    color: #FA8072;
+}
+
 
 /* NAVBAR */
 .icon-home {
@@ -179,6 +201,10 @@ section > div > div {
     font-weight: 600;
 }
 
+.monospace {
+    font-family: monospace;
+    overflow-x: auto;
+}
 
 /* FOOTER */
 .footer {
