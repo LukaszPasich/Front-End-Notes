@@ -285,13 +285,13 @@
               </div>
               
               <!-- tag a attributes -->
-              <div class="col-12">
+              <div class="col-12 mt-3">
                 <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
               </div>
 
               <div class="col-12">
                 <!-- tag a attributes head -->
-                <div class="row mx-2">
+                <div class="row mx-2 mb-3">
                   <div class="col-5 col-sm-3 small border p-1">
                     <p class="">Attribute:</p>
                   </div>
@@ -303,10 +303,10 @@
                   </div>
                 </div>
 
-                <!-- tag a attributes row -->
-                <div class="row mx-2 my-1">
+                <!-- tag a attributes rows -->
+                <div class="row mx-2">
                   <div class="col-5 col-sm-3 p-1">
-                    <p class="text-tomato">download</p>
+                    <p class="attribute-name">download</p>
                   </div>
                   <div class="col-7 col-sm-3 p-1">
                     <p class=""><em>filename</em></p>
@@ -320,25 +320,196 @@
 
                 <hr>
 
-                <div class="row mx-2 my-1">
+                <div class="row mx-2">
                   <div class="col-5 col-sm-3 p-1">
-                    <p class="text-tomato">download</p>
+                    <p class="attribute-name">href</p>
                   </div>
                   <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>filename</em></p>
+                    <p class=""><em>URL</em></p>
                   </div>
                   <div class="col-12 col-sm-6 p-1">
                     <p class="">
-                      Specifies that the target will be downloaded when a user clicks on the hyperlink.
+                      Specifies the URL of the page the link goes to.
                     </p>
                   </div>
                 </div>
                 
                 <hr>
 
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">hreflang</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>language_code</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the language of the linked document.
+                    </p>
+                  </div>
+                </div>
+                
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">media</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>media_query</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies what media/device the linked document is optimized for.
+                    </p>
+                  </div>
+                </div>
+                
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">ping</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>list_of_URLs</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a space-separated list of URLs to which, when the link is followed,
+                      post requests with the body ping will be sent by the browser (in the background).
+                      Typically used for tracking.
+                    </p>
+                  </div>
+                </div>
+                
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">referrerpolicy</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <ul class="list-pl-20">
+                      <li class=""><em>no-referrer</em></li>
+                      <li class=""><em>no-referrer-when-downgrade</em></li>
+                      <li class=""><em>origin</em></li>
+                      <li class=""><em>origin-when-cross-origin</em></li>
+                      <li class=""><em>same-origin</em></li>
+                      <li class=""><em>strict-origin-when-cross-origin</em></li>
+                      <li class=""><em>unsafe-url</em></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a space-separated list of URLs to which, when the link is followed,
+                      post requests with the body ping will be sent by the browser (in the background).
+                      Typically used for tracking.
+                    </p>
+                  </div>
+                </div>
+                
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">rel</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <ul class="list-pl-20">
+                      <li class=""><em>alternate</em></li>
+                      <li class=""><em>author</em></li>
+                      <li class=""><em>bookmark</em></li>
+                      <li class=""><em>external</em></li>
+                      <li class=""><em>help</em></li>
+                      <li class=""><em>licence</em></li>
+                      <li class=""><em>next</em></li>
+                      <li class=""><em>nofollow</em></li>
+                      <li class=""><em>noreferrer</em></li>
+                      <li class=""><em>noopener</em></li>
+                      <li class=""><em>prev</em></li>
+                      <li class=""><em>search</em></li>
+                      <li class=""><em>tag</em></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the relationship between the current document and the linked document.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">target</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <ul class="list-pl-20">
+                      <li class=""><em>_blank</em></li>
+                      <li class=""><em>_parent</em></li>
+                      <li class=""><em>_self</em></li>
+                      <li class=""><em>_top</em></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies where to open the linked document.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">type</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>media_type</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the media type of the linked document.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;a&gt;</strong> tag supports the
+                      <a href="" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;a&gt;</strong> tag supports the
+                      <a href="" class="link-normal">
+                        Event Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
               </div>
 
             </div>
+
+            
 
           </div>
 
