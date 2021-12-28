@@ -1254,9 +1254,9 @@
               <!-- tag base description -->
               <div class="col-12">
                 <p class="">
-                  The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.
-                  <br>
-                  The most important attribute of the &lt;a&gt; element is the <em>href</em> attribute, which indicates the link's destination.
+                  The &lt;base&gt; tag specifies the base URL and/or target for all relative URLs in a document. <br>
+                  The &lt;base&gt; tag must have either an href or a target attribute present, or both. <br>
+                  There can only be one single &lt;base&gt; element in a document, and it must be inside the &lt;head&gt; element.
                 </p>
               </div>
 
@@ -1265,8 +1265,25 @@
                 <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
               </div>
               <div class="col-12">
+                <p class="pb-1 mb-2">
+                  <strong>Note: </strong> Only relative address for the image has been specified.
+                  Since a base URL has been specified in the head section, the browser will look for the image at "https://www.abc.com/images/pic.gif".
+                </p>
+                <p class="pb-1 mb-2">
+                  <strong>Note: </strong> The link opens in a new window, even if it has no target="_blank" attribute.
+                  This is because the target attribute of the base element is set to "_blank".
+                </p>
+              </div>
+              <div class="col-12">
                 <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;a href=https://www.w3schools.com"&gt;Visit W3Schools.com!&lt;/a&gt;
+                  &lt;head&gt; <br>
+                  &nbsp; &lt;base href="https://www.abc.com/" target="_blank"&gt; <br>
+                  &lt;/head&gt; <br>
+                  <br>
+                  &lt;body&gt; <br>
+                  &nbsp; &lt;img src="images/pic.gif" width="24" height="39" alt="Stickman"&gt; <br>
+                  &nbsp; &lt;a href="tags/tag_base.asp"&gt; HTML base Tag&lt;/a&gt; <br>
+                  &lt;/body&gt;
                 </p>
               </div>
               
@@ -1299,7 +1316,7 @@
                   </div>
                   <div class="col-12 col-sm-6 p-1">
                     <p class="">
-                      Specifies the URL of the page the link goes to.
+                      Specifies the base URL for all relative URLs in the page.
                     </p>
                   </div>
                 </div>
@@ -1320,7 +1337,7 @@
                   </div>
                   <div class="col-12 col-sm-6 p-1">
                     <p class="">
-                      Specifies where to open the linked document.
+                      Specifies the default target for all hyperlinks and forms in the page.
                     </p>
                   </div>
                 </div>
