@@ -1374,6 +1374,85 @@
 
             </div>
 
+             <!-- tag bdi -->
+             <div class="row mb-5">
+
+              <div class="col-12 mb-3">
+                <p class="element-name text-center text-sm-left">
+                  &lt;bdi&gt;
+                </p>
+              </div>
+              
+              <!-- tag bdi description -->
+              <div class="col-12">
+                <p class="">
+                  BDI stands for Bi-Directional Isolation. <br>
+                  The &lt;bdi&gt; tag isolates a part of text that might be formatted in a different direction from other text outside it. <br>
+                  This element is useful when embedding user-generated content with an unknown text direction.
+                </p>
+              </div>
+
+              <!-- tag bdi example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="pb-1 mb-2">
+                  Isolate the usernames from the surrounding text-direction settings:
+                </p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;ul&gt; <br>
+                  &nbsp; &lt;li&gt;User &lt;bdi&gt;jane&lt;/bdi&gt;: 60 points&lt;/li&gt; <br>
+                  &nbsp; &lt;li&gt;User &lt;bdi&gt;joe&lt;/bdi&gt;: 80 points&lt;/li&gt; <br>
+                  &nbsp; &lt;li&gt;User &lt;bdi&gt;إيان&lt;/bdi&gt;: 90 points&lt;/li&gt; <br>
+                  &lt;/ul&gt;
+                </p>
+              </div>
+              <div class="col-12">
+                <p class="pb-1 my-2">
+                  In the example, usernames are shown along with the number of points in a contest.
+                  If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text
+                  (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").
+                </p>
+              </div>
+              
+              <!-- tag bdi attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;bdi&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;bdi&gt;</strong> tag supports the
+                      <a href="html_attributes_event.html" class="link-normal">
+                        Event Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
           </div>
 
           <!-- C -->
