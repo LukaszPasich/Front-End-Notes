@@ -1,4 +1,8 @@
 /* General */
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     margin: 0px;
 }
@@ -82,7 +86,7 @@ a:hover {
 .icon-home {
     font-size: 1.65rem;
     color: #eee;
-    background-color: rgba(11, 11, 11, 1);
+    background-color: rgba(0, 0, 0, 1);
     display: inline;
     border-radius: 50%;
     position: absolute;
@@ -92,7 +96,7 @@ a:hover {
 }
 
 .icon-home:hover {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.75);
     transform: translateX(2%);
     -webkit-transition: background-color 0.3s ease-out, transform 0.3s ease-in-out;
     -moz-transition: background-color 0.3s ease-out, transform 0.3s ease-in-out; 
@@ -234,6 +238,26 @@ section > div > div {
 .footer {
     outline: 1px solid #ddd;
     outline-offset: -5px;
+}
+
+.icon-go-top {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 3rem;
+    border: 3px solid #eee;
+}
+
+.icon-go-top:hover {
+    color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, .75);
+    -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out, background-color 0.3s ease-out; 
+    -o-transition: color 0.3s ease-out, background-color 0.3s ease-out; 
+    transition: color 0.3s ease-out, background-color 0.3s ease-out; 
 }
 
 .list-pl-20 {
