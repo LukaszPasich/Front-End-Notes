@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>HTML - HTML tags</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>HTML - HTML tags</title>
 </head>
+
 <body>
 
   <!-- NAVBAR   -->
@@ -24,7 +26,7 @@
 
     <!-- BIG NAVBAR (contains SMALL NAVBAR for mobiles) -->
     <div class="row justify-content-center mt-2">
-      
+
       <!-- html button -->
       <div id="nav-button-html" class="nav-button-active col-10 col-md-3 col-lg-2 bg-grey-111 m-1 py-2">
         <p class="nav-button-text-active text-center">
@@ -80,7 +82,7 @@
             JS Array
           </p>
         </a>
-      </div> 
+      </div>
     </div>
 
 
@@ -168,2333 +170,2521 @@
           <div class="col-12 py-3">
             <h1>HTML Tags</h1>
           </div>
+        </div>
 
-          <!-- A -->
-          <div id="html-tags-a" class="col-12 html-tags py-3">
- 
-            <!-- tag comment-out -->
-            <div class="row mb-5">
+        <!-- A -->
+        <div id="html-tags-a" class="col-12 html-tags py-3">
 
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;!-- ... --&gt;
-                </p>
-                
+          <!-- tag comment-out -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;!-- ... --&gt;
+              </p>
+
+            </div>
+
+            <div class="col-12">
+              <p class="">
+                The comment tag is used to insert comments in the source code.
+                <br>
+                Comments are not displayed in the browsers.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- tag doctype -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;!DOCTYPE&gt;
+              </p>
+            </div>
+
+            <div class="col-12">
+              <p class="">
+                All HTML documents must start with a &lt;!DOCTYPE&gt; declaration.
+                <br>
+                The declaration is not an HTML tag. It is an "information" to the browser about what document type to
+                expect.
+              </p>
+            </div>
+
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;!DOCTYPE html&gt;
+              </p>
+            </div>
+
+          </div>
+
+          <!-- tag a -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;a&gt;
+              </p>
+            </div>
+
+            <!-- tag a description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.
+                <br>
+                The most important attribute of the &lt;a&gt; element is the <em>href</em> attribute, which indicates
+                the link's destination.
+              </p>
+            </div>
+
+            <!-- tag a example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;a href=https://www.w3schools.com"&gt;Visit W3Schools.com!&lt;/a&gt;
+              </p>
+            </div>
+
+            <!-- tag a attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <!-- tag a attributes head -->
+              <div class="row mx-2 mb-3">
+                <div class="col-5 col-sm-3 small border p-1">
+                  <p class="">Attribute:</p>
+                </div>
+                <div class="col-7 col-sm-3 small border p-1">
+                  <p class="">Value:</p>
+                </div>
+                <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                  <p class="">Description:</p>
+                </div>
               </div>
 
-              <div class="col-12">
-                <p class="">
-                  The comment tag is used to insert comments in the source code.
-                  <br>
-                  Comments are not displayed in the browsers.
-                </p>
+              <!-- tag a attributes rows -->
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">download</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(filename)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies that the target will be downloaded when a user clicks on the hyperlink.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">href</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(URL)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the URL of the page the link goes to.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">hreflang</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(language_code)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the language of the linked document.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">media</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(media_query)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies what media/device the linked document is optimized for.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">ping</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(list_of_URLs)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies a space-separated list of URLs to which, when the link is followed,
+                    post requests with the body ping will be sent by the browser (in the background).
+                    Typically used for tracking.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">referrerpolicy</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <ul class="list-pl-20">
+                    <li class=""><em>no-referrer</em></li>
+                    <li class=""><em>no-referrer-when-downgrade</em></li>
+                    <li class=""><em>origin</em></li>
+                    <li class=""><em>origin-when-cross-origin</em></li>
+                    <li class=""><em>same-origin</em></li>
+                    <li class=""><em>strict-origin-when-cross-origin</em></li>
+                    <li class=""><em>unsafe-url</em></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies which referrer information to send with the link.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">rel</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <ul class="list-pl-20">
+                    <li class=""><em>alternate</em></li>
+                    <li class=""><em>author</em></li>
+                    <li class=""><em>bookmark</em></li>
+                    <li class=""><em>external</em></li>
+                    <li class=""><em>help</em></li>
+                    <li class=""><em>licence</em></li>
+                    <li class=""><em>next</em></li>
+                    <li class=""><em>nofollow</em></li>
+                    <li class=""><em>noreferrer</em></li>
+                    <li class=""><em>noopener</em></li>
+                    <li class=""><em>prev</em></li>
+                    <li class=""><em>search</em></li>
+                    <li class=""><em>tag</em></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the relationship between the current document and the linked document.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">target</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <ul class="list-pl-20">
+                    <li class=""><em>_blank</em></li>
+                    <li class=""><em>_parent</em></li>
+                    <li class=""><em>_self</em></li>
+                    <li class=""><em>_top</em></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies where to open the linked document.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">type</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(media_type)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the media type of the linked document.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;a&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;a&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
               </div>
 
             </div>
 
-            <!-- tag doctype -->
-            <div class="row mb-5">
+          </div>
 
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;!DOCTYPE&gt;
-                </p>
+          <!-- tag abbr -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;abbr&gt;
+              </p>
+            </div>
+
+            <!-- tag abbr description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;abbr&gt; tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP",
+                "ATM".
+              </p>
+              <p>
+                <strong>Tip: </strong>Use the global <em>title</em> attribute to show the description for the
+                abbreviation/acronym when you mouse over the element.
+              </p>
+            </div>
+
+            <!-- tag abbr example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="my-2">&lt;abbr&gt; can also be used with &lt;dfn&gt; to define an abbreviation:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;p&gt; <br>
+                &nbsp; &lt;dfn&gt; <br>
+                &nbsp; &nbsp; &lt;abbr title="Cascading Style Sheets"&gt;CSS&lt;/abbr&gt; <br>
+                &nbsp; &lt;/dfn&gt; <br>
+                &nbsp; is a language that describes the style of an HTML document. <br>
+                &lt;/p&gt;
+              </p>
+            </div>
+
+            <!-- tag abbr attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;abbr&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
               </div>
 
-              <div class="col-12">
-                <p class="">
-                  All HTML documents must start with a &lt;!DOCTYPE&gt; declaration.
-                  <br>
-                  The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
-                </p>
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;abbr&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- tag area -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;area&gt;
+              </p>
+            </div>
+
+            <!-- tag area description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;area&gt; tag defines an area inside an image map (an image map is an image with clickable
+                areas). <br>
+                &lt;area&gt; elements are always nested inside a &lt;map&gt; tag. <br>
+                <strong>Note:</strong> The usemap attribute in &lt;img&gt; is associated with the &lt;map&gt;
+                element's name attribute, and creates a relationship between the image and the map.
+              </p>
+            </div>
+
+            <!-- tag area example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt; <br>
+                <br>
+                &lt;map name="workmap"&gt; <br>
+                &nbsp; &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt; <br>
+                &nbsp; &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt; <br>
+                &nbsp; &lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"&gt; <br>
+                &lt;/map&gt;
+              </p>
+            </div>
+
+            <!-- tag area attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <!-- tag area attributes head -->
+              <div class="row mx-2 mb-3">
+                <div class="col-5 col-sm-3 small border p-1">
+                  <p class="">Attribute:</p>
+                </div>
+                <div class="col-7 col-sm-3 small border p-1">
+                  <p class="">Value:</p>
+                </div>
+                <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                  <p class="">Description:</p>
+                </div>
               </div>
 
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              <!-- tag area attributes rows -->
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">alt</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(text)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies an alternate text for the area. Required if the href attribute is present.
+                  </p>
+                </div>
               </div>
 
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;!DOCTYPE html&gt;
-                </p>
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">coords</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(coordinates)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the coordinates of the area.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">download</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(filename)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies that the target will be downloaded when a user clicks on the hyperlink.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">href</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(URL)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the hyperlink target for the area.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">hreflang</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(language_code)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the language of the target URL.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">media</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(media_query)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies what media/device the target URL is optimized for.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">referrerpolicy</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <ul class="list-pl-20">
+                    <li class=""><em>no-referrer</em></li>
+                    <li class=""><em>no-referrer-when-downgrade</em></li>
+                    <li class=""><em>origin</em></li>
+                    <li class=""><em>origin-when-cross-origin</em></li>
+                    <li class=""><em>same-origin</em></li>
+                    <li class=""><em>strict-origin-when-cross-origin</em></li>
+                    <li class=""><em>unsafe-url</em></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies which referrer information to send with the link.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">rel</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <ul class="list-pl-20">
+                    <li class=""><em>alternate</em></li>
+                    <li class=""><em>author</em></li>
+                    <li class=""><em>bookmark</em></li>
+                    <li class=""><em>external</em></li>
+                    <li class=""><em>help</em></li>
+                    <li class=""><em>licence</em></li>
+                    <li class=""><em>next</em></li>
+                    <li class=""><em>nofollow</em></li>
+                    <li class=""><em>noreferrer</em></li>
+                    <li class=""><em>noopener</em></li>
+                    <li class=""><em>prev</em></li>
+                    <li class=""><em>search</em></li>
+                    <li class=""><em>tag</em></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the relationship between the current document and the target URL.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">shape</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <ul class="list-pl-20">
+                    <li class=""><em>default</em></li>
+                    <li class=""><em>rect</em></li>
+                    <li class=""><em>circle</em></li>
+                    <li class=""><em>poly</em></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the shape of the area.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">target</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <ul class="list-pl-20">
+                    <li class=""><em>_blank</em></li>
+                    <li class=""><em>_parent</em></li>
+                    <li class=""><em>_self</em></li>
+                    <li class=""><em>_top</em></li>
+                    <li class=""><em>(framename)</em></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies where to open the linked document.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">type</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(media_type)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the media type of the linked document.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;area&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;area&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
               </div>
 
             </div>
 
-            <!-- tag a -->
-            <div class="row mb-5">
+          </div>
 
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;a&gt;
-                </p>
-              </div>
-              
-              <!-- tag a description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.
-                  <br>
-                  The most important attribute of the &lt;a&gt; element is the <em>href</em> attribute, which indicates the link's destination.
-                </p>
-              </div>
+          <!-- tag article -->
+          <div class="row mb-5">
 
-              <!-- tag a example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;a href=https://www.w3schools.com"&gt;Visit W3Schools.com!&lt;/a&gt;
-                </p>
-              </div>
-              
-              <!-- tag a attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;article&gt;
+              </p>
+            </div>
 
-              <div class="col-12">
-                <!-- tag a attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
+            <!-- tag article description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;article&gt; tag specifies independent, self-contained content. <br>
+                An article should make sense on its own and it should be possible to distribute it independently from
+                the rest of the site. <br>
+                Potential sources for the &lt;article&gt; element: <br>
+                <ul>
+                  <li>Forum post</li>
+                  <li>Blog post</li>
+                  <li>News story</li>
+                </ul>
+                <strong>Note:</strong> The &lt;article&gt; element does not render as anything special in a browser.
+                However, you can use CSS to style the &lt;article&gt; element.
+              </p>
+            </div>
+
+            <!-- tag article example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;article&gt; <br>
+                &nbsp; &lt;h2&gt;>Google Chrome&lt;/h2&gt; <br>
+                &nbsp; &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008.&lt;/p&gt; <br>
+                &lt;/article&gt;
+              </p>
+            </div>
+
+            <!-- tag article attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+
+              <!-- tag article attributes rows -->
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;article&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
                 </div>
+              </div>
 
-                <!-- tag a attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">download</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(filename)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that the target will be downloaded when a user clicks on the hyperlink.
-                    </p>
-                  </div>
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;article&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
                 </div>
+              </div>
 
-                <hr>
+            </div>
 
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">href</p>
-                  </div>
+          </div>
+
+          <!-- tag aside -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;aside&gt;
+              </p>
+            </div>
+
+            <!-- tag aside description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;aside&gt; tag defines some content aside from the content it is placed in.
+                The aside content should be indirectly related to the surrounding content. <br>
+                <strong>Tip:</strong> The &lt;aside&gt; content is often placed as a sidebar in a document. <br>
+                <strong>Note:</strong> The &lt;aside&gt; element does not render as anything special in a browser.
+                However, you can use CSS to style the &lt;aside&gt; element.
+              </p>
+            </div>
+
+            <!-- tag aside example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;aside&gt; <br>
+                &nbsp; &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008.&lt;/p&gt; <br>
+                &lt;/aside&gt;
+              </p>
+            </div>
+
+            <!-- tag aside attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+
+              <!-- tag aside attributes rows -->
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;aside&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;aside&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- tag audio -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;audio&gt;
+              </p>
+            </div>
+
+            <!-- tag audio description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;audio&gt; is used to embed sound content in a document, such as music or other audio streams.
+                <br>
+                The &lt;audio&gt; tag contains one or more &lt;source&gt; tags with different audio sources. The
+                browser will choose the first source it supports.
+                The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do
+                not support the &lt;audio&gt; element. <br>
+                There are three supported audio formats in HTML: MP3, WAV, and OGG (OGG not supported in Safari).
+              </p>
+            </div>
+
+            <!-- tag audio example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;audio controls&gt; <br>
+                &nbsp; &lt;source src="horse.ogg" type="audio/ogg"&gt; <br>
+                &nbsp; &lt;source src="horse.mp3" type="audio/mpeg"&gt; <br>
+                &nbsp; Your browser does not support the audio tag. <br>
+                &lt;/audio&gt;
+              </p>
+            </div>
+
+            <!-- tag audio attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <!-- tag audio attributes head -->
+              <div class="row mx-2 mb-3">
+                <div class="col-5 col-sm-3 small border p-1">
+                  <p class="">Attribute:</p>
+                </div>
+                <div class="col-7 col-sm-3 small border p-1">
+                  <p class="">Value:</p>
+                </div>
+                <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                  <p class="">Description:</p>
+                </div>
+              </div>
+
+              <!-- tag audio attributes rows -->
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">autoplay</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>autoplay</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies that the audio will start playing as soon as it is ready.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">controls</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>controls</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies that the audio will start over again, every time it is finished.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">loop</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>loop</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies that the audio will start over again, every time it is finished.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">muted</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>muted</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies that the audio output should be muted.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">preload</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <ul class="list-pl-20">
+                    <li class=""><em>auto</em></li>
+                    <li class=""><em>metadata</em></li>
+                    <li class=""><em>none</em></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies if and how the author thinks the audio should be loaded when the page loads.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">src</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(URL)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the URL of the audio file.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;audio&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;audio&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- B -->
+        <div id="html-tags-b" class="col-12 html-tags py-3">
+
+          <!-- tag b -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;b&gt;
+              </p>
+            </div>
+
+            <!-- tag b description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;b&gt; tag specifies bold text without any extra importance.
+              </p>
+              <p>
+                <strong>Note: </strong> According to the HTML5 specification, the &lt;b&gt; tag should be used as a
+                LAST resort when no other tag is more appropriate.
+                The specification states that headings should be denoted with the &lt;h1&gt; to &lt;h6&gt; tags,
+                emphasized text should be denoted with the &lt;em&gt; tag,
+                important text should be denoted with the &lt;strong&gt; tag, and marked/highlighted text should be
+                denoted with the &lt;mark&gt; tag.
+              </p>
+              <p>
+                <strong>Tip: </strong>You can also use the following CSS to set bold text: "font-weight: bold;".
+              </p>
+            </div>
+
+            <!-- tag b example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;p&gt; <br>
+                &nbsp; This is normal text - &lt;b&gt;and this is bold text&lt;/b&gt;. <br>
+                &lt;/p&gt;
+              </p>
+            </div>
+
+            <!-- tag b attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;b&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;b&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- tag base -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;base&gt;
+              </p>
+            </div>
+
+            <!-- tag base description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;base&gt; tag specifies the base URL and/or target for all relative URLs in a document. <br>
+                The &lt;base&gt; tag must have either an href or a target attribute present, or both. <br>
+                There can only be one single &lt;base&gt; element in a document, and it must be inside the
+                &lt;head&gt; element.
+              </p>
+            </div>
+
+            <!-- tag base example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="pb-1 mb-2">
+                <strong>Note: </strong> Only relative address for the image has been specified.
+                Since a base URL has been specified in the head section, the browser will look for the image at
+                "https://www.abc.com/images/pic.gif".
+              </p>
+              <p class="pb-1 mb-2">
+                <strong>Note: </strong> The link opens in a new window, even if it has no target="_blank" attribute.
+                This is because the target attribute of the base element is set to "_blank".
+              </p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;head&gt; <br>
+                &nbsp; &lt;base href="https://www.abc.com/" target="_blank"&gt; <br>
+                &lt;/head&gt; <br>
+                <br>
+                &lt;body&gt; <br>
+                &nbsp; &lt;img src="images/pic.gif" width="24" height="39" alt="Stickman"&gt; <br>
+                &nbsp; &lt;a href="tags/tag_base.asp"&gt; HTML base Tag&lt;/a&gt; <br>
+                &lt;/body&gt;
+              </p>
+            </div>
+
+            <!-- tag base attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <!-- tag base attributes head -->
+              <div class="row mx-2 mb-3">
+                <div class="col-5 col-sm-3 small border p-1">
+                  <p class="">Attribute:</p>
+                </div>
+                <div class="col-7 col-sm-3 small border p-1">
+                  <p class="">Value:</p>
+                </div>
+                <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                  <p class="">Description:</p>
+                </div>
+              </div>
+
+              <!-- tag base attributes rows -->
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">href</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(URL)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the base URL for all relative URLs in the page.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">target</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <ul class="list-pl-20">
+                    <li class=""><em>_blank</em></li>
+                    <li class=""><em>_parent</em></li>
+                    <li class=""><em>_self</em></li>
+                    <li class=""><em>_top</em></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the default target for all hyperlinks and forms in the page.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1">
+                  <p class="">
+                    The <strong>&lt;base&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1">
+                  <p class="">
+                    The <strong>&lt;base&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- tag bdi -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;bdi&gt;
+              </p>
+            </div>
+
+            <!-- tag bdi description -->
+            <div class="col-12">
+              <p class="">
+                BDI stands for Bi-Directional Isolation. <br>
+                The &lt;bdi&gt; tag isolates a part of text that might be formatted in a different direction from
+                other text outside it. <br>
+                This element is useful when embedding user-generated content with an unknown text direction.
+              </p>
+            </div>
+
+            <!-- tag bdi example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="pb-1 mb-2">
+                Isolate the usernames from the surrounding text-direction settings:
+              </p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;ul&gt; <br>
+                &nbsp; &lt;li&gt;User &lt;bdi&gt;jane&lt;/bdi&gt;: 60 points&lt;/li&gt; <br>
+                &nbsp; &lt;li&gt;User &lt;bdi&gt;joe&lt;/bdi&gt;: 80 points&lt;/li&gt; <br>
+                &nbsp; &lt;li&gt;User &lt;bdi&gt;إيان&lt;/bdi&gt;: 90 points&lt;/li&gt; <br>
+                &lt;/ul&gt;
+              </p>
+            </div>
+            <div class="col-12">
+              <p class="pb-1 my-2">
+                In the example, usernames are shown along with the number of points in a contest.
+                If the bdi element is not supported in the browser, the username of the Arabic user would confuse the
+                text
+                (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather
+                than next to the word "points").
+              </p>
+            </div>
+
+            <!-- tag bdi attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;bdi&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;bdi&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- tag bdo -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;bdo&gt;
+              </p>
+            </div>
+
+            <!-- tag bdo description -->
+            <div class="col-12">
+              <p class="">
+                BDO stands for Bi-Directional Override. <br>
+                The &lt;bdo&gt; tag is used to override the current text direction.
+              </p>
+            </div>
+
+            <!-- tag bdo example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="pb-1 mb-2">
+                Specify the text direction:
+              </p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;bdo dir="rtl"&gt; <br>
+                &nbsp; This text will go right-to-left. <br>
+                &lt;bdo&gt;
+              </p>
+            </div>
+
+            <!-- tag bdo attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <!-- tag bdo attributes head -->
+              <div class="row mx-2 mb-3">
+                <div class="col-5 col-sm-3 small border p-1">
+                  <p class="">Attribute:</p>
+                </div>
+                <div class="col-7 col-sm-3 small border p-1">
+                  <p class="">Value:</p>
+                </div>
+                <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                  <p class="">Description:</p>
+                </div>
+              </div>
+
+              <!-- tag bdo attributes rows -->
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">dir</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <ul class="list-pl-20">
+                    <li class=""><em>ltr</em></li>
+                    <li class=""><em>rtl</em></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Required. Specifies the text direction of the text inside the &lt;bdo&gt; element.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1">
+                  <p class="">
+                    The <strong>&lt;bdo&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1">
+                  <p class="">
+                    The <strong>&lt;bdo&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- tag blockquote -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;blockquote&gt;
+              </p>
+            </div>
+
+            <!-- tag blockquote description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;blockquote&gt; tag specifies a section that is quoted from another source. <br>
+                Browsers usually indent &lt;blockquote&gt; elements (look at example below to see how to remove the
+                indentation).
+              </p>
+            </div>
+
+            <!-- tag blockquote example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="pb-1 mb-2">
+                A section that is quoted from another source:
+              </p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;blockquote cite="http://www.worldwildlife.org/index.html"&gt; <br>
+                &nbsp; For 50 years, WWF has been protecting the future of nature. <br>
+                &lt;/blockquote&gt;
+              </p>
+            </div>
+
+            <!-- tag blockquote attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <!-- tag blockquote attributes head -->
+              <div class="row mx-2 mb-3">
+                <div class="col-5 col-sm-3 small border p-1">
+                  <p class="">Attribute:</p>
+                </div>
+                <div class="col-7 col-sm-3 small border p-1">
+                  <p class="">Value:</p>
+                </div>
+                <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                  <p class="">Description:</p>
+                </div>
+              </div>
+
+              <!-- tag blockquote attributes rows -->
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">cite</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
                     <p class=""><em>(URL)</em></p>
                   </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the URL of the page the link goes to.
-                    </p>
-                  </div>
                 </div>
-                
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">hreflang</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(language_code)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the language of the linked document.
-                    </p>
-                  </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the source of the quotation.
+                  </p>
                 </div>
-                
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">media</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(media_query)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies what media/device the linked document is optimized for.
-                    </p>
-                  </div>
-                </div>
-                
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">ping</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(list_of_URLs)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies a space-separated list of URLs to which, when the link is followed,
-                      post requests with the body ping will be sent by the browser (in the background).
-                      Typically used for tracking.
-                    </p>
-                  </div>
-                </div>
-                
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">referrerpolicy</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <ul class="list-pl-20">
-                      <li class=""><em>no-referrer</em></li>
-                      <li class=""><em>no-referrer-when-downgrade</em></li>
-                      <li class=""><em>origin</em></li>
-                      <li class=""><em>origin-when-cross-origin</em></li>
-                      <li class=""><em>same-origin</em></li>
-                      <li class=""><em>strict-origin-when-cross-origin</em></li>
-                      <li class=""><em>unsafe-url</em></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies which referrer information to send with the link.
-                    </p>
-                  </div>
-                </div>
-                
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">rel</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <ul class="list-pl-20">
-                      <li class=""><em>alternate</em></li>
-                      <li class=""><em>author</em></li>
-                      <li class=""><em>bookmark</em></li>
-                      <li class=""><em>external</em></li>
-                      <li class=""><em>help</em></li>
-                      <li class=""><em>licence</em></li>
-                      <li class=""><em>next</em></li>
-                      <li class=""><em>nofollow</em></li>
-                      <li class=""><em>noreferrer</em></li>
-                      <li class=""><em>noopener</em></li>
-                      <li class=""><em>prev</em></li>
-                      <li class=""><em>search</em></li>
-                      <li class=""><em>tag</em></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the relationship between the current document and the linked document.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">target</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <ul class="list-pl-20">
-                      <li class=""><em>_blank</em></li>
-                      <li class=""><em>_parent</em></li>
-                      <li class=""><em>_self</em></li>
-                      <li class=""><em>_top</em></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies where to open the linked document.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">type</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(media_type)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the media type of the linked document.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;a&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;a&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
               </div>
 
-            </div>
+              <hr>
 
-            <!-- tag abbr -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;abbr&gt;
-                </p>
-              </div>
-              
-              <!-- tag abbr description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;abbr&gt; tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
-                </p>
-                <p>
-                  <strong>Tip: </strong>Use the global <em>title</em> attribute to show the description for the abbreviation/acronym when you mouse over the element.
-                </p>
-              </div>
-
-              <!-- tag abbr example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="my-2">&lt;abbr&gt; can also be used with &lt;dfn&gt; to define an abbreviation:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt; <br>
-                  &nbsp; &lt;dfn&gt; <br>
-                  &nbsp; &nbsp; &lt;abbr title="Cascading Style Sheets"&gt;CSS&lt;/abbr&gt; <br>
-                  &nbsp; &lt;/dfn&gt; <br>
-                  &nbsp; is a language that describes the style of an HTML document. <br>
-                  &lt;/p&gt;
-                </p>
-              </div>
-              
-              <!-- tag abbr attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;abbr&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1">
+                  <p class="">
+                    The <strong>&lt;blockquote&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
                 </div>
+              </div>
 
-                <hr>
+              <hr>
 
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;abbr&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1">
+                  <p class="">
+                    The <strong>&lt;blockquote&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
                 </div>
               </div>
 
             </div>
 
-            <!-- tag area -->
-            <div class="row mb-5">
+          </div>
 
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;area&gt;
-                </p>
-              </div>
-              
-              <!-- tag area description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;area&gt; tag defines an area inside an image map (an image map is an image with clickable areas). <br>
-                  &lt;area&gt; elements are always nested inside a &lt;map&gt; tag. <br>
-                  <strong>Note:</strong> The usemap attribute in &lt;img&gt; is associated with the &lt;map&gt; element's name attribute, and creates a relationship between the image and the map.
-                </p>
-              </div>
+          <!-- tag body -->
+          <div class="row mb-5">
 
-              <!-- tag area example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt; <br>
-                  <br>
-                  &lt;map name="workmap"&gt; <br>
-                  &nbsp; &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt; <br>
-                  &nbsp; &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt; <br>
-                  &nbsp; &lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"&gt; <br>
-                  &lt;/map&gt;
-                </p>
-              </div>
-              
-              <!-- tag area attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;body&gt;
+              </p>
+            </div>
 
-              <div class="col-12">
-                <!-- tag area attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
+            <!-- tag body description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;body&gt; tag defines the document's body. <br>
+                The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs,
+                images, hyperlinks, tables, lists, etc.
+              </p>
+              <p>
+                <strong>Note: </strong> There can only be one &lt;body&gt; element in an HTML document.
+              </p>
+            </div>
+
+            <!-- tag body example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;html&gt; <br>
+                &lt;head&gt; <br>
+                &nbsp; &lt;title&gt;Title of the document&lt;/title&gt; <br>
+                &lt;/head&gt; <br>
+                <br>
+                &lt;body&gt; <br>
+                &nbsp; &lt;h1&gt;This is a heading&lt;/h1&gt; <br>
+                &nbsp; &lt;p&gt;This is a paragraph.&lt;/p&gt; <br>
+                &lt;/body&gt; <br>
+                &lt;/html&gt;
+              </p>
+            </div>
+
+            <!-- tag body attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;body&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
                 </div>
+              </div>
 
-                <!-- tag area attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">alt</p>
-                  </div>
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;body&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- tag br -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;br&gt;
+              </p>
+            </div>
+
+            <!-- tag br description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;br&gt; tag inserts a single line break. <br>
+                The &lt;br&gt; tag is useful for writing addresses or poems. <br>
+                The &lt;br&gt; tag is an empty tag which means that it has no end tag.
+              </p>
+              <p>
+                <strong>Note: </strong> Use the &lt;br&gt; tag to enter line breaks, not to add space between
+                paragraphs.
+              </p>
+            </div>
+
+            <!-- tag br example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;p&gt; <br>
+                &nbsp; To force&lt;br&gt; line breaks&lt;br&gt; in a text,&lt;br&gt; use the br element. <br>
+                &lt;/p&gt;
+              </p>
+            </div>
+
+            <!-- tag br attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;br&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;br&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- tag button -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;button&gt;
+              </p>
+            </div>
+
+            <!-- tag button description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;button&gt; tag defines a clickable button. <br>
+                Inside a &lt;button&gt; element you can put text (and tags like
+                &lt;i&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;br&gt;, &lt;img&gt;, etc.).
+                That is not possible with a button created with the &lt;input&gt; element!
+              </p>
+              <p class="">
+                <strong>Tip:</strong> Always specify the type attribute for a &lt;button&gt; element, to tell browsers
+                what type of button it is.
+              </p>
+            </div>
+
+            <!-- tag button example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;button type="button"&gt;Click Me!&lt;/button&gt;
+              </p>
+            </div>
+
+            <!-- tag button attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <!-- tag button attributes head -->
+              <div class="row mx-2 mb-3">
+                <div class="col-5 col-sm-3 small border p-1">
+                  <p class="">Attribute:</p>
+                </div>
+                <div class="col-7 col-sm-3 small border p-1">
+                  <p class="">Value:</p>
+                </div>
+                <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                  <p class="">Description:</p>
+                </div>
+              </div>
+
+              <!-- tag button attributes rows -->
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">autofocus</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(text)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies an alternate text for the area. Required if the href attribute is present.
-                    </p>
+                    <p class=""><em>autofocus</em></p>
                   </div>
                 </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies that a button should automatically get focus when the page loads.
+                  </p>
+                </div>
+              </div>
 
-                <hr>
+              <hr>
 
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">coords</p>
-                  </div>
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">disabled</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(coordinates)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the coordinates of the area.
-                    </p>
+                    <p class=""><em>disabled</em></p>
                   </div>
                 </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies that a button should be disabled.
+                  </p>
+                </div>
+              </div>
 
-                <hr>
-                
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">download</p>
-                  </div>
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">form</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(filename)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that the target will be downloaded when a user clicks on the hyperlink.
-                    </p>
+                    <p class=""><em>(form_id)</em></p>
                   </div>
                 </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies which form the button belongs to.
+                  </p>
+                </div>
+              </div>
 
-                <hr>
+              <hr>
 
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">href</p>
-                  </div>
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">formaction</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
                     <p class=""><em>(URL)</em></p>
                   </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the hyperlink target for the area.
-                    </p>
-                  </div>
                 </div>
-                
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">hreflang</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(language_code)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the language of the target URL.
-                    </p>
-                  </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies where to send the form-data when a form is submitted. Only for type="submit".
+                  </p>
                 </div>
-                
-                <hr>
+              </div>
 
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">media</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(media_query)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies what media/device the target URL is optimized for.
-                    </p>
-                  </div>
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">formenctype</p>
                 </div>
-                
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">referrerpolicy</p>
-                  </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
                     <ul class="list-pl-20">
-                      <li class=""><em>no-referrer</em></li>
-                      <li class=""><em>no-referrer-when-downgrade</em></li>
-                      <li class=""><em>origin</em></li>
-                      <li class=""><em>origin-when-cross-origin</em></li>
-                      <li class=""><em>same-origin</em></li>
-                      <li class=""><em>strict-origin-when-cross-origin</em></li>
-                      <li class=""><em>unsafe-url</em></li>
+                      <li class=""><em>application/x-www-form-urlencoded</em></li>
+                      <li class=""><em>multipart/form-data</em></li>
+                      <li class=""><em>text/plain</em></li>
                     </ul>
                   </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies which referrer information to send with the link.
-                    </p>
-                  </div>
                 </div>
-                
-                <hr>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies how form-data should be encoded before sending it to a server. Only for type="submit".
+                  </p>
+                </div>
+              </div>
 
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">rel</p>
-                  </div>
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">formmethod</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
                     <ul class="list-pl-20">
-                      <li class=""><em>alternate</em></li>
-                      <li class=""><em>author</em></li>
-                      <li class=""><em>bookmark</em></li>
-                      <li class=""><em>external</em></li>
-                      <li class=""><em>help</em></li>
-                      <li class=""><em>licence</em></li>
-                      <li class=""><em>next</em></li>
-                      <li class=""><em>nofollow</em></li>
-                      <li class=""><em>noreferrer</em></li>
-                      <li class=""><em>noopener</em></li>
-                      <li class=""><em>prev</em></li>
-                      <li class=""><em>search</em></li>
-                      <li class=""><em>tag</em></li>
+                      <li class=""><em>get</em></li>
+                      <li class=""><em>post</em></li>
                     </ul>
                   </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the relationship between the current document and the target URL.
-                    </p>
-                  </div>
                 </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies how to send the form-data (which HTTP method to use). Only for type="submit".
+                  </p>
+                </div>
+              </div>
 
-                <hr>
+              <hr>
 
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">shape</p>
-                  </div>
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">formnovalidate</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
-                    <ul class="list-pl-20">
-                      <li class=""><em>default</em></li>
-                      <li class=""><em>rect</em></li>
-                      <li class=""><em>circle</em></li>
-                      <li class=""><em>poly</em></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the shape of the area.
-                    </p>
+                    <p class=""><em>formnovalidate</em></p>
                   </div>
                 </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies that the form-data should not be validated on submission. Only for type="submit".
+                  </p>
+                </div>
+              </div>
 
-                <hr>
+              <hr>
 
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">target</p>
-                  </div>
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">formtarget</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
                     <ul class="list-pl-20">
                       <li class=""><em>_blank</em></li>
-                      <li class=""><em>_parent</em></li>
                       <li class=""><em>_self</em></li>
+                      <li class=""><em>_parent</em></li>
                       <li class=""><em>_top</em></li>
                       <li class=""><em>(framename)</em></li>
                     </ul>
                   </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies where to open the linked document.
-                    </p>
-                  </div>
                 </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies where to display the response after submitting the form. Only for type="submit".
+                  </p>
+                </div>
+              </div>
 
-                <hr>
+              <hr>
 
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">type</p>
-                  </div>
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">name</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(media_type)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the media type of the linked document.
-                    </p>
+                    <p class=""><em>(name)</em></p>
                   </div>
                 </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;area&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies a name for the button.
+                  </p>
                 </div>
+              </div>
 
-                <hr>
+              <hr>
 
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;area&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">type</p>
                 </div>
-
-              </div>
-
-            </div>
-
-            <!-- tag article -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;article&gt;
-                </p>
-              </div>
-              
-              <!-- tag article description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;article&gt; tag specifies independent, self-contained content. <br>
-                  An article should make sense on its own and it should be possible to distribute it independently from the rest of the site. <br>
-                  Potential sources for the &lt;article&gt; element: <br>
-                  <ul>
-                    <li>Forum post</li>
-                    <li>Blog post</li>
-                    <li>News story</li>
-                  </ul>
-                  <strong>Note:</strong> The &lt;article&gt; element does not render as anything special in a browser.
-                  However, you can use CSS to style the &lt;article&gt; element.
-                </p>
-              </div>
-
-              <!-- tag article example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;article&gt; <br>
-                  &nbsp; &lt;h2&gt;>Google Chrome&lt;/h2&gt; <br>
-                  &nbsp; &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008.&lt;/p&gt; <br>
-                  &lt;/article&gt;
-                </p>
-              </div>
-              
-              <!-- tag article attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-
-                <!-- tag article attributes rows -->
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;article&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;article&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- tag aside -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;aside&gt;
-                </p>
-              </div>
-              
-              <!-- tag aside description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;aside&gt; tag defines some content aside from the content it is placed in.
-                  The aside content should be indirectly related to the surrounding content. <br>
-                  <strong>Tip:</strong> The &lt;aside&gt; content is often placed as a sidebar in a document. <br>
-                  <strong>Note:</strong> The &lt;aside&gt; element does not render as anything special in a browser.
-                  However, you can use CSS to style the &lt;aside&gt; element.
-                </p>
-              </div>
-
-              <!-- tag aside example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;aside&gt; <br>
-                  &nbsp; &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008.&lt;/p&gt; <br>
-                  &lt;/aside&gt;
-                </p>
-              </div>
-              
-              <!-- tag aside attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-
-                <!-- tag aside attributes rows -->
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;aside&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;aside&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- tag audio -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;audio&gt;
-                </p>
-              </div>
-              
-              <!-- tag audio description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;audio&gt; is used to embed sound content in a document, such as music or other audio streams. <br>
-                  The &lt;audio&gt; tag contains one or more &lt;source&gt; tags with different audio sources. The browser will choose the first source it supports.
-                  The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do not support the &lt;audio&gt; element. <br>
-                  There are three supported audio formats in HTML: MP3, WAV, and OGG (OGG not supported in Safari).
-                </p>
-              </div>
-
-              <!-- tag audio example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;audio controls&gt; <br>
-                  &nbsp; &lt;source src="horse.ogg" type="audio/ogg"&gt; <br>
-                  &nbsp; &lt;source src="horse.mp3" type="audio/mpeg"&gt; <br>
-                  &nbsp; Your browser does not support the audio tag. <br>
-                  &lt;/audio&gt;
-                </p>
-              </div>
-              
-              <!-- tag audio attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag audio attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag audio attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">autoplay</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>autoplay</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that the audio will start playing as soon as it is ready.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">controls</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>controls</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that the audio will start over again, every time it is finished.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">loop</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>loop</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that the audio will start over again, every time it is finished.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">muted</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>muted</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that the audio output should be muted.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">preload</p>
-                  </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
                     <ul class="list-pl-20">
-                      <li class=""><em>auto</em></li>
-                      <li class=""><em>metadata</em></li>
-                      <li class=""><em>none</em></li>
+                      <li class=""><em>button</em></li>
+                      <li class=""><em>reset</em></li>
+                      <li class=""><em>submit</em></li>
                     </ul>
                   </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies if and how the author thinks the audio should be loaded when the page loads.
-                    </p>
-                  </div>
                 </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the type of button.
+                  </p>
+                </div>
+              </div>
 
-                <hr>
+              <hr>
 
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">src</p>
-                  </div>
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">value</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
                   <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(URL)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the URL of the audio file.
-                    </p>
+                    <p class=""><em>(text)</em></p>
                   </div>
                 </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;audio&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies an initial value for the button.
+                  </p>
                 </div>
+              </div>
 
-                <hr>
+              <hr>
 
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;audio&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1">
+                  <p class="">
+                    The <strong>&lt;button&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
                 </div>
-
               </div>
 
-            </div>
+              <hr>
 
-          </div>
-
-          
-          <!-- B -->
-          <div id="html-tags-b" class="col-12 html-tags py-3">
-            
-            <!-- tag b -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;b&gt;
-                </p>
-              </div>
-              
-              <!-- tag b description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;b&gt; tag specifies bold text without any extra importance.
-                </p>
-                <p>
-                  <strong>Note: </strong> According to the HTML5 specification, the &lt;b&gt; tag should be used as a LAST resort when no other tag is more appropriate.
-                  The specification states that headings should be denoted with the &lt;h1&gt; to &lt;h6&gt; tags, emphasized text should be denoted with the &lt;em&gt; tag,
-                  important text should be denoted with the &lt;strong&gt; tag, and marked/highlighted text should be denoted with the &lt;mark&gt; tag.
-                </p>
-                <p>
-                  <strong>Tip: </strong>You can also use the following CSS to set bold text: "font-weight: bold;".
-                </p>
-              </div>
-
-              <!-- tag b example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt; <br>
-                  &nbsp; This is normal text - &lt;b&gt;and this is bold text&lt;/b&gt;. <br>
-                  &lt;/p&gt;
-                </p>
-              </div>
-              
-              <!-- tag b attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;b&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;b&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1">
+                  <p class="">
+                    The <strong>&lt;button&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
                 </div>
               </div>
 
             </div>
 
-            <!-- tag base -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;base&gt;
-                </p>
-              </div>
-              
-              <!-- tag base description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;base&gt; tag specifies the base URL and/or target for all relative URLs in a document. <br>
-                  The &lt;base&gt; tag must have either an href or a target attribute present, or both. <br>
-                  There can only be one single &lt;base&gt; element in a document, and it must be inside the &lt;head&gt; element.
-                </p>
-              </div>
-
-              <!-- tag base example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="pb-1 mb-2">
-                  <strong>Note: </strong> Only relative address for the image has been specified.
-                  Since a base URL has been specified in the head section, the browser will look for the image at "https://www.abc.com/images/pic.gif".
-                </p>
-                <p class="pb-1 mb-2">
-                  <strong>Note: </strong> The link opens in a new window, even if it has no target="_blank" attribute.
-                  This is because the target attribute of the base element is set to "_blank".
-                </p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;head&gt; <br>
-                  &nbsp; &lt;base href="https://www.abc.com/" target="_blank"&gt; <br>
-                  &lt;/head&gt; <br>
-                  <br>
-                  &lt;body&gt; <br>
-                  &nbsp; &lt;img src="images/pic.gif" width="24" height="39" alt="Stickman"&gt; <br>
-                  &nbsp; &lt;a href="tags/tag_base.asp"&gt; HTML base Tag&lt;/a&gt; <br>
-                  &lt;/body&gt;
-                </p>
-              </div>
-              
-              <!-- tag base attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag base attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag base attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">href</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(URL)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the base URL for all relative URLs in the page.
-                    </p>
-                  </div>
-                </div>
-                
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">target</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <ul class="list-pl-20">
-                      <li class=""><em>_blank</em></li>
-                      <li class=""><em>_parent</em></li>
-                      <li class=""><em>_self</em></li>
-                      <li class=""><em>_top</em></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the default target for all hyperlinks and forms in the page.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1">
-                    <p class="">
-                      The <strong>&lt;base&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1">
-                    <p class="">
-                      The <strong>&lt;base&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-             <!-- tag bdi -->
-             <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;bdi&gt;
-                </p>
-              </div>
-              
-              <!-- tag bdi description -->
-              <div class="col-12">
-                <p class="">
-                  BDI stands for Bi-Directional Isolation. <br>
-                  The &lt;bdi&gt; tag isolates a part of text that might be formatted in a different direction from other text outside it. <br>
-                  This element is useful when embedding user-generated content with an unknown text direction.
-                </p>
-              </div>
-
-              <!-- tag bdi example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="pb-1 mb-2">
-                  Isolate the usernames from the surrounding text-direction settings:
-                </p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;ul&gt; <br>
-                  &nbsp; &lt;li&gt;User &lt;bdi&gt;jane&lt;/bdi&gt;: 60 points&lt;/li&gt; <br>
-                  &nbsp; &lt;li&gt;User &lt;bdi&gt;joe&lt;/bdi&gt;: 80 points&lt;/li&gt; <br>
-                  &nbsp; &lt;li&gt;User &lt;bdi&gt;إيان&lt;/bdi&gt;: 90 points&lt;/li&gt; <br>
-                  &lt;/ul&gt;
-                </p>
-              </div>
-              <div class="col-12">
-                <p class="pb-1 my-2">
-                  In the example, usernames are shown along with the number of points in a contest.
-                  If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text
-                  (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").
-                </p>
-              </div>
-              
-              <!-- tag bdi attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;bdi&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;bdi&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- tag bdo -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;bdo&gt;
-                </p>
-              </div>
-              
-              <!-- tag bdo description -->
-              <div class="col-12">
-                <p class="">
-                  BDO stands for Bi-Directional Override. <br>
-                  The &lt;bdo&gt; tag is used to override the current text direction.
-                </p>
-              </div>
-
-              <!-- tag bdo example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="pb-1 mb-2">
-                  Specify the text direction:
-                </p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;bdo dir="rtl"&gt; <br>
-                  &nbsp; This text will go right-to-left. <br>
-                  &lt;bdo&gt;
-                </p>
-              </div>
-              
-              <!-- tag bdo attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag bdo attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag bdo attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">dir</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <ul class="list-pl-20">
-                      <li class=""><em>ltr</em></li>
-                      <li class=""><em>rtl</em></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Required. Specifies the text direction of the text inside the &lt;bdo&gt; element.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1">
-                    <p class="">
-                      The <strong>&lt;bdo&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1">
-                    <p class="">
-                      The <strong>&lt;bdo&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- tag blockquote -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;blockquote&gt;
-                </p>
-              </div>
-              
-              <!-- tag blockquote description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;blockquote&gt; tag specifies a section that is quoted from another source. <br>
-                  Browsers usually indent &lt;blockquote&gt; elements (look at example below to see how to remove the indentation).
-                </p>
-              </div>
-
-              <!-- tag blockquote example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="pb-1 mb-2">
-                  A section that is quoted from another source:
-                </p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;blockquote cite="http://www.worldwildlife.org/index.html"&gt; <br>
-                  &nbsp; For 50 years, WWF has been protecting the future of nature. <br>
-                  &lt;/blockquote&gt;
-                </p>
-              </div>
-              
-              <!-- tag blockquote attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag blockquote attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag blockquote attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">cite</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <p class=""><em>(URL)</em></p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the source of the quotation.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1">
-                    <p class="">
-                      The <strong>&lt;blockquote&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1">
-                    <p class="">
-                      The <strong>&lt;blockquote&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- tag body -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;body&gt;
-                </p>
-              </div>
-              
-              <!-- tag body description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;body&gt; tag defines the document's body. <br>
-                  The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
-                </p>
-                <p>
-                  <strong>Note: </strong> There can only be one &lt;body&gt; element in an HTML document.
-                </p>
-              </div>
-
-              <!-- tag body example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;html&gt; <br>
-                  &lt;head&gt; <br>
-                  &nbsp; &lt;title&gt;Title of the document&lt;/title&gt; <br>
-                  &lt;/head&gt; <br>
-                  <br>
-                  &lt;body&gt; <br>
-                  &nbsp; &lt;h1&gt;This is a heading&lt;/h1&gt; <br>
-                  &nbsp; &lt;p&gt;This is a paragraph.&lt;/p&gt; <br>
-                  &lt;/body&gt; <br>
-                  &lt;/html&gt;
-                </p>
-              </div>
-              
-              <!-- tag body attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;body&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;body&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- tag br -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;br&gt;
-                </p>
-              </div>
-              
-              <!-- tag br description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;br&gt; tag inserts a single line break. <br>
-                  The &lt;br&gt; tag is useful for writing addresses or poems. <br>
-                  The &lt;br&gt; tag is an empty tag which means that it has no end tag.
-                </p>
-                <p>
-                  <strong>Note: </strong> Use the &lt;br&gt; tag to enter line breaks, not to add space between paragraphs.
-                </p>
-              </div>
-
-              <!-- tag br example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt; <br>
-                  &nbsp; To force&lt;br&gt; line breaks&lt;br&gt; in a text,&lt;br&gt; use the br element. <br>
-                  &lt;/p&gt;
-                </p>
-              </div>
-              
-              <!-- tag br attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;br&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;br&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- tag button -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;button&gt;
-                </p>
-              </div>
-              
-              <!-- tag button description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;button&gt; tag defines a clickable button. <br>
-                  Inside a &lt;button&gt; element you can put text (and tags like
-                  &lt;i&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;br&gt;, &lt;img&gt;, etc.).
-                  That is not possible with a button created with the &lt;input&gt; element!
-                </p>
-                <p class="">
-                  <strong>Tip:</strong> Always specify the type attribute for a &lt;button&gt; element, to tell browsers what type of button it is.
-                </p>
-              </div>
-
-              <!-- tag button example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;button type="button"&gt;Click Me!&lt;/button&gt;
-                </p>
-              </div>
-              
-              <!-- tag button attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag button attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag button attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">autofocus</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <p class=""><em>autofocus</em></p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that a button should automatically get focus when the page loads.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">disabled</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <p class=""><em>disabled</em></p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that a button should be disabled.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">form</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <p class=""><em>(form_id)</em></p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies which form the button belongs to.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">formaction</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <p class=""><em>(URL)</em></p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies where to send the form-data when a form is submitted. Only for type="submit".
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">formenctype</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <ul class="list-pl-20">
-                        <li class=""><em>application/x-www-form-urlencoded</em></li>
-                        <li class=""><em>multipart/form-data</em></li>
-                        <li class=""><em>text/plain</em></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies how form-data should be encoded before sending it to a server. Only for type="submit".
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">formmethod</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <ul class="list-pl-20">
-                        <li class=""><em>get</em></li>
-                        <li class=""><em>post</em></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies how to send the form-data (which HTTP method to use). Only for type="submit".
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">formnovalidate</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <p class=""><em>formnovalidate</em></p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that the form-data should not be validated on submission. Only for type="submit".
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">formtarget</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <ul class="list-pl-20">
-                        <li class=""><em>_blank</em></li>
-                        <li class=""><em>_self</em></li>
-                        <li class=""><em>_parent</em></li>
-                        <li class=""><em>_top</em></li>
-                        <li class=""><em>(framename)</em></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies where to display the response after submitting the form. Only for type="submit".
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">name</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <p class=""><em>(name)</em></p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies a name for the button.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">type</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <ul class="list-pl-20">
-                        <li class=""><em>button</em></li>
-                        <li class=""><em>reset</em></li>
-                        <li class=""><em>submit</em></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the type of button.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">value</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <div class="col-7 col-sm-3 p-1">
-                      <p class=""><em>(text)</em></p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies an initial value for the button.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1">
-                    <p class="">
-                      The <strong>&lt;button&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1">
-                    <p class="">
-                      The <strong>&lt;button&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <!-- C -->
-          <div id="html-tags-c" class="col-12 html-tags py-3">
-            
-            <!-- tag canvas -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;canvas&gt;
-                </p>
-              </div>
-              
-              <!-- tag canvas description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;canvas&gt; tag is used to draw graphics, on the fly, via scripting (usually JavaScript). <br>
-                  The &lt;canvas&gt; tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics. <br>
-                  Any text inside the &lt;canvas&gt; element will be displayed in browsers with JavaScript disabled and in browsers that do not support &lt;canvas&gt;.
-                </p>
-              </div>
-
-              <!-- tag canvas example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;canvas id="myCanvas"&gt; <br>
-                  &nbsp; Your browser does not support the canvas tag. <br>
-                  &lt;/canvas&gt; <br>
-                  <br>
-                  &lt;script&gt; <br>
-                  var canvas = document.getElementById("myCanvas"); <br>
-                  var ctx = canvas.getContext("2d"); <br>
-                  ctx.fillStyle = "#FF0000"; <br>
-                  ctx.fillRect(0, 0, 80, 80); <br>
-                  &lt;/script&gt;
-                </p>
-              </div>
-              
-              <!-- tag canvas attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag canvas attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag canvas attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">height</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(pixels)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the height of the canvas. Default value is 150.
-                    </p>
-                  </div>
-                </div>
-              
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">width</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(pixels)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the width of the canvas. Default value is 300.
-                    </p>
-                  </div>
-                </div>
-              
-                <hr>
-
-                <div class="col-12">
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;canvas&gt;</strong> tag supports the
-                        <a href="html_attributes_global.html" class="link-normal">
-                          Global Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;canvas&gt;</strong> tag supports the
-                        <a href="html_attributes_event.html" class="link-normal">
-                          Event Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- tag caption -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;caption&gt;
-                </p>
-              </div>
-              
-              <!-- tag caption description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;caption&gt; tag defines a table caption. <br>
-                  The &lt;caption&gt; tag must be inserted immediately after the &lt;table&gt; tag. <br>
-                  <strong>Tip:</strong> By default, a table caption will be center-aligned above a table.
-                  The CSS properties text-align and caption-side can be used to align and place the caption.
-                </p>
-              </div>
-
-              <!-- tag caption example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;table&gt; <br>
-                  &nbsp; &lt;caption&gt;Monthly savings&lt;/caption&gt; <br>
-                  &nbsp; &lt;tr&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;Month&lt;/th&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;Savings&lt;/th&gt; <br>
-                  &nbsp; &lt;/tr&gt; <br>
-                  &nbsp; &lt;tr&gt; <br>
-                  &nbsp; &nbsp; &lt;td&gt;January&lt;/td&gt; <br>
-                  &nbsp; &nbsp; &lt;td&gt;$100&lt;/td&gt; <br>
-                  &nbsp; &lt;/tr&gt; <br>
-                  &lt;/table&gt;
-                </p>
-              </div>
-              
-              <!-- tag caption attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-                <!-- tag caption attributes rows -->
-                <div class="col-12">
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;caption&gt;</strong> tag supports the
-                        <a href="html_attributes_global.html" class="link-normal">
-                          Global Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;caption&gt;</strong> tag supports the
-                        <a href="html_attributes_event.html" class="link-normal">
-                          Event Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- tag cite -->
-            <div class="row mb-5">
-
-              <div class="col-12 mb-3">
-                <p class="element-name text-center text-sm-left">
-                  &lt;cite&gt;
-                </p>
-              </div>
-              
-              <!-- tag cite description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;caption&gt; tag defines a table caption. <br>
-                  The &lt;caption&gt; tag must be inserted immediately after the &lt;table&gt; tag. <br>
-                  <strong>Tip:</strong> By default, a table caption will be center-aligned above a table.
-                  The CSS properties text-align and caption-side can be used to align and place the caption.
-                </p>
-              </div>
-
-              <!-- tag cite example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;table&gt; <br>
-                  &nbsp; &lt;caption&gt;Monthly savings&lt;/caption&gt; <br>
-                  &nbsp; &lt;tr&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;Month&lt;/th&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;Savings&lt;/th&gt; <br>
-                  &nbsp; &lt;/tr&gt; <br>
-                  &nbsp; &lt;tr&gt; <br>
-                  &nbsp; &nbsp; &lt;td&gt;January&lt;/td&gt; <br>
-                  &nbsp; &nbsp; &lt;td&gt;$100&lt;/td&gt; <br>
-                  &nbsp; &lt;/tr&gt; <br>
-                  &lt;/table&gt;
-                </p>
-              </div>
-              
-              <!-- tag cite attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-                <!-- tag cite attributes rows -->
-                <div class="col-12">
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;cite&gt;</strong> tag supports the
-                        <a href="html_attributes_global.html" class="link-normal">
-                          Global Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;cite&gt;</strong> tag supports the
-                        <a href="html_attributes_event.html" class="link-normal">
-                          Event Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- D -->
-          <div id="html-tags-d" class="col-12 html-tags py-3">
-            <h1>D</h1>
-          </div>
-
-          <!-- E -->
-          <div id="html-tags-e" class="col-12 html-tags py-3">
-            <h1>E</h1>
-          </div>
-
-          <!-- F -->
-          <div id="html-tags-f" class="col-12 html-tags py-3">
-            <h1>F</h1>
-          </div>
-
-          <!-- G -->
-          <div id="html-tags-g" class="col-12 html-tags py-3">
-            <h1>G</h1>
-          </div>
-
-          <!-- H -->
-          <div id="html-tags-h" class="col-12 html-tags py-3">
-            <h1>H</h1>
-          </div>
-
-          <!-- I -->
-          <div id="html-tags-i" class="col-12 html-tags py-3">
-            <h1>I</h1>
-          </div>
-
-          <!-- J -->
-          <div id="html-tags-j" class="col-12 html-tags py-3">
-            <h1>J</h1>
-          </div>
-
-          <!-- K -->
-          <div id="html-tags-k" class="col-12 html-tags py-3">
-            <h1>K</h1>
-          </div>
-
-          <!-- L -->
-          <div id="html-tags-l" class="col-12 html-tags py-3">
-            <h1>L</h1>
-          </div>
-
-          <!-- M -->
-          <div id="html-tags-m" class="col-12 html-tags py-3">
-            <h1>M</h1>
-          </div>
-
-          <!-- N -->
-          <div id="html-tags-n" class="col-12 html-tags py-3">
-            <h1>N</h1>
-          </div>
-
-          <!-- O -->
-          <div id="html-tags-o" class="col-12 html-tags py-3">
-            <h1>O</h1>
-          </div>
-
-          <!-- P -->
-          <div id="html-tags-p" class="col-12 html-tags py-3">
-            <h1>P</h1>
-          </div>
-
-           <!-- Q -->
-           <div id="html-tags-q" class="col-12 html-tags py-3">
-            <h1>Q</h1>
-          </div>
-
-          <!-- R -->
-          <div id="html-tags-r" class="col-12 html-tags py-3">
-            <h1>R</h1>
-          </div>
-
-          <!-- S -->
-          <div id="html-tags-s" class="col-12 html-tags py-3">
-            <h1>S</h1>
-          </div>
-
-          <!-- T -->
-          <div id="html-tags-t" class="col-12 html-tags py-3">
-            <h1>T</h1>
-          </div>
-
-           <!-- U -->
-           <div id="html-tags-u" class="col-12 html-tags py-3">
-            <h1>U</h1>
-          </div>
-
-          <!-- V -->
-          <div id="html-tags-v" class="col-12 html-tags py-3">
-            <h1>V</h1>
-          </div>
-
-          <!-- W -->
-          <div id="html-tags-w" class="col-12 html-tags py-3">
-            <h1>W</h1>
-          </div>
-
-          <!-- X -->
-          <div id="html-tags-x" class="col-12 html-tags py-3">
-            <h1>X</h1>
-          </div>
-
-          <!-- Y -->
-          <div id="html-tags-y" class="col-12 html-tags py-3">
-            <h1>Y</h1>
-          </div>
-
-          <!-- Z -->
-          <div id="html-tags-z" class="col-12 html-tags py-3">
-            <h1>Z</h1>
           </div>
 
         </div>
+
+        <!-- C -->
+        <div id="html-tags-c" class="col-12 html-tags py-3">
+
+          <!-- tag canvas -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;canvas&gt;
+              </p>
+            </div>
+
+            <!-- tag canvas description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;canvas&gt; tag is used to draw graphics, on the fly, via scripting (usually JavaScript). <br>
+                The &lt;canvas&gt; tag is transparent, and is only a container for graphics, you must use a script to
+                actually draw the graphics. <br>
+                Any text inside the &lt;canvas&gt; element will be displayed in browsers with JavaScript disabled and
+                in browsers that do not support &lt;canvas&gt;.
+              </p>
+            </div>
+
+            <!-- tag canvas example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;canvas id="myCanvas"&gt; <br>
+                &nbsp; Your browser does not support the canvas tag. <br>
+                &lt;/canvas&gt; <br>
+                <br>
+                &lt;script&gt; <br>
+                var canvas = document.getElementById("myCanvas"); <br>
+                var ctx = canvas.getContext("2d"); <br>
+                ctx.fillStyle = "#FF0000"; <br>
+                ctx.fillRect(0, 0, 80, 80); <br>
+                &lt;/script&gt;
+              </p>
+            </div>
+
+            <!-- tag canvas attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <!-- tag canvas attributes head -->
+              <div class="row mx-2 mb-3">
+                <div class="col-5 col-sm-3 small border p-1">
+                  <p class="">Attribute:</p>
+                </div>
+                <div class="col-7 col-sm-3 small border p-1">
+                  <p class="">Value:</p>
+                </div>
+                <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                  <p class="">Description:</p>
+                </div>
+              </div>
+
+              <!-- tag canvas attributes rows -->
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">height</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(pixels)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the height of the canvas. Default value is 150.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">width</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(pixels)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the width of the canvas. Default value is 300.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="col-12">
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;canvas&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;canvas&gt;</strong> tag supports the
+                      <a href="html_attributes_event.html" class="link-normal">
+                        Event Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tag caption -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;caption&gt;
+              </p>
+            </div>
+
+            <!-- tag caption description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;caption&gt; tag defines a table caption. <br>
+                The &lt;caption&gt; tag must be inserted immediately after the &lt;table&gt; tag. <br>
+                <strong>Tip:</strong> By default, a table caption will be center-aligned above a table.
+                The CSS properties text-align and caption-side can be used to align and place the caption.
+              </p>
+            </div>
+
+            <!-- tag caption example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;table&gt; <br>
+                &nbsp; &lt;caption&gt;Monthly savings&lt;/caption&gt; <br>
+                &nbsp; &lt;tr&gt; <br>
+                &nbsp; &nbsp; &lt;th&gt;Month&lt;/th&gt; <br>
+                &nbsp; &nbsp; &lt;th&gt;Savings&lt;/th&gt; <br>
+                &nbsp; &lt;/tr&gt; <br>
+                &nbsp; &lt;tr&gt; <br>
+                &nbsp; &nbsp; &lt;td&gt;January&lt;/td&gt; <br>
+                &nbsp; &nbsp; &lt;td&gt;$100&lt;/td&gt; <br>
+                &nbsp; &lt;/tr&gt; <br>
+                &lt;/table&gt;
+              </p>
+            </div>
+
+            <!-- tag caption attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <!-- tag caption attributes rows -->
+            <div class="col-12">
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;caption&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;caption&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tag cite -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;cite&gt;
+              </p>
+            </div>
+
+            <!-- tag cite description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;cite&gt; tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a
+                painting, a sculpture, etc.). <br>
+                <strong>Note:</strong> A person's name is not the title of a work. <br>
+                The text in the &lt;cite&gt; element usually renders in italic.
+              </p>
+            </div>
+
+            <!-- tag cite example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;p&gt; &lt;cite&gt;The Scream&lt;/cite&gt; by Edward Munch. Painted in 1893.&lt;/p&gt;
+              </p>
+            </div>
+
+            <!-- tag cite attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <!-- tag cite attributes rows -->
+            <div class="col-12">
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;cite&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;cite&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tag code -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;code&gt;
+              </p>
+            </div>
+
+            <!-- tag code description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;code&gt; tag is used to define a piece of computer code.
+                The content inside is displayed in the browser's default monospace font. <br>
+                <strong>Tip:</strong> This tag is not deprecated. However, it is possible to achieve richer effect by
+                using CSS. <br>
+                <strong>Note:</strong> Also look at tags:
+                <ul>
+                  <li>&lt;samp&gt;</li>
+                  <li>&lt;kbd&gt;</li>
+                  <li>&lt;var&gt;</li>
+                  <li>&lt;pre&gt;</li>
+                </ul>
+              </p>
+            </div>
+
+            <!-- tag code example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;p&gt;The HTML &lt;code&gt;button&lt;/code&gt; tag defines a clickable button.&lt;/p&gt;
+              </p>
+            </div>
+
+            <!-- tag code attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;code&gt;</strong> tag supports the
+                    <a href="html_attributes_global.html" class="link-normal">
+                      Global Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mx-2 py-3">
+                <div class="col-12 px-1 ">
+                  <p class="">
+                    The <strong>&lt;code&gt;</strong> tag supports the
+                    <a href="html_attributes_event.html" class="link-normal">
+                      Event Attributes
+                    </a>
+                    in HTML.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tag col -->
+          <div class="row mb-5">
+
+            <div class="col-12 mb-3">
+              <p class="element-name text-center text-sm-left">
+                &lt;col&gt;
+              </p>
+            </div>
+
+            <!-- tag col description -->
+            <div class="col-12">
+              <p class="">
+                The &lt;col&gt; tag specifies column properties for each column within a &lt;colgroup&gt; element. <br>
+                The &lt;col&gt; tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.
+              </p>
+            </div>
+
+            <!-- tag col example -->
+            <div class="col-12">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+            </div>
+            <div class="col-12">
+              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                &lt;table&gt; <br>
+                &nbsp; &lt;colgroup&gt; <br>
+                &nbsp; &nbsp; &lt;col span="2" style="background-color:red"&gt; <br>
+                &nbsp; &nbsp; &lt;col style="background-color:yellow"&gt; <br>
+                &nbsp; &lt;/colgroup&gt; <br>
+                &nbsp; &lt;tr&gt; <br>
+                &nbsp; &nbsp; &lt;th&gt;Title&lt;/th&gt; <br>
+                &nbsp; &nbsp; &lt;th&gt;Price&lt;/th&gt; <br>
+                &nbsp; &lt;/tr&gt; <br>
+                &nbsp; &lt;tr&gt; <br>
+                &nbsp; &nbsp; &lt;th&gt;My first HTML&lt;/th&gt; <br>
+                &nbsp; &nbsp; &lt;th&gt;$55&lt;/th&gt; <br>
+                &nbsp; &lt;/tr&gt; <br>
+                &lt;/table&gt;
+              </p>
+            </div>
+            
+            <!-- tag col attributes -->
+            <div class="col-12 mt-3">
+              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+            </div>
+
+            <div class="col-12">
+              <!-- tag col attributes head -->
+              <div class="row mx-2 mb-3">
+                <div class="col-5 col-sm-3 small border p-1">
+                  <p class="">Attribute:</p>
+                </div>
+                <div class="col-7 col-sm-3 small border p-1">
+                  <p class="">Value:</p>
+                </div>
+                <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                  <p class="">Description:</p>
+                </div>
+              </div>
+
+              <!-- tag col attributes rows -->
+              <div class="row mx-2">
+                <div class="col-5 col-sm-3 p-1">
+                  <p class="attribute-name">span</p>
+                </div>
+                <div class="col-7 col-sm-3 p-1">
+                  <p class=""><em>(number)</em></p>
+                </div>
+                <div class="col-12 col-sm-6 p-1">
+                  <p class="">
+                    Specifies the number of columns a &lt;col&gt; element should span.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="col-12">
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;col&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;col&gt;</strong> tag supports the
+                      <a href="html_attributes_event.html" class="link-normal">
+                        Event Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- D -->
+        <div id="html-tags-d" class="col-12 html-tags py-3">
+          <h1>D</h1>
+        </div>
+
+        <!-- E -->
+        <div id="html-tags-e" class="col-12 html-tags py-3">
+          <h1>E</h1>
+        </div>
+
+        <!-- F -->
+        <div id="html-tags-f" class="col-12 html-tags py-3">
+          <h1>F</h1>
+        </div>
+
+        <!-- G -->
+        <div id="html-tags-g" class="col-12 html-tags py-3">
+          <h1>G</h1>
+        </div>
+
+        <!-- H -->
+        <div id="html-tags-h" class="col-12 html-tags py-3">
+          <h1>H</h1>
+        </div>
+
+        <!-- I -->
+        <div id="html-tags-i" class="col-12 html-tags py-3">
+          <h1>I</h1>
+        </div>
+
+        <!-- J -->
+        <div id="html-tags-j" class="col-12 html-tags py-3">
+          <h1>J</h1>
+        </div>
+
+        <!-- K -->
+        <div id="html-tags-k" class="col-12 html-tags py-3">
+          <h1>K</h1>
+        </div>
+
+        <!-- L -->
+        <div id="html-tags-l" class="col-12 html-tags py-3">
+          <h1>L</h1>
+        </div>
+
+        <!-- M -->
+        <div id="html-tags-m" class="col-12 html-tags py-3">
+          <h1>M</h1>
+        </div>
+
+        <!-- N -->
+        <div id="html-tags-n" class="col-12 html-tags py-3">
+          <h1>N</h1>
+        </div>
+
+        <!-- O -->
+        <div id="html-tags-o" class="col-12 html-tags py-3">
+          <h1>O</h1>
+        </div>
+
+        <!-- P -->
+        <div id="html-tags-p" class="col-12 html-tags py-3">
+          <h1>P</h1>
+        </div>
+
+        <!-- Q -->
+        <div id="html-tags-q" class="col-12 html-tags py-3">
+          <h1>Q</h1>
+        </div>
+
+        <!-- R -->
+        <div id="html-tags-r" class="col-12 html-tags py-3">
+          <h1>R</h1>
+        </div>
+
+        <!-- S -->
+        <div id="html-tags-s" class="col-12 html-tags py-3">
+          <h1>S</h1>
+        </div>
+
+        <!-- T -->
+        <div id="html-tags-t" class="col-12 html-tags py-3">
+          <h1>T</h1>
+        </div>
+
+        <!-- U -->
+        <div id="html-tags-u" class="col-12 html-tags py-3">
+          <h1>U</h1>
+        </div>
+
+        <!-- V -->
+        <div id="html-tags-v" class="col-12 html-tags py-3">
+          <h1>V</h1>
+        </div>
+
+        <!-- W -->
+        <div id="html-tags-w" class="col-12 html-tags py-3">
+          <h1>W</h1>
+        </div>
+
+        <!-- X -->
+        <div id="html-tags-x" class="col-12 html-tags py-3">
+          <h1>X</h1>
+        </div>
+
+        <!-- Y -->
+        <div id="html-tags-y" class="col-12 html-tags py-3">
+          <h1>Y</h1>
+        </div>
+
+        <!-- Z -->
+        <div id="html-tags-z" class="col-12 html-tags py-3">
+          <h1>Z</h1>
+        </div>
+
       </div>
+    </div>
     </div>
   </section>
 
-  
+
   <!-- FOOTER -->
   <footer>
 
@@ -2503,7 +2693,7 @@
         <i class="fas fa-arrow-alt-circle-up icon-go-top"></i>
       </a>
     </div>
-    
+
     <div class="row">
       <div class="col-12 bg-grey-eee p-5 footer">
         <p class="text-center small">Created by Lukasz Pasich &copy; 2022</p>
@@ -2518,4 +2708,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
