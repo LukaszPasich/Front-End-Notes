@@ -2900,109 +2900,217 @@
           <!-- tag del -->
           <div class="row mb-5">
 
-            <div class="col-12 mb-3">
+            <div class="tag-html col-12 mb-3">
               <p class="element-name text-center text-sm-left">
                 &lt;del&gt;
+                <hr class="hr-red">
               </p>
             </div>
 
-            <!-- tag del description -->
-            <div class="col-12">
-              <p class="">
-                The &lt;del&gt; tag defines text that has been deleted from a document.
-                Browsers will usually strike a line through deleted text.
-                <strong>Tip:</strong> Also look at the &lt;ins&gt; tag to markup inserted text.
-              </p>
-            </div>
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
-            <!-- tag del example -->
-            <div class="col-12">
-              <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-            </div>
-            <div class="col-12">
-              <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                 &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
-              </p>
-            </div>
-
-            <!-- tag del attributes -->
-            <div class="col-12 mt-3">
-              <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-            </div>
-
-            <div class="col-12">
-              <!-- tag del attributes head -->
-              <div class="row mx-2 mb-3">
-                <div class="col-5 col-sm-3 small border p-1">
-                  <p class="">Attribute:</p>
-                </div>
-                <div class="col-7 col-sm-3 small border p-1">
-                  <p class="">Value:</p>
-                </div>
-                <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                  <p class="">Description:</p>
-                </div>
+            <div class="tag-collapsable">
+              <!-- tag del description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;del&gt; tag defines text that has been deleted from a document.
+                  Browsers will usually strike a line through deleted text.
+                  <strong>Tip:</strong> Also look at the &lt;ins&gt; tag to markup inserted text.
+                </p>
               </div>
 
-              <!-- tag del attributes rows -->
-              <div class="row mx-2">
-                <div class="col-5 col-sm-3 p-1">
-                  <p class="attribute-name">cite</p>
-                </div>
-                <div class="col-7 col-sm-3 p-1">
-                  <p class=""><em>(URL)</em></p>
-                </div>
-                <div class="col-12 col-sm-6 p-1">
-                  <p class="">
-                    Specifies a URL to a document that explains the reason why the text was deleted/changed.
-                  </p>
-                </div>
+              <!-- tag del example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
+                </p>
               </div>
 
-              <hr>
-
-              <div class="row mx-2">
-                <div class="col-5 col-sm-3 p-1">
-                  <p class="attribute-name">datetime</p>
-                </div>
-                <div class="col-7 col-sm-3 p-1">
-                  <p class=""><em>(YYYY-MM-DDThh:mm:ssTZD)</em></p>
-                </div>
-                <div class="col-12 col-sm-6 p-1">
-                  <p class="">
-                    Specifies the date and time of when the text was deleted/changed.
-                  </p>
-                </div>
+              <!-- tag del attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
               </div>
 
-              <hr>
-
-              <div class="row mx-2 py-3">
-                <div class="col-12 px-1 ">
-                  <p class="">
-                    The <strong>&lt;del&gt;</strong> tag supports the
-                    <a href="html_attributes_global.html" class="link-normal">
-                      Global Attributes
-                    </a>
-                    in HTML.
-                  </p>
+              <div class="col-12">
+                <!-- tag del attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-5 col-sm-3 small border p-1">
+                    <p class="">Attribute:</p>
+                  </div>
+                  <div class="col-7 col-sm-3 small border p-1">
+                    <p class="">Value:</p>
+                  </div>
+                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                    <p class="">Description:</p>
+                  </div>
                 </div>
-              </div>
-  
+
+                <!-- tag del attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">cite</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(URL)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a URL to a document that explains the reason why the text was deleted/changed.
+                    </p>
+                  </div>
+                </div>
+
                 <hr>
-  
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">datetime</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(YYYY-MM-DDThh:mm:ssTZD)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the date and time of when the text was deleted/changed.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
                 <div class="row mx-2 py-3">
                   <div class="col-12 px-1 ">
                     <p class="">
                       The <strong>&lt;del&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
                       </a>
                       in HTML.
                     </p>
                   </div>
                 </div>
+    
+                  <hr>
+    
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;del&gt;</strong> tag supports the
+                        <a href="html_attributes_event.html" class="link-normal">
+                          Event Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
 
+              </div>
+            </div>
+          </div>
+
+          <!-- tag details -->
+          <div class="row mb-5">
+
+            <div class="tag-html col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;details&gt;
+                <hr class="hr-red">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag details description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;details&gt; tag specifies additional details that the user can open and close on demand. <br>
+                  The &lt;details&gt; tag is often used to create an interactive widget that the user can open and close.
+                  By default, the widget is closed. When open, it expands, and displays the content within. <br>
+                  Any sort of content can be put inside the &lt;details&gt; tag. <br>
+                  <strong>Tip:</strong> The &lt;summary&gt; tag is used in conjuction with &lt;details&gt; to specify a visible heading for the details.
+                </p>
+              </div>
+
+              <!-- tag details example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;details&gt; <br>
+                  &nbsp; &lt;summary&gt;Epcot Center&lt;/summary&gt; <br>
+                  &nbsp; &lt;p&gt;Epcot is a theme park at Walt Disney World Resort featuring exciting attractions.&lt;/p&gt; <br>
+                  &lt;/details&gt;
+                </p>
+              </div>
+
+              <!-- tag details attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag details attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-5 col-sm-3 small border p-1">
+                    <p class="">Attribute:</p>
+                  </div>
+                  <div class="col-7 col-sm-3 small border p-1">
+                    <p class="">Value:</p>
+                  </div>
+                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                    <p class="">Description:</p>
+                  </div>
+                </div>
+
+                <!-- tag details attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">open</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class="">open</p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that the details should be visible (open) to the user.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;del&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+    
+                  <hr>
+    
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;del&gt;</strong> tag supports the
+                        <a href="html_attributes_event.html" class="link-normal">
+                          Event Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
+
+              </div>
             </div>
           </div>
           

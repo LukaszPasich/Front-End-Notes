@@ -21,6 +21,10 @@ $('#html-tags-a').show();
 $('div > p.alpha-nav-button:first').addClass('alpha-nav-button-active').removeClass('alpha-nav-button-inactive');
 
 
+// hide all tag descriptions
+$('.tag-collapsable').hide();
+
+
 // html button
 $('#nav-button-html').on('click', function() {
 
@@ -99,6 +103,16 @@ $('.alpha-nav-button').on('click', function(e) {
     $('.html-tags').hide();
     $('#html-tags-' + $alphaLetter).show();
 
+});
+
+// collapse tags
+$('.tag-collapse').on('click', function() {
+
+    if ( $(this).next().is(':hidden') ) {
+            $(this).next().slideDown(300);
+        } else {
+            $(this).next().slideUp(300);
+        }
 });
 
 

@@ -81,6 +81,11 @@ a:hover {
     color: #fff;
 }
 
+.hr-red {
+    border-bottom: 1px solid red;
+    margin: 0px;
+    opacity: .25;
+}
 
 /* NAVBAR */
 .icon-home {
@@ -233,6 +238,16 @@ section > div > div {
     color: #111;
     border: 1px solid #111;
 }
+
+.tag-html {
+    cursor: pointer;
+}
+
+.fa-caret-down {
+    font-size: 1.25rem;
+    color: red;
+}
+
 
 /* FOOTER */
 .footer {
