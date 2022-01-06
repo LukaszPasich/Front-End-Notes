@@ -8,10 +8,11 @@ p {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #222;
     text-decoration: none;
+    text-align: center;
 }
 
 hr {
@@ -81,8 +82,8 @@ a:hover {
     color: #fff;
 }
 
-.hr-red {
-    border-bottom: 1px solid red;
+.hr-dgrey {
+    border-bottom: 1px solid #222;
     margin: 0px;
     opacity: .25;
 }
@@ -210,8 +211,8 @@ section > div > div {
 }
 
 .element-name {
-    font-size: 2rem;
-    color: red;
+    font-size: 1.875rem;
+    color: #111;
     font-weight: 600;
 }
 
@@ -245,7 +246,7 @@ section > div > div {
 
 .fa-caret-down {
     font-size: 1.25rem;
-    color: red;
+    color: #222;
 }
 
 
