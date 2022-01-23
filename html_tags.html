@@ -3128,19 +3128,19 @@
                   </div>
                 </div>
     
-                  <hr>
+                <hr>
     
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;del&gt;</strong> tag supports the
-                        <a href="html_attributes_event.html" class="link-normal">
-                          Event Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;del&gt;</strong> tag supports the
+                      <a href="html_attributes_event.html" class="link-normal">
+                        Event Attributes
+                      </a>
+                      in HTML.
+                    </p>
                   </div>
+                </div>
 
               </div>
             </div>
@@ -3208,7 +3208,7 @@
                     <p class="attribute-name">open</p>
                   </div>
                   <div class="col-7 col-sm-3 p-1">
-                    <p class="">open</p>
+                    <p class=""><em>open</em></p>
                   </div>
                   <div class="col-12 col-sm-6 p-1">
                     <p class="">
@@ -3423,7 +3423,7 @@
                     <p class="attribute-name">open</p>
                   </div>
                   <div class="col-7 col-sm-3 p-1">
-                    <p class="">open</p>
+                    <p class=""><em>open</em></p>
                   </div>
                   <div class="col-12 col-sm-6 p-1">
                     <p class="">
@@ -3692,7 +3692,7 @@
 
             <div class="col-12">
               <p class="element-name text-center text-sm-left">
-                &lt;data&gt;
+                &lt;em&gt;
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -3700,36 +3700,118 @@
             <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
             <div class="tag-collapsable">
-              <!-- tag data description -->
+              <!-- tag description -->
               <div class="col-12">
                 <p class="">
-                  The &lt;data&gt; tag is used to add a machine-readable translation of a given content. <br>
-                  This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser. <br>
-                  <strong>Tip:</strong> If the content is time- or date-related, use the &lt;time&gt; element instead.
+                  The &lt;em&gt; tag is used to define emphasized text. The content inside is typically displayed in italic.
+                  A screen reader will pronounce the words in &lt;em&gt; with an emphasis, using verbal stress.
                 </p>
               </div>
 
-              <!-- tag data example -->
+              <!-- tag example -->
               <div class="col-12">
                 <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
               </div>
               <div class="col-12">
                 <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;ul&gt; <br>
-                  &nbsp; &lt;li&gt;&lt;data value="21053"&gt;Cherry Tomato&lt;/data&gt;&lt;/li&gt; <br>
-                  &nbsp; &lt;li&gt;&lt;data value="21054"&gt;Beef Tomato&lt;/data&gt;&lt;/li&gt; <br>
-                  &nbsp; &lt;li&gt;&lt;data value="21055"&gt;Snack Tomato&lt;/data&gt;&lt;/li&gt; <br>
-                  &lt;/ul&gt;
+                  &lt;p&gt;You &lt;em&gt;have&lt;/em&gt; to hurry up!&lt;/p&gt;
                 </p>
               </div>
 
-              <!-- tag data attributes -->
+              <!-- tag attributes -->
               <div class="col-12 mt-3">
                 <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
               </div>
 
               <div class="col-12">
-                <!-- tag data attributes head -->
+
+                <div class="col-12">
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;em&gt;</strong> tag supports the
+                        <a href="html_attributes_global.html" class="link-normal">
+                          Global Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;em&gt;</strong> tag supports the
+                        <a href="html_attributes_event.html" class="link-normal">
+                          Event Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- tag embed -->
+          <div class="row mb-5">
+
+            <div class="tag-html col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;embed&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag details description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;embed&gt; tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application. <br>
+                  <strong>Suggestion:</strong> <br>
+                  To display a picture, it is better to use the &lt;img&gt; tag. <br>
+                  To display HTML, it is better to use the &lt;iframe&gt; tag. <br>
+                  To display video or audio, it is better to use the &lt;video&gt; and &lt;audio&gt; tags.
+                </p>
+              </div>
+
+              <!-- tag details example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+
+                <p class="pb-1 pt-2">An embedded image:</p>
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;embed type="image/jpg" src="picture.jpg" width="300" height="200"&gt;
+                </p>
+
+                <p class="pb-1 pt-4">An embedded HTML page:</p>
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;embed type="text/html" src="snippet.html" width="500" height="200"&gt;
+                </p>
+
+                <p class="pb-1 pt-4">An embedded video:</p>
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;embed type="video/webm" src="video.mp4" width="400" height="300"&gt;
+                </p>
+
+              </div>
+
+              <!-- tag details attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag details attributes head -->
                 <div class="row mx-2 mb-3">
                   <div class="col-5 col-sm-3 small border p-1">
                     <p class="">Attribute:</p>
@@ -3742,17 +3824,65 @@
                   </div>
                 </div>
 
-                <!-- tag data attributes rows -->
+                <!-- tag details attributes rows -->
                 <div class="row mx-2">
                   <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">value</p>
+                    <p class="attribute-name">height</p>
                   </div>
                   <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(machine-readable format)</em></p>
+                    <p class=""><em>(pixels)</em></p>
                   </div>
                   <div class="col-12 col-sm-6 p-1">
                     <p class="">
-                      Specifies the machine-readable translation of the content of the element.
+                      Specifies the height of the embedded content.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">width</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(pixels)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the width of the embedded content.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">src</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(URL)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the address of the external file to embed.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">type</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(media_type)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the media type of the embedded content.
                     </p>
                   </div>
                 </div>
@@ -3762,7 +3892,7 @@
                 <div class="row mx-2 py-3">
                   <div class="col-12 px-1 ">
                     <p class="">
-                      The <strong>&lt;data&gt;</strong> tag supports the
+                      The <strong>&lt;embed&gt;</strong> tag supports the
                       <a href="html_attributes_global.html" class="link-normal">
                         Global Attributes
                       </a>
@@ -3770,10 +3900,23 @@
                     </p>
                   </div>
                 </div>
+    
+                  <hr>
+    
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;embed&gt;</strong> tag supports the
+                        <a href="html_attributes_event.html" class="link-normal">
+                          Event Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
 
               </div>
             </div>
-
           </div>
 
         </div>
