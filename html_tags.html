@@ -3771,7 +3771,7 @@
             <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
             <div class="tag-collapsable">
-              <!-- tag details description -->
+              <!-- tag description -->
               <div class="col-12">
                 <p class="">
                   The &lt;embed&gt; tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application. <br>
@@ -3782,7 +3782,7 @@
                 </p>
               </div>
 
-              <!-- tag details example -->
+              <!-- tag example -->
               <div class="col-12">
                 <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
               </div>
@@ -3805,13 +3805,13 @@
 
               </div>
 
-              <!-- tag details attributes -->
+              <!-- tag attributes -->
               <div class="col-12 mt-3">
                 <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
               </div>
 
               <div class="col-12">
-                <!-- tag details attributes head -->
+                <!-- tag attributes head -->
                 <div class="row mx-2 mb-3">
                   <div class="col-5 col-sm-3 small border p-1">
                     <p class="">Attribute:</p>
@@ -3824,7 +3824,7 @@
                   </div>
                 </div>
 
-                <!-- tag details attributes rows -->
+                <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-5 col-sm-3 p-1">
                     <p class="attribute-name">height</p>
@@ -3923,7 +3923,222 @@
 
         <!-- F -->
         <div id="html-tags-f" class="col-12 html-tags py-3">
-          <h1>F</h1>
+          
+          <!-- tag fieldset -->
+          <div class="row mb-5">
+
+            <div class="tag-html col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;fieldset&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;fieldset&gt; tag is used to group related elements in a form. <br>
+                  The &lt;fieldset&gt; tag draws a box around the related elements. <br>
+                  <strong>Tip:</strong> The &lt;legend&gt; tag is used to define a caption for the &lt;fieldset&gt; element.
+                </p>
+              </div>
+
+              <!-- tag example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;form action="/action_page.php"&gt; <br>
+                  &nbsp; &lt;fieldset&gt; <br>
+                  &nbsp; &nbsp; &lt;legend&gt;Personalia:&lt;/legend&gt; <br>
+                  &nbsp; &nbsp; &lt;label for="fname"&gt;First name:&lt;/label&gt; <br>
+                  &nbsp; &nbsp; &lt;input type="text" id="fname" name="fname"&gt; &lt;br&gt;&lt;br&gt; <br>
+                  &nbsp; &nbsp; &lt;label for="lname"&gt;Last name:&lt;/label&gt; <br>
+                  &nbsp; &nbsp; &lt;input type="text" id="lname" name="lname"&gt; &lt;br&gt;&lt;br&gt; <br>
+                  &nbsp; &nbsp; &lt;label for="email"&gt;Email:&lt;/label&gt; <br>
+                  &nbsp; &nbsp; &lt;input type="email" id="email" name="email"&gt; &lt;br&gt;&lt;br&gt; <br>
+                  &nbsp; &nbsp; &lt;input type="submit" value="Submit"&gt; <br>
+                  &nbsp; &lt;/fieldset&gt; <br>
+                  &lt;/form&gt; <br>
+                </p>
+              </div>
+
+              <!-- tag attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-5 col-sm-3 small border p-1">
+                    <p class="">Attribute:</p>
+                  </div>
+                  <div class="col-7 col-sm-3 small border p-1">
+                    <p class="">Value:</p>
+                  </div>
+                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                    <p class="">Description:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">disabled</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>disabled</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that a group of related form elements should be disabled.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">form</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(form_id)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies which form the fieldset belongs to.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">name</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(text)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a name for the fieldset.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;fieldset&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+    
+                  <hr>
+    
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;fieldset&gt;</strong> tag supports the
+                        <a href="html_attributes_event.html" class="link-normal">
+                          Event Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- tag figcaption -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;figcaption&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;figcaption&gt; tag defines a caption for a &lt;figure&gt; element. <br>
+                  The &lt;figcaption&gt; element can be placed as the first or last child of the &lt;figure&gt; element.
+                </p>
+              </div>
+
+              <!-- tag example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;figure&gt; <br>
+                  &nbsp; &lt;img src="pic_trulli.jpg" alt="Trulli" style="width:100%"&gt; <br>
+                  &nbsp; &lt;figcaption&gt;Fig.1 - Trulli, Puglia, Italy.&lt;/figcaption&gt; <br>
+                  &lt;/figure&gt;
+                </p>
+              </div>
+
+              <!-- tag attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+
+                <div class="col-12">
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;figcaption&gt;</strong> tag supports the
+                        <a href="html_attributes_global.html" class="link-normal">
+                          Global Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;figcaption&gt;</strong> tag supports the
+                        <a href="html_attributes_event.html" class="link-normal">
+                          Event Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
         <!-- G -->
