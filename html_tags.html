@@ -4376,6 +4376,264 @@
 
           </div>
 
+          <!-- tag form -->
+          <div class="row mb-5">
+
+            <div class="tag-html col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;form&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;form&gt; tag is used to create an HTML form for user input. <br>
+                  The &lt;form&gt; element can contain one or more of the following form elements: <br>
+                  <ul>
+                    <li>&lt;input&gt;</li>
+                    <li>&lt;textarea&gt;</li>
+                    <li>&lt;button&gt;</li>
+                    <li>&lt;select&gt;</li>
+                    <li>&lt;option&gt;</li>
+                    <li>&lt;optgroup&gt;</li>
+                    <li>&lt;fieldset&gt;</li>
+                    <li>&lt;label&gt;</li>
+                    <li>&lt;output&gt;</li>
+                  </ul>
+                </p>
+              </div>
+
+              <!-- tag example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;form action="/action_page.php" method="get"&gt; <br>
+                  &nbsp; &lt;label for="fname"&gt;First name:&lt;/label&gt; <br>
+                  &nbsp; &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt; <br>
+                  &nbsp; &lt;label for="lname"&gt;Last name:&lt;/label&gt; <br>
+                  &nbsp; &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt; <br>
+                  &nbsp; &lt;input type="submit" value="Submit"&gt; <br>
+                  &lt;/form&gt;
+              </p>
+              </div>
+
+              <!-- tag attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-5 col-sm-3 small border p-1">
+                    <p class="">Attribute:</p>
+                  </div>
+                  <div class="col-7 col-sm-3 small border p-1">
+                    <p class="">Value:</p>
+                  </div>
+                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                    <p class="">Description:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">accept-charset</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(character_set)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the character encodings that are to be used for the form submission.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">action</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(URL)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies where to send the form-data when a form is submitted.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">autocomplete</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>on</em></p>
+                    <p class=""><em>off</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies whether a form should have autocomplete on or off.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">enctype</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>application/x-www-form-urlencoded</em></p>
+                    <p class=""><em>multipart/form-data</em></p>
+                    <p class=""><em>text/plain</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies how the form-data should be encoded when submitting it to the server (only for method="post").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">method</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>get</em></p>
+                    <p class=""><em>post</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the HTTP method to use when sending form-data.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">name</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(text)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the name of a form.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">novalidate</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>novalidate</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that the form should not be validated when submitted.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">rel</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>external</em></p>
+                    <p class=""><em>help</em></p>
+                    <p class=""><em>licence</em></p>
+                    <p class=""><em>next</em></p>
+                    <p class=""><em>nofollow</em></p>
+                    <p class=""><em>noopener</em></p>
+                    <p class=""><em>noreferrer</em></p>
+                    <p class=""><em>opener</em></p>
+                    <p class=""><em>prev</em></p>
+                    <p class=""><em>search</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the relationship between a linked resource and the current document.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">target</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>_blank</em></p>
+                    <p class=""><em>_self</em></p>
+                    <p class=""><em>_parent</em></p>
+                    <p class=""><em>_top</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies where to display the response that is received after submitting the form.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;form&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+    
+                  <hr>
+    
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;form&gt;</strong> tag supports the
+                        <a href="html_attributes_event.html" class="link-normal">
+                          Event Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <!-- G -->
