@@ -5416,6 +5416,296 @@
             </div>
           </div>
 
+          <!-- tag img -->
+          <div class="row mb-5">
+
+            <div class="tag-html col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;img&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;img&gt; tag is used to embed an image in an HTML page. <br>
+                  Images are not technically inserted into a web page; images are linked to web pages. <br>
+                  The &lt;img&gt;tag creates a holding space for the referenced image. <br>
+                  The &lt;img&gt; tag has two required attributes:
+                  <ul>
+                    <li><em>src</em> - specifies the path to the image</li>
+                    <li><em>alt</em> - specifies an alternate text for the image, if the image for some reason cannot be displayed</li>
+                </ul>
+                <strong>Note:</strong> Also, always specify the width and height of an image.
+                If width and height are not specified, the page might flicker while the image loads. <br>
+                <strong>Tip:</strong> To link an image to another document, simply nest the &lt;img&gt; tag inside an &lt;a&gt; tag.
+                </p>
+              </div>
+
+              <!-- tag example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt;
+              </p>
+              </div>
+
+              <!-- tag attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-5 col-sm-3 small border p-1">
+                    <p class="">Attribute:</p>
+                  </div>
+                  <div class="col-7 col-sm-3 small border p-1">
+                    <p class="">Value:</p>
+                  </div>
+                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                    <p class="">Description:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">alt</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(text)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies an alternate text for an image.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">crossorigin</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>anonymous</em></p>
+                    <p class=""><em>use-credentials</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Allow images from third-party sites that allow cross-origin access to be used with canvas.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">height</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(pixels)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the height of an image.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">ismap</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>ismap</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies an image as a server-side image map.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">loading</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>eager</em></p>
+                    <p class=""><em>lazy</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies whether a browser should load an image immediately or to defer loading of images until some conditions are met.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">longdesc</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(URL)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a URL to a detailed description of an image.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">referrerpolicy</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>no-referrer</em></p>
+                    <p class=""><em>no-referrer-when-downgrade</em></p>
+                    <p class=""><em>origin</em></p>
+                    <p class=""><em>origin-when-cross-origin</em></p>
+                    <p class=""><em>same-origin</em></p>
+                    <p class=""><em>strict-origin-when-cross-origin</em></p>
+                    <p class=""><em>unsafe-url</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies which referrer information to use when fetching an image.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">sizes</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>sizes</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies image sizes for different page layouts.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">src</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(URL)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the path to the image.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">srcset</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(URL-list)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a list of image files to use in different situations.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">usemap</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(#mapname)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies an image as a client-side image map.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">width</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(pixels)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the width of an image.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;img&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+    
+                  <hr>
+    
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;img&gt;</strong> tag supports the
+                        <a href="html_attributes_event.html" class="link-normal">
+                          Event Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <!-- J -->
