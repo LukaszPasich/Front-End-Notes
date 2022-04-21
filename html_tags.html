@@ -5601,7 +5601,7 @@
                     <p class="attribute-name">sizes</p>
                   </div>
                   <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>sizes</em></p>
+                    <p class=""><em>(sizes)</em></p>
                   </div>
                   <div class="col-12 col-sm-6 p-1">
                     <p class="">
@@ -5694,6 +5694,659 @@
                     <div class="col-12 px-1 ">
                       <p class="">
                         The <strong>&lt;img&gt;</strong> tag supports the
+                        <a href="html_attributes_event.html" class="link-normal">
+                          Event Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- tag input -->
+          <div class="row mb-5">
+
+            <div class="tag-html col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;input&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;input&gt; tag specifies an input field where the user can enter data. <br>
+                  The &lt;input&gt; element is the most important form element. <br>
+                  The &lt;input&gt; element can be displayed in several ways, depending on the type attribute. <br>
+                  The different input types are as follows: <br>
+                  <ul>
+                    <li>&lt;input type="button"&gt;</li>
+                    <li>&lt;input type="checkbox"&gt;</li>
+                    <li>&lt;input type="color"&gt;</li>
+                    <li>&lt;input type="date"&gt;</li>
+                    <li>&lt;input type="datetime-local"&gt;</li>
+                    <li>&lt;input type="email"&gt;</li>
+                    <li>&lt;input type="file"&gt;</li>
+                    <li>&lt;input type="hidden"&gt;</li>
+                    <li>&lt;input type="image"&gt;</li>
+                    <li>&lt;input type="month"&gt;</li>
+                    <li>&lt;input type="number"&gt;</li>
+                    <li>&lt;input type="password"&gt;</li>
+                    <li>&lt;input type="radio"&gt;</li>
+                    <li>&lt;input type="range"&gt;</li>
+                    <li>&lt;input type="reset"&gt;</li>
+                    <li>&lt;input type="search"&gt;</li>
+                    <li>&lt;input type="submit"&gt;</li>
+                    <li>&lt;input type="tel"&gt;</li>
+                    <li>&lt;input type="text"&gt; (default value)</li>
+                    <li>&lt;input type="time"&gt;</li>
+                    <li>&lt;input type="url"&gt;</li>
+                    <li>&lt;input type="week"&gt;</li>
+                  </ul>
+                  <strong>Tip:</strong> Always use the &lt;label&gt; tag to define labels for: <br>
+                  <ul>
+                    <li>&lt;input type="text"&gt;</li>
+                    <li>&lt;input type="checkbox"&gt;</li>
+                    <li>&lt;input type="radio"&gt;</li>
+                    <li>&lt;input type="file"&gt;</li>
+                    <li>&lt;input type="password"&gt;</li>
+                  </ul>
+                </p>
+              </div>
+
+              <!-- tag example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;form action="/action_page.php"&gt; <br>
+                  &nbsp; &lt;label for="fname">First name:&lt;/label&gt; <br>
+                  &nbsp; &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt; <br>
+                  &nbsp; &lt;label for="lname">Last name:&lt;/label&gt; <br>
+                  &nbsp; &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt; <br>
+                  &nbsp; &lt;input type="submit" value="Submit"&gt; <br>
+                  &lt;/form&gt;
+              </p>
+              </div>
+
+              <!-- tag attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-5 col-sm-3 small border p-1">
+                    <p class="">Attribute:</p>
+                  </div>
+                  <div class="col-7 col-sm-3 small border p-1">
+                    <p class="">Value:</p>
+                  </div>
+                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                    <p class="">Description:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">accept</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(file extension)</em></p>
+                    <p class=""><em>audio/*</em></p>
+                    <p class=""><em>video/*</em></p>
+                    <p class=""><em>image/*</em></p>
+                    <p class=""><em>(media type)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a filter for what file types the user can pick from the file input dialog box (only for type="file").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">alt</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(text)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies an alternate text for images (only for type="image").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">autocomplete</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>on</em></p>
+                    <p class=""><em>off</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies whether an &lt;input&gt; element should have autocomplete enabled.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">autofocus</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>autofocus</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that an <input> element should automatically get focus when the page loads.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">checked</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>checked</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that an &lt;input&gt; element should be pre-selected when the page loads (for type="checkbox" or type="radio").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">dirname</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(inputname).dir</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that the text direction will be submitted.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">disabled</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>disabled</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that an &lt;input&gt; element should be disabled.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">form</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(form_id)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the form the &lt;input&gt; element belongs to.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">formaction</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(URL)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the URL of the file that will process the input control when the form is submitted (for type="submit" and type="image").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">formenctype</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>application/x-www-form-urlencoded</em></p>
+                    <p class=""><em>multipart/form-data</em></p>
+                    <p class=""><em>text/plain</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies how the form-data should be encoded when submitting it to the server (for type="submit" and type="image").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">formmethod</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>get</em></p>
+                    <p class=""><em>post</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Defines the HTTP method for sending data to the action URL (for type="submit" and type="image").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">formnovalidate</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>formnovalidate</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Defines that form elements should not be validated when submitted.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">formtarget</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>_blank</em></p>
+                    <p class=""><em>_self</em></p>
+                    <p class=""><em>_parent</em></p>
+                    <p class=""><em>_top</em></p>
+                    <p class=""><em>(framename)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies where to display the response that is received after submitting the form (for type="submit" and type="image").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">height</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(pixels)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the height of an &lt;input&gt; element (only for type="image").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">list</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(datalist_id)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Refers to a &lt;datalist&gt; element that contains pre-defined options for an &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">max</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>number</em></p>
+                    <p class=""><em>date</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the maximum value for an &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">maxlength</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(number)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the maximum number of characters allowed in an &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">min</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>number</em></p>
+                    <p class=""><em>date</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a minimum value for an &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">minlength</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(number)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the minimum number of characters required in an &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">multiple</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>multiple</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that a user can enter more than one value in an &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">name</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(text)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the name of an &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">pattern</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(regexp)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a regular expression that an &lt;input&gt; element's value is checked against.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">placeholder</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(text)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a short hint that describes the expected value of an &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">readonly</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>readonly</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that an input field is read-only.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">required</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>required</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that an input field must be filled out before submitting the form.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">size</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(number)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the width, in characters, of an &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">src</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(URL)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the URL of the image to use as a submit button (only for type="image").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">step</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(number)</em></p>
+                    <p class=""><em>any</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the interval between legal numbers in an input field.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">type</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>button</em></p>
+                    <p class=""><em>checkbox</em></p>
+                    <p class=""><em>color</em></p>
+                    <p class=""><em>date</em></p>
+                    <p class=""><em>datetime-local</em></p>
+                    <p class=""><em>email</em></p>
+                    <p class=""><em>file</em></p>
+                    <p class=""><em>hidden</em></p>
+                    <p class=""><em>image</em></p>
+                    <p class=""><em>month</em></p>
+                    <p class=""><em>number</em></p>
+                    <p class=""><em>password</em></p>
+                    <p class=""><em>radio</em></p>
+                    <p class=""><em>range</em></p>
+                    <p class=""><em>reset</em></p>
+                    <p class=""><em>search</em></p>
+                    <p class=""><em>submit</em></p>
+                    <p class=""><em>tel</em></p>
+                    <p class=""><em>text</em></p>
+                    <p class=""><em>time</em></p>
+                    <p class=""><em>url</em></p>
+                    <p class=""><em>week</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the type &lt;input&gt; element to display.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">value</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(text)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the value of an &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-5 col-sm-3 p-1">
+                    <p class="attribute-name">width</p>
+                  </div>
+                  <div class="col-7 col-sm-3 p-1">
+                    <p class=""><em>(pixels)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the width of an &lt;input&gt; element (only for type="image").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;input&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+    
+                  <hr>
+    
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;input&gt;</strong> tag supports the
                         <a href="html_attributes_event.html" class="link-normal">
                           Event Attributes
                         </a>
