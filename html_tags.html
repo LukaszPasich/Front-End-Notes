@@ -7908,7 +7908,241 @@
 
         <!-- O -->
         <div id="html-tags-o" class="col-12 html-tags py-3">
-          <h1>O</h1>
+          
+          <!-- tag object -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;object&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;object&gt;tag defines a container for an external resource. <br>
+                  The external resource can be a web page, a picture, a media player, or a plug-in application. <br>
+                  The &lt;object&gt; tag was originally designed to embed browser Plug-ins. <br>
+                  <strong>Note:</strong> <br>
+                  To embed a picture, it is better to use the &lt;img&gt; tag. <br>
+                  To embed HTML, it is better to use the &lt;iframe&gt; tag. <br>
+                  To embed video or audio, it is better to use the &lt;video&gt; and &lt;audio&gt; tags.
+                </p>
+              </div>
+
+              <!-- tag example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small"> An embedded image example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;object data="pic_trulli.jpg" width="300" height="200"&gt;&lt;/object&gt;
+                </p>
+              </div>
+
+              <div class="col-12">
+                <p class="pb-1 mb-2 mt-4 small"> An embedded HTML page example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;object data="snippet.html" width="500" height="200"&gt;&lt;/object&gt;
+                </p>
+              </div>
+
+              <div class="col-12">
+                <p class="pb-1 mb-2 mt-4 small"> An embedded video example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;object data="video.mp4" width="400" height="300"&gt;&lt;/object&gt;
+                </p>
+              </div>
+
+              <!-- tag attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-5 col-sm-3 small border p-1">
+                    <p class="">Attribute:</p>
+                  </div>
+                  <div class="col-7 col-sm-3 small border p-1">
+                    <p class="">Value:</p>
+                  </div>
+                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                    <p class="">Description:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">data</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(URL)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the URL of the resource to be used by the object.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">form</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(form_id)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies which form the object belongs to.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">height</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(pixels)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the height of the object.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">name</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(name)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a name for the object.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">type</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(media_type)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the media type of data specified in the data attribute.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">typemustmatch</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>true</em></p>
+                    <p class=""><em>false</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies whether the type attribute and the actual content of the resource must match to be displayed.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">usemap</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(#mapname)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the name of a client-side image map to be used with the object.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">width</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(pixels)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the width of the object.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;map&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+    
+                  <hr>
+    
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 px-1 ">
+                      <p class="">
+                        The <strong>&lt;map&gt;</strong> tag supports the
+                        <a href="html_attributes_event.html" class="link-normal">
+                          Event Attributes
+                        </a>
+                        in HTML.
+                      </p>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
         <!-- P -->
