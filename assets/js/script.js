@@ -120,3 +120,9 @@ $('.tag-collapse').on('click', function() {
 $.fn.hideHtmlSubmenus();
 $.fn.hideCssSubmenus();
 $.fn.hideJsSubmenus();
+
+
+// count number of HTML tags
+allElements = $('.element-name');
+allElementsCount = allElements.length;
+console.log(allElementsCount);
