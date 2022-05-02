@@ -9927,6 +9927,279 @@
 
           </div>
 
+          <!-- tag select -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;select&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;select&gt; element is used to create a drop-down list. <br>
+                  The &lt;select&gt; element is most often used in a form, to collect user input. <br>
+                  The <em>name</em> attribute is needed to reference the form data after the form is submitted
+                  (if you omit the name attribute, no data from the drop-down list will be submitted). <br>
+                  The <em>id</em> attribute is needed to associate the drop-down list with a label. <br>
+                  The &lt;option&gt; tags inside the &lt;select&gt; element define the available options in the drop-down list. <br>
+                  <strong>Tip:</strong> Always add the &lt;label&gt; tag for best accessibility practices!
+                </p>
+              </div>
+
+              <!-- tag example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small"> Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;label for="cars"&gt;Choose a car:&lt;/label&gt; <br>
+                  &lt;select name="cars" id="cars"&gt; <br>
+                  &nbsp;&lt;option value="volvo"&gt;Volvo&lt;/option&gt; <br>
+                  &nbsp;&lt;option value="opel"&gt;Opel&lt;/option&gt; <br>
+                  &nbsp;&lt;option value="audi"&gt;Audi&lt;/option&gt; <br>
+                  &lt;/select&gt;
+                </p>
+              </div>
+
+              <!-- tag attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-5 col-sm-3 small border p-1">
+                    <p class="">Attribute:</p>
+                  </div>
+                  <div class="col-7 col-sm-3 small border p-1">
+                    <p class="">Value:</p>
+                  </div>
+                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                    <p class="">Description:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">autofocus</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>autofocus</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that the drop-down list should automatically get focus when the page loads.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">disabled</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>disbled</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that a drop-down list should be disabled.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">form</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(form_id)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Defines which form the drop-down list belongs to.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">multiple</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>multiple</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that multiple options can be selected at once.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">name</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>name</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Defines a name for the drop-down list.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">required</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>required</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that the user is required to select a value before submitting the form.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">size</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(number)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Defines the number of visible options in a drop-down list.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;select&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;select&gt;</strong> tag supports the
+                      <a href="html_attributes_event.html" class="link-normal">
+                        Event Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- tag small -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;small&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;small&gt; tag defines smaller text (like copyright and other side-comments). <br>
+                  <strong>Tip:</strong> This tag is not deprecated, but it is possible to achieve richer (or the same) effect with CSS.
+                </p>
+              </div>
+
+              <!-- tag example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;p&gt;This is some normal text.&lt;/p&gt;> <br>
+                  &lt;p&gt;&lt;small&gt;This is some smaller text.&lt;/small&gt;&lt;/p&gt;>
+                </p>
+              </div>
+
+              <!-- tag attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;small&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;small&gt;</strong> tag supports the
+                      <a href="html_attributes_event.html" class="link-normal">
+                        Event Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
         <!-- T -->
