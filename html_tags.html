@@ -11239,6 +11239,364 @@
 
           </div>
 
+          <!-- tag template -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;template&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;template&gt; tag is used as a container to hold some HTML content hidden from the user when the page loads. <br>
+                  The content inside &lt;template&gt; can be rendered later with a JavaScript. <br>
+                  You can use the &lt;template&gt; tag if you have some HTML code you want to use over and over again, but not until you ask for it.
+                  To do this without the &lt;template&gt; tag, you have to create the HTML code with JavaScript to prevent the browser from rendering the code.
+                </p>
+              </div>
+
+              <!-- tag example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;!DOCTYPE html&gt; <br>
+                  &lt;html&gt; <br>
+                  &lt;body&gt; <br><br>
+                  &lt;h1&gt;The template Element&lt;/h1&lt; <br><br>
+                  &lt;p&gt;Click the button below to display the hidden content from the template element.&lt;/p&gt; <br><br>
+                  &lt;button onclick="showContent()"&gt;Show hidden content&lt;/button&gt; <br><br>
+                  &lt;template&gt; <br>
+                  &nbsp;&lt;h2&gt;Flower&lt;/h2&lt; <br>
+                  &nbsp;&lt;img src="img_white_flower.jpg" width="214" height="204"&gt; <br>
+                  &lt;/template&gt; <br><br>
+                  &lt;script&gt; <br>
+                  function showContent() {
+                  &nbsp;var temp = document.getElementsByTagName("template")[0]; <br>
+                  &nbsp;var clon = temp.content.cloneNode(true); <br>
+                  &nbsp;document.body.appendChild(clon); <br>
+                  } <br>
+                  &lt;/script&gt; <br><br>
+                  &lt;/body&gt; <br>
+                  &lt;/html&gt;
+                </p>
+              </div>
+
+              <!-- tag attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;template&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- tag textarea -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-name text-center text-sm-left">
+                &lt;textarea&gt;
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+              <!-- tag description -->
+              <div class="col-12">
+                <p class="">
+                  The &lt;textarea&gt; tag defines a multi-line text input control. <br>
+                  The &lt;textarea&gt; element is often used in a form, to collect user inputs like comments or reviews. <br>
+                  A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier). <br>
+                  The size of a text area is specified by the <i>cols</i> and <i>rows</i> attributes (or with CSS). <br>
+                  The <i>name</i> attribute is needed to reference the form data after the form is submitted (if you omit the name attribute,
+                  no data from the text area will be submitted). <br>
+                  The <i>id</i> attribute is needed to associate the text area with a label. <br>
+                  <b>Tip:</b> Always add the &lt;label&gt; tag for best accessibility practices!
+                </p>
+              </div>
+
+              <!-- tag example -->
+              <div class="col-12">
+                <p class="border-bottom pb-1 mb-2 mt-4 small"> Example:</p>
+              </div>
+              <div class="col-12">
+                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
+                  &lt;label for="w3review"&gt;Review of W3Schools:&lt;/label&gt; <br><br>
+                  &lt;textarea id="w3review" name="w3review" rows="4" cols="50"&gt; <br>
+                  At w3schools.com you will learn how to make a website. <br>
+                  &lt;/textarea&gt;
+                </p>
+              </div>
+
+              <!-- tag attributes -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-5 col-sm-3 small border p-1">
+                    <p class="">Attribute:</p>
+                  </div>
+                  <div class="col-7 col-sm-3 small border p-1">
+                    <p class="">Value:</p>
+                  </div>
+                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
+                    <p class="">Description:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">autofocus</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>autofocus</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that a text area should automatically get focus when the page loads.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">cols</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(number)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the visible width of a text area.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">dirname</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(textareaname.dir)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that the text direction of the textarea will be submitted.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">disabled</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>disabled</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that a text area should be disabled.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">form</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(form_id)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies which form the text area belongs to.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">maxlength</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(number)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the maximum number of characters allowed in the text area.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">name</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(text)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a name for a text area.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">placeholder</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(text)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies a short hint that describes the expected value of a text area.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">readonly</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>readonly</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that a text area should be read-only.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">required</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>required</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies that a text area is required/must be filled out.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">rows</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>(number)</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies the visible number of lines in a text area.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class="attribute-name">wrap</p>
+                  </div>
+                  <div class="col-6 col-sm-3 p-1">
+                    <p class=""><em>hard</em></p>
+                    <p class=""><em>soft</em></p>
+                  </div>
+                  <div class="col-12 col-sm-6 p-1">
+                    <p class="">
+                      Specifies how the text in a text area is to be wrapped when submitted in a form.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;textarea&gt;</strong> tag supports the
+                      <a href="html_attributes_global.html" class="link-normal">
+                        Global Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2 py-3">
+                  <div class="col-12 px-1 ">
+                    <p class="">
+                      The <strong>&lt;textarea&gt;</strong> tag supports the
+                      <a href="html_attributes_event.html" class="link-normal">
+                        Event Attributes
+                      </a>
+                      in HTML.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
         <!-- U -->
