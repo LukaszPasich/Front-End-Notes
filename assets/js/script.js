@@ -125,4 +125,4 @@ $.fn.hideJsSubmenus();
 // count number of HTML tags
 allElements = $('.element-name');
 allElementsCount = allElements.length;
-console.log(allElementsCount);
+console.log('HTML tags count: ' + allElementsCount);
