@@ -126,3 +126,8 @@ $.fn.hideJsSubmenus();
 allElements = $('.element-name');
 allElementsCount = allElements.length;
 console.log('HTML tags count: ' + allElementsCount);
+
+// count number of HTML attributes
+allAttributes = $('.element-attribute-name');
+allAttributesCount = allAttributes.length;
+console.log('HTML attributes count: ' + allAttributesCount);

@@ -210,7 +210,8 @@ section > div > div {
     border-radius: 0.5rem;
 }
 
-.element-name {
+.element-name,
+.element-attribute-name {
     font-size: 1.875rem;
     color: #111;
     font-weight: 600;
