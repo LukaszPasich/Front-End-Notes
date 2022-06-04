@@ -3,6 +3,13 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Below code stops website moving to the sides on mobile
+https://stackoverflow.com/questions/44667161/page-moving-left-and-right-while-in-mobile-browser */
+html, body {
+    width: auto!important;
+    overflow-x: hidden!important;
+} 
+
 p {
     margin: 0px;
 }
