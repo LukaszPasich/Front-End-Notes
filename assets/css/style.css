@@ -88,6 +88,9 @@ a:hover {
 .text-grey-fff {
     color: #fff;
 }
+.text-red {
+    color: red;
+}
 
 .hr-dgrey {
     border-bottom: 1px solid #222;
