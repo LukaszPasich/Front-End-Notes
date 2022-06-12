@@ -181,6 +181,7 @@
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
                 accept
+                <p class="small mute text-center text-sm-left mb-1">&lt;input&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -249,6 +250,7 @@
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
                 accept-charset
+                <p class="small mute text-center text-sm-left mb-1">&lt;form&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -310,6 +312,7 @@
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
                 accesskey
+                <p class="small mute text-center text-sm-left mb-1">Global Attributes</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -373,6 +376,7 @@
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
                 action
+                <p class="small mute text-center text-sm-left mb-1">&lt;form&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -429,6 +433,7 @@
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
                 alt
+                <p class="small mute text-center text-sm-left mb-1">&lt;area&gt;, &lt;img&gt;, &lt;input&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -509,6 +514,141 @@
                     </p>
                     <p class="mb-3"><em class="attribute-name">(text)</em> <br>
                       Specifies an alternate text for an image.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- attribute async -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                async
+                <p class="small mute text-center text-sm-left mb-1">&lt;script&gt;</p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;script&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The async attribute is a boolean attribute.
+                      If the async attribute is set, the script is downloaded in parallel to parsing the page, and executed as soon as it is available.
+                      The parsing of the page is interrupted once the script is downloaded completely, and then the script is executed, before the parsing of the rest of the page continues. <br><br>
+                      <b>Note:</b> The async attribute is only for external scripts (and should only be used if the src attribute is present). <br><br>
+                      <b>Note:</b> There are several ways an external script can be executed:
+                      <ul>
+                        <li>If async is present: The script is downloaded in parallel to parsing the page, and executed as soon as it is available (before parsing completes)</li>
+                        <li>If defer is present (and not async): The script is downloaded in parallel to parsing the page, and executed after the page has finished parsing</li>
+                        <li>If neither async or defer is present: The script is downloaded and executed immediately, blocking parsing until the script is completed</li>
+                      </ul>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">True/False</em> <br>
+                      The async attribute is a boolean attribute.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- attribute autocomplete -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                autocomplete
+                <p class="small mute text-center text-sm-left mb-1">&lt;form&gt;, &lt;input&gt;</p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;form&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The autocomplete attribute specifies whether a form should have autocomplete on or off. <br>
+                      When autocomplete is on, the browser automatically complete values based on values that the user has entered before. <br>
+                      <b>Tip:</b> It is possible to have autocomplete "on" for the form, and "off" for specific input fields, or vice versa.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">on</em> <br>
+                      Default. The browser will automatically complete values based on values that the user has entered before. <br>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">off</em> <br>
+                      The user must enter a value into each field for every use. The browser does not automatically complete entries. <br>
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;input&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The autocomplete attribute specifies whether or not an input field should have autocomplete enabled. <br>
+                      Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values. <br>
+                      <b>Note:</b> The autocomplete attribute works with the following input types: text, search, url, tel, email, password, datepickers, range, and color.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">on</em> <br>
+                      Default. Specifies that autocomplete is on (enabled). <br>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">off</em> <br>
+                      Specifies that autocomplete is off (disabled). <br>
                     </p>
                   </div>
                 </div>
