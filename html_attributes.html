@@ -571,7 +571,7 @@
                         <li>If neither async or defer is present: The script is downloaded and executed immediately, blocking parsing until the script is completed</li>
                       </ul>
                     </p>
-                    <p class="mb-3"><em class="attribute-name">True/False</em> <br>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
                       The async attribute is a boolean attribute.
                     </p>
                   </div>
@@ -697,7 +697,7 @@
                     <p class="mb-3">
                       When present, it specifies that a button should automatically get focus when the page loads.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">True/False</em> <br>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
                       The autofocus attribute is a boolean attribute. <br>
                     </p>
                   </div>
@@ -713,7 +713,7 @@
                     <p class="mb-3">
                       When present, it specifies that an &lt;input&gt; element should automatically get focus when the page loads.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">True/False</em> <br>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
                       The autofocus attribute is a boolean attribute. <br>
                     </p>
                   </div>
@@ -729,7 +729,7 @@
                     <p class="mb-3">
                       When present, it specifies that the drop-down list should automatically get focus when the page loads.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">True/False</em> <br>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
                       The autofocus attribute is a boolean attribute. <br>
                     </p>
                   </div>
@@ -745,7 +745,7 @@
                     <p class="mb-3">
                       When present, it specifies that the text area should automatically get focus when the page loads.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">True/False</em> <br>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
                       The autofocus attribute is a boolean attribute. <br>
                     </p>
                   </div>
@@ -797,7 +797,7 @@
                       <b>Note:</b> Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed. <br>
                       Add muted after autoplay to let your audio file start playing automatically (but muted).
                     </p>
-                    <p class="mb-3"><em class="attribute-name">True/False</em> <br>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
                       The autoplay attribute is a boolean attribute. <br>
                     </p>
                   </div>
@@ -815,7 +815,7 @@
                       <b>Note:</b> Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed. <br>
                       Add muted after autoplay to let your video file start playing automatically (but muted).
                     </p>
-                    <p class="mb-3"><em class="attribute-name">True/False</em> <br>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
                       The autoplay attribute is a boolean attribute. <br>
                     </p>
                   </div>
@@ -835,12 +835,13 @@
         <!-- C -->
         <div id="html-tags-c" class="col-12 html-tags py-3">
 
-          <!-- tag canvas -->
+          <!-- attribute charset -->
           <div class="row mb-5">
 
             <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;canvas&gt;
+              <p class="element-attribute-name text-center text-sm-left">
+                charset
+                <p class="small mute text-center text-sm-left mb-1">&lt;meta&gt;, &lt;script&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -848,66 +849,35 @@
             <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
             <div class="tag-collapsable">
-              <!-- tag canvas description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;canvas&gt; tag is used to draw graphics, on the fly, via scripting (usually JavaScript). <br>
-                  The &lt;canvas&gt; tag is transparent, and is only a container for graphics, you must use a script to
-                  actually draw the graphics. <br>
-                  Any text inside the &lt;canvas&gt; element will be displayed in browsers with JavaScript disabled and
-                  in browsers that do not support &lt;canvas&gt;.
-                </p>
-              </div>
 
-              <!-- tag canvas example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;canvas id="myCanvas"&gt; <br>
-                  &nbsp; Your browser does not support the canvas tag. <br>
-                  &lt;/canvas&gt; <br>
-                  <br>
-                  &lt;script&gt; <br>
-                  var canvas = document.getElementById("myCanvas"); <br>
-                  var ctx = canvas.getContext("2d"); <br>
-                  ctx.fillStyle = "#FF0000"; <br>
-                  ctx.fillRect(0, 0, 80, 80); <br>
-                  &lt;/script&gt;
-                </p>
-              </div>
-
-              <!-- tag canvas attributes -->
+              <!-- attribute applies to + values -->
               <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
               </div>
 
               <div class="col-12">
-                <!-- tag canvas attributes head -->
+                <!-- tag attributes head -->
                 <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
                   </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
                   </div>
                 </div>
 
-                <!-- tag canvas attributes rows -->
+                <!-- tag attributes rows -->
                 <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">height</p>
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;meta&gt;</p>
                   </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(pixels)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the height of the canvas. Default value is 150.
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The charset attribute specifies the character encoding for the HTML document. <br>
+                      The HTML5 specification encourages web developers to use the UTF-8 character set, which covers almost all of the characters and symbols in the world!
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(character_set)</em> <br>
+                      Specifies the character encoding for the HTML document.
                     </p>
                   </div>
                 </div>
@@ -915,58 +885,31 @@
                 <hr>
 
                 <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">width</p>
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;script&gt;</p>
                   </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(pixels)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the width of the canvas. Default value is 300.
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The charset attribute specifies the character encoding used in an external script file. <br>
+                      The charset attribute is used when the character encoding in an external script file differs from the encoding in the HTML document.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(charset)</em> <br>
+                      Specifies the character encoding of an external script file (used if different than <i>(character_set)</i>).
                     </p>
                   </div>
                 </div>
 
-                <hr>
-                
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;canvas&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;canvas&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-                
               </div>
             </div>
-            
           </div>
 
-          <!-- tag caption -->
+          <!-- attribute checked -->
           <div class="row mb-5">
 
             <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;caption&gt;
+              <p class="element-attribute-name text-center text-sm-left">
+                checked
+                <p class="small mute text-center text-sm-left mb-1">&lt;input&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -974,442 +917,43 @@
             <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
             <div class="tag-collapsable">
-              <!-- tag caption description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;caption&gt; tag defines a table caption. <br>
-                  The &lt;caption&gt; tag must be inserted immediately after the &lt;table&gt; tag. <br>
-                  <strong>Tip:</strong> By default, a table caption will be center-aligned above a table.
-                  The CSS properties text-align and caption-side can be used to align and place the caption.
-                </p>
-              </div>
 
-              <!-- tag caption example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;table&gt; <br>
-                  &nbsp; &lt;caption&gt;Monthly savings&lt;/caption&gt; <br>
-                  &nbsp; &lt;tr&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;Month&lt;/th&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;Savings&lt;/th&gt; <br>
-                  &nbsp; &lt;/tr&gt; <br>
-                  &nbsp; &lt;tr&gt; <br>
-                  &nbsp; &nbsp; &lt;td&gt;January&lt;/td&gt; <br>
-                  &nbsp; &nbsp; &lt;td&gt;$100&lt;/td&gt; <br>
-                  &nbsp; &lt;/tr&gt; <br>
-                  &lt;/table&gt;
-                </p>
-              </div>
-
-              <!-- tag caption attributes -->
+              <!-- attribute applies to + values -->
               <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <!-- tag caption attributes rows -->
-              <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;caption&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;caption&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- tag cite -->
-          <div class="row mb-5">
-
-            <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;cite&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag cite description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;cite&gt; tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a
-                  painting, a sculpture, etc.). <br>
-                  <strong>Note:</strong> A person's name is not the title of a work. <br>
-                  The text in the &lt;cite&gt; element usually renders in italic.
-                </p>
-              </div>
-
-              <!-- tag cite example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt; &lt;cite&gt;The Scream&lt;/cite&gt; by Edward Munch. Painted in 1893.&lt;/p&gt;
-                </p>
-              </div>
-
-              <!-- tag cite attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <!-- tag cite attributes rows -->
-              <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;cite&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;cite&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- tag code -->
-          <div class="row mb-5">
-
-            <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;code&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag code description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;code&gt; tag is used to define a piece of computer code.
-                  The content inside is displayed in the browser's default monospace font. <br>
-                  <strong>Tip:</strong> This tag is not deprecated. However, it is possible to achieve richer effect by
-                  using CSS. <br>
-                  <strong>Note:</strong> Also look at tags:
-                  <ul>
-                    <li>&lt;samp&gt;</li>
-                    <li>&lt;kbd&gt;</li>
-                    <li>&lt;var&gt;</li>
-                    <li>&lt;pre&gt;</li>
-                  </ul>
-                </p>
-              </div>
-
-              <!-- tag code example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt;The HTML &lt;code&gt;button&lt;/code&gt; tag defines a clickable button.&lt;/p&gt;
-                </p>
-              </div>
-
-              <!-- tag code attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
               </div>
 
               <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;code&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;code&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- tag col -->
-          <div class="row mb-5">
-
-            <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;col&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag col description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;col&gt; tag specifies column properties for each column within a &lt;colgroup&gt; element. <br>
-                  The &lt;col&gt; tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.
-                </p>
-              </div>
-
-              <!-- tag col example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;table&gt; <br>
-                  &nbsp; &lt;colgroup&gt; <br>
-                  &nbsp; &nbsp; &lt;col span="2" style="background-color:red"&gt; <br>
-                  &nbsp; &nbsp; &lt;col style="background-color:yellow"&gt; <br>
-                  &nbsp; &lt;/colgroup&gt; <br>
-                  &nbsp; &lt;tr&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;Title&lt;/th&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;Price&lt;/th&gt; <br>
-                  &nbsp; &lt;/tr&gt; <br>
-                  &nbsp; &lt;tr&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;My first HTML&lt;/th&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;$55&lt;/th&gt; <br>
-                  &nbsp; &lt;/tr&gt; <br>
-                  &lt;/table&gt;
-                </p>
-              </div>
-              
-              <!-- tag col attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag col attributes head -->
+                <!-- tag attributes head -->
                 <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
                   </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
                   </div>
                 </div>
 
-                <!-- tag col attributes rows -->
+                <!-- tag attributes rows -->
                 <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">span</p>
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;meta&gt;</p>
                   </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(number)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the number of columns a &lt;col&gt; element should span.
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The checked attribute is a boolean attribute. <br>
+                      When present, it specifies that an &lt;input&gt; element should be pre-selected (checked) when the page loads. <br>
+                      The checked attribute can be used with &lt;input type="checkbox"&gt; and &lt;input type="radio"&gt;. <br>
+                      The checked attribute can also be set after the page load, with a JavaScript.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The checked attribute is a boolean attribute.
                     </p>
                   </div>
                 </div>
 
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;col&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;col&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-                
               </div>
             </div>
-
-          </div>
-
-          <!-- tag colgroup -->
-          <div class="row mb-5">
-
-            <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;colgroup&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag colgroup description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;colgroup&gt; tag specifies a group of one or more columns in a table for formatting. <br>
-                  The &lt;colgroup&gt; tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row. <br>
-                  <strong>Note:</strong> The &lt;colgroup&gt; tag must be a child of a &lt;table&gt; element, after any &lt;caption&gt; elements
-                  and before any &lt;thead&gt;, &lt;tbody&gt;, &lt;foot&gt;, and &lt;tr&gt; elements. <br>
-                  <strong>Tip:</strong> To define different properties to a column within a &lt;colgroup&gt;, use the &lt;col&gt; tag within the &lt;colgroup&gt; tag.
-                </p>
-              </div>
-
-              <!-- tag colgroup example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;table&gt; <br>
-                  &nbsp; &lt;colgroup&gt; <br>
-                  &nbsp; &nbsp; &lt;col span="2" style="background-color:red"&gt; <br>
-                  &nbsp; &nbsp; &lt;col style="background-color:yellow"&gt; <br>
-                  &nbsp; &lt;/colgroup&gt; <br>
-                  &nbsp; &lt;tr&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;Title&lt;/th&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;Price&lt;/th&gt; <br>
-                  &nbsp; &lt;/tr&gt; <br>
-                  &nbsp; &lt;tr&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;My first HTML&lt;/th&gt; <br>
-                  &nbsp; &nbsp; &lt;th&gt;$55&lt;/th&gt; <br>
-                  &nbsp; &lt;/tr&gt; <br>
-                  &lt;/table&gt;
-                </p>
-              </div>
-              
-              <!-- tag colgroup attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag colgroup attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag colgroup attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">span</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(number)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the number of columns a column group should span.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;colgroup&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;colgroup&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
           </div>
 
         </div>
