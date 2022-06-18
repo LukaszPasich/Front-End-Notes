@@ -1367,17 +1367,13 @@
             </div>
           </div>
 
-        </div>
-
-        <!-- D -->
-        <div id="html-tags-d" class="col-12 html-tags py-3">
-
-          <!-- tag data -->
+          <!-- attribute controls -->
           <div class="row mb-5">
 
             <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;data&gt;
+              <p class="element-attribute-name text-center text-sm-left">
+                controls
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;audio&gt;, &lt;video&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -1385,659 +1381,67 @@
             <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
             <div class="tag-collapsable">
-              <!-- tag data description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;data&gt; tag is used to add a machine-readable translation of a given content. <br>
-                  This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser. <br>
-                  <strong>Tip:</strong> If the content is time- or date-related, use the &lt;time&gt; element instead.
-                </p>
-              </div>
 
-              <!-- tag data example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;ul&gt; <br>
-                  &nbsp; &lt;li&gt;&lt;data value="21053"&gt;Cherry Tomato&lt;/data&gt;&lt;/li&gt; <br>
-                  &nbsp; &lt;li&gt;&lt;data value="21054"&gt;Beef Tomato&lt;/data&gt;&lt;/li&gt; <br>
-                  &nbsp; &lt;li&gt;&lt;data value="21055"&gt;Snack Tomato&lt;/data&gt;&lt;/li&gt; <br>
-                  &lt;/ul&gt;
-                </p>
-              </div>
-
-              <!-- tag data attributes -->
+              <!-- attribute applies to + values -->
               <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag data attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag data attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">value</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(machine-readable format)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the machine-readable translation of the content of the element.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;data&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-          <!-- tag datalist -->
-          <div class="row mb-5">
-
-            <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;datalist&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag datalist description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;datalist&gt; tag specifies a list of pre-defined options for an &lt;input&gt; element. <br>
-                  The &lt;datalist&gt; tag is used to provide an "autocomplete" feature for &lt;datalist&gt; elements.
-                  Users will see a drop-down list of pre-defined options as they input data. <br>
-                  The &lt;datalist&gt; element's id attribute must be equal to the &lt;input&gt; element's list attribute (this binds them together).
-                </p>
-              </div>
-
-              <!-- tag datalist example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;form action="/action_page.php" method="get"&gt; <br>
-                  &nbsp; &lt;label for="browser"&gt;Choose your browser from the list:&lt;/label&gt; <br>
-                  &nbsp; &lt;input list="browsers" name="browser" id="browser"&lt; <br>
-                  &nbsp; &lt;datalist id="browsers"&gt; <br>
-                  &nbsp; &nbsp; &lt;option value="Edge"&gt; <br>
-                  &nbsp; &nbsp; &lt;option value="Firefox"&gt; <br>
-                  &nbsp; &nbsp; &lt;option value="Chrome"&gt; <br>
-                  &nbsp; &nbsp; &lt;option value="Opera"&gt; <br>
-                  &nbsp; &nbsp; &lt;option value="Safari"&gt; <br>
-                  &nbsp; &lt;/datalist&gt; <br>
-                  &nbsp; &lt;input type="submit"&gt; <br>
-                  &lt;/form&gt;
-                </p>
-              </div>
-
-              <!-- tag datalist attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;datalist&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;datalist&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- tag dd -->
-          <div class="row mb-5">
-
-            <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;dd&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag dd description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;dd&gt; tag is used to describe a term/name in a description list. <br>
-                  The &lt;dd&gt; tag is used in conjunction with &lt;dl&gt; (defines a description list) and &lt;dt&gt; (defines terms/names). <br>
-                  Inside a &lt;dd&gt; tag you can put paragraphs, line breaks, images, links, lists, etc.
-                </p>
-              </div>
-
-              <!-- tag dd example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;dl&gt; <br>
-                  &nbsp; &lt;dt&gt;Coffee&lt;/dt&gt; <br>
-                  &nbsp; &lt;dd&gt;Black hot drink&lt;/dd&gt; <br>
-                  &nbsp; &lt;dt&gt;Milk&lt;/dt&gt; <br>
-                  &nbsp; &lt;dd&gt;White cold drink&lt;/dd&gt; <br>
-                  &lt;/dl&gt;
-                </p>
-              </div>
-
-              <!-- tag dd attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;dd&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;dd&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- tag del -->
-          <div class="row mb-5">
-
-            <div class="tag-html col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;del&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag del description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;del&gt; tag defines text that has been deleted from a document.
-                  Browsers will usually strike a line through deleted text.
-                  <strong>Tip:</strong> Also look at the &lt;ins&gt; tag to markup inserted text.
-                </p>
-              </div>
-
-              <!-- tag del example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
-                </p>
-              </div>
-
-              <!-- tag del attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag del attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag del attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">cite</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(URL)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies a URL to a document that explains the reason why the text was deleted/changed.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">datetime</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(YYYY-MM-DDThh:mm:ssTZD)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the date and time of when the text was deleted/changed.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;del&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-    
-                <hr>
-    
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;del&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- tag details -->
-          <div class="row mb-5">
-
-            <div class="tag-html col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;details&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag details description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;details&gt; tag specifies additional details that the user can open and close on demand. <br>
-                  The &lt;details&gt; tag is often used to create an interactive widget that the user can open and close.
-                  By default, the widget is closed. When open, it expands, and displays the content within. <br>
-                  Any sort of content can be put inside the &lt;details&gt; tag. <br>
-                  <strong>Tip:</strong> The &lt;summary&gt; tag is used in conjuction with &lt;details&gt; to specify a visible heading for the details.
-                </p>
-              </div>
-
-              <!-- tag details example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;details&gt; <br>
-                  &nbsp; &lt;summary&gt;Epcot Center&lt;/summary&gt; <br>
-                  &nbsp; &lt;p&gt;Epcot is a theme park at Walt Disney World Resort featuring exciting attractions.&lt;/p&gt; <br>
-                  &lt;/details&gt;
-                </p>
-              </div>
-
-              <!-- tag details attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag details attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag details attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">open</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>open</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that the details should be visible (open) to the user.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;details&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-    
-                  <hr>
-    
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;details&gt;</strong> tag supports the
-                        <a href="html_attributes_event.html" class="link-normal">
-                          Event Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- tag dfn -->
-          <div class="row mb-5">
-
-            <div class="tag-html col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;dfn&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;dfn&gt; tag stands for the "definition element", and it specifies a term that is going to be defined within the content. <br>
-                  The nearest parent of the &lt;dfn&gt; tag must also contain the definition/explanation for the term. <br> <br>
-                  The term inside the &lt;dfn&gt; tag can be any of the following: <br>
-                </p>
-              </div>
-
-              <!-- tag example -->
-              <div class="col-12">
-                <p class="mb-2 mt-4"><strong>1. Just as the content of the &lt;dfn&gt; element:</strong></p>
-                <p class="border-bottom pb-1 mb-2 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt;&lt;dfn&gt;HTML&lt;/dfn&gt; is the standard markup language for creating web pages.&lt;/p&gt;
-                </p>
-              </div>
-
-              <div class="col-12">
-                <p class="mb-2 mt-4"><strong>2. Or, with the title attribute added:</strong></p>
-                <p class="border-bottom pb-1 mb-2 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt; <br>
-                  &nbsp;&lt;dfn title="HyperText Markup Language"&gt;HTML&lt;/dfn&gt; <br>
-                  &nbsp;is the standard markup language for creating web pages. <br>
-                  &lt;/p&gt;
-                </p>
-              </div>
-
-              <div class="col-12">
-                <p class="mb-2 mt-4"><strong>3. Or, with an &lt;abbr&gt; tag inside the &lt;dfn&gt; element:</strong></p>
-                <p class="border-bottom pb-1 mb-2 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt; <br>
-                  &nbsp;&lt;/dfn&gt; <br>
-                  &nbsp;&nbsp;&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt; <br>
-                  &nbsp;&lt;/dfn&gt; <br>
-                  &nbsp;is the standard markup language for creating web pages. <br>
-                  &lt;/p&gt;
-                </p>
-              </div>
-
-              <div class="col-12">
-                <p class="mb-2 mt-4">
-                  <strong>
-                    4. Or, with the id attribute added. Then, whenever a term is used, it can refer back to the definition with an &gt;a&lt; tag:
-                  </strong>
-                </p>
-                <p class="border-bottom pb-1 mb-2 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt; <br>
-                  &nbsp;&lt;dfn id="html-def"&gt;HTML&lt;/dfn&gt; <br>
-                  &nbsp;is the standard markup language for creating web pages. <br>
-                  &lt;/p&gt; <br>
-                  &lt;p&gt;This is some text..&lt;/p&gt; <br>
-                  &lt;p&gt;This is some text..&lt;/p&gt; <br>
-                  &lt;p&gt;Learn &lt;a href="#html-def"&gt;HTML&lt;/a&gt;&lt;/p&gt;
-                </p>
-              </div>
-
-              <!-- tag details attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;dfn&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-    
-                  <hr>
-    
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;dfn&gt;</strong> tag supports the
-                        <a href="html_attributes_event.html" class="link-normal">
-                          Event Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- tag dialog -->
-          <div class="row mb-5">
-
-            <div class="tag-html col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;dialog&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;dialog&gt; tag defines a dialog box or subwindow. <br>
-                  The &lt;dialog&gt; element makes it easy to create popup dialogs and modals on a web page. <br>
-                </p>
-              </div>
-
-              <!-- tag example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;dialog open&gt;This is an open dialog window&lt;/dialog&gt;
-                </p>
-              </div>
-
-              <!-- tag attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
               </div>
 
               <div class="col-12">
                 <!-- tag attributes head -->
                 <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
                   </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
                   </div>
                 </div>
 
                 <!-- tag attributes rows -->
                 <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">open</p>
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;audio&gt;</p>
                   </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>open</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies that the dialog element is active and that the user can interact with it.
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      When present, it specifies that audio controls should be displayed. <br><br>
+                      Audio controls should include:
+                      <ul>
+                        <li>Play</li>
+                        <li>Pause</li>
+                        <li>Seeking</li>
+                        <li>Volume</li>
+                      </ul>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The controls attribute is a boolean attribute.
                     </p>
                   </div>
                 </div>
 
                 <hr>
 
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;dialog&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;video&gt;</p>
                   </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;dialog&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      When present, it specifies that video controls should be displayed. <br><br>
+                      Audio controls should include:
+                      <ul>
+                        <li>Play</li>
+                        <li>Pause</li>
+                        <li>Seeking</li>
+                        <li>Volume</li>
+                        <li>Fullscreen toggle</li>
+                        <li>Captions/Subtitles (when available)</li>
+                        <li>Track (when available)</li>
+                      </ul>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The controls attribute is a boolean attribute.
                     </p>
                   </div>
                 </div>
@@ -2046,86 +1450,13 @@
             </div>
           </div>
 
-          <!-- tag div -->
-          <div class="row mb-5">
-
-            <div class="tag-html col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;div&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;div&gt; tag defines a division or a section in an HTML document. <br>
-                  The &lt;div&gt; tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. <br>
-                  The &lt;div&gt; tag is easily styled by using the class or id attribute. <br>
-                  Any sort of content can be put inside the &lt;div&gt; tag! <br>
-                  <strong>Note:</strong>By default, browsers always place a line break before and after the &lt;div&gt; element.
-                </p>
-              </div>
-
-              <!-- tag example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;div class="myDiv"&gt; <br>
-                  &nbsp;&lt;h2&gt;This is a heading in a div element&lt;/h2&gt; <br>
-                  &nbsp;&lt;p&gt;This is some text in a div element.&lt;/p&gt; <br>
-                  &lt;/div&gt;
-                </p>
-              </div>
-
-              <!-- tag attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;div&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;div&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- tag dl -->
+          <!-- attribute coords -->
           <div class="row mb-5">
 
             <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;dl&gt;
+              <p class="element-attribute-name text-center text-sm-left">
+                coords
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;area&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -2133,71 +1464,64 @@
             <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
             <div class="tag-collapsable">
-              <!-- tag description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;dl&gt; tag defines a description list. <br>
-                  The &lt;dl&gt; tag is used in conjunction with &lt;dt&gt; (defines terms/names) and &lt;dd&gt; (describes each term/name).
-                </p>
-              </div>
 
-              <!-- tag example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;dl&gt; <br>
-                  &nbsp; &lt;dt&gt;Coffee&lt;/dt&gt; <br>
-                  &nbsp; &lt;dd&gt;Black hot drink&lt;/dd&gt; <br>
-                  &nbsp; &lt;dt&gt;Milk&lt;/dt&gt; <br>
-                  &nbsp; &lt;dd&gt;White cold drink&lt;/dd&gt; <br>
-                  &lt;/dl&gt;
-                </p>
-              </div>
-
-              <!-- tag attributes -->
+              <!-- attribute applies to + values -->
               <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
               </div>
 
               <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;dl&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;area&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The coords attribute specifies the coordinates of an area in an image map. <br>
+                      The coords attribute is used together with the shape attribute to specify the size, shape, and placement of an area. <br>
+                      <b>Tip:</b> The coordinates of the top-left corner of an area are 0,0.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(x1, y1, x2, y2)</em> <br>
+                      Specifies the coordinates of the top-left and bottom-right corner of the rectangle (shape="rect").
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(x, y, radius)</em> <br>
+                      Specifies the coordinates of the circle center and the radius (shape="circle").
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(x1, y1, x2, y2,.., xn, yn)</em> <br>
+                      Specifies the coordinates of the edges of the polygon.
+                      If the first and last coordinate pairs are not the same,
+                      the browser will add the last coordinate pair to close the polygon (shape="poly").
                     </p>
                   </div>
                 </div>
 
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;dl&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
-
           </div>
 
-          <!-- tag dt -->
+        </div>
+
+        <!-- D -->
+        <div id="html-tags-d" class="col-12 html-tags py-3">
+
+          <!-- attribute data -->
           <div class="row mb-5">
 
             <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;dt&gt;
+              <p class="element-attribute-name text-center text-sm-left">
+                data
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;object&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -2205,63 +1529,50 @@
             <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
             <div class="tag-collapsable">
-              <!-- tag description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;dl&gt; tag defines a term/name in a description list. <br>
-                  The &lt;dt&gt; tag is used in conjunction with &lt;dl&gt; (defines a description list) and &lt;dd&gt; (describes each term/name).
-                </p>
-              </div>
 
-              <!-- tag example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;dl&gt; <br>
-                  &nbsp; &lt;dt&gt;Coffee&lt;/dt&gt; <br>
-                  &nbsp; &lt;dd&gt;Black hot drink&lt;/dd&gt; <br>
-                  &nbsp; &lt;dt&gt;Milk&lt;/dt&gt; <br>
-                  &nbsp; &lt;dd&gt;White cold drink&lt;/dd&gt; <br>
-                  &lt;/dl&gt;
-                </p>
-              </div>
-
-              <!-- tag attributes -->
+              <!-- attribute applies to + values -->
               <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
               </div>
 
               <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;dt&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;area&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The coords attribute specifies the coordinates of an area in an image map. <br>
+                      The coords attribute is used together with the shape attribute to specify the size, shape, and placement of an area. <br>
+                      <b>Tip:</b> The coordinates of the top-left corner of an area are 0,0.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(x1, y1, x2, y2)</em> <br>
+                      Specifies the coordinates of the top-left and bottom-right corner of the rectangle (shape="rect").
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(x, y, radius)</em> <br>
+                      Specifies the coordinates of the circle center and the radius (shape="circle").
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(x1, y1, x2, y2,.., xn, yn)</em> <br>
+                      Specifies the coordinates of the edges of the polygon.
+                      If the first and last coordinate pairs are not the same,
+                      the browser will add the last coordinate pair to close the polygon (shape="poly").
                     </p>
                   </div>
                 </div>
 
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;dt&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
-
           </div>
           
         </div>
