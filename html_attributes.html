@@ -1549,24 +1549,19 @@
                 <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;area&gt;</p>
+                    <p class="">&lt;object&gt;</p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      The coords attribute specifies the coordinates of an area in an image map. <br>
-                      The coords attribute is used together with the shape attribute to specify the size, shape, and placement of an area. <br>
-                      <b>Tip:</b> The coordinates of the top-left corner of an area are 0,0.
+                      The data attribute specifies the URL of the resource to be used by the object.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">(x1, y1, x2, y2)</em> <br>
-                      Specifies the coordinates of the top-left and bottom-right corner of the rectangle (shape="rect").
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">(x, y, radius)</em> <br>
-                      Specifies the coordinates of the circle center and the radius (shape="circle").
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">(x1, y1, x2, y2,.., xn, yn)</em> <br>
-                      Specifies the coordinates of the edges of the polygon.
-                      If the first and last coordinate pairs are not the same,
-                      the browser will add the last coordinate pair to close the polygon (shape="poly").
+                    <p class="mb-3"><em class="attribute-name">(URL)</em> <br>
+                      Specifies the URL of the resource to be used by the object. <br><br>
+                      Possible values:
+                      <ul>
+                        <li>An absolute URL - points to data on another web site (like href="http://www.example.com/images/pic_trulli.jpg")</li>
+                        <li>A relative URL - points to data within a web site (like href="pic_trulli.jpg")</li>
+                      </ul>
                     </p>
                   </div>
                 </div>
