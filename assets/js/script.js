@@ -93,7 +93,7 @@ $('.alpha-nav-button').on('click', function(e) {
 
     // get the letter (text) and attribute from the alpha-nav button
     var $alphaLetter = $(this).text().toLowerCase();
-    var $dataPage = $(this).attr('data-page');
+    var $dataPage = $(this).attr('data-page');   // !POSSIBLY REDUNDANT LINE
 
     // reset all buttons to inactive, then add active class to the clicked on button
     $('.alpha-nav-button').addClass('alpha-nav-button-inactive').removeClass('alpha-nav-button-active');
