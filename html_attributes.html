@@ -1631,6 +1631,149 @@
               </div>
             </div>
           </div>
+
+          <!-- attribute datetime -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                datetime
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;del&gt;, &lt;ins&gt;, &lt;time&gt;</p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;del&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The datetime attribute specifies the date and time when the text was deleted. <br>
+                      <b>Note:</b> The datetime attribute has no visual effect in ordinary web browsers, but can be used by screen readers.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(YYYY-MM-DDThh:mm:ssTZD)</em> <br>
+                      The date and time of when the text was deleted. <br><br>
+                      Explanation of components:
+                      <ul>
+                        <li>YYYY - year (e.g. 2012)</li>
+                        <li>MM - month (e.g. 01 for January)</li>
+                        <li>DD - day of the month (e.g. 08)</li>
+                        <li>T or a space - a separator (required if time is also specified)</li>
+                        <li>hh - hour (e.g. 22 for 10.00pm)</li>
+                        <li>mm - minutes (e.g. 55)</li>
+                        <li>ss - seconds (e.g. 03)</li>
+                        <li>TZD - Time Zone Designator (Z denotes Zulu, also known as Greenwich Mean Time)</li>
+                      </ul>
+                      <i>Example: 2015-11-15T22:55:03Z</i>
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;ins&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The datetime attribute specifies the date and time when the text was inserted/changed. <br>
+                      <b>Note:</b> The datetime attribute has no visual effect in ordinary web browsers, but can be used by screen readers.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(YYYY-MM-DDThh:mm:ssTZD)</em> <br>
+                      The date and time of when the text was inserted/changed. <br><br>
+                      Explanation of components:
+                      <ul>
+                        <li>YYYY - year (e.g. 2012)</li>
+                        <li>MM - month (e.g. 01 for January)</li>
+                        <li>DD - day of the month (e.g. 08)</li>
+                        <li>T or a space - a separator (required if time is also specified)</li>
+                        <li>hh - hour (e.g. 22 for 10.00pm)</li>
+                        <li>mm - minutes (e.g. 55)</li>
+                        <li>ss - seconds (e.g. 03)</li>
+                        <li>TZD - Time Zone Designator (Z denotes Zulu, also known as Greenwich Mean Time)</li>
+                      </ul>
+                      <i>Example: 2015-11-15T22:55:03Z</i>
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;time&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The datetime attribute represent a machine-readable format of a &lt;time&gt; element.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(YYYY-MM-DDThh:mm:ssTZD) <span class="text-grey-222">or</span> (PTDHMS)</em> <br>
+                      The date or time being specified. <br><br>
+                      Explanation of components:
+                      <ul>
+                        <li>YYYY - year (e.g. 2012)</li>
+                        <li>MM - month (e.g. 01 for January)</li>
+                        <li>DD - day of the month (e.g. 08)</li>
+                        <li>T or a space - a separator (required if time is also specified)</li>
+                        <li>hh - hour (e.g. 22 for 10.00pm)</li>
+                        <li>mm - minutes (e.g. 55)</li>
+                        <li>ss - seconds (e.g. 03)</li>
+                        <li>TZD - Time Zone Designator (Z denotes Zulu, also known as Greenwich Mean Time)</li>
+                        <li>P - a prefix for "Period"</li>
+                        <li>D - a prefix for "Days"</li>
+                        <li>H - a prefix for "Hours"</li>
+                        <li>M - a prefix for "Minutes"</li>
+                        <li>S - a prefix for "Seconds"</li>
+                      </ul>
+                      <i>Examples of valid datetime values:</i><br><br>
+                      Dates: <br>
+                      &lt;time datetime="1914"&gt;  <span class="text-success">&lt;!-- means the year 1914 --&gt;</span> <br>
+                      &lt;time datetime="1914-12"&gt;  <span class="text-success">&lt;!-- means December 1914 --&gt;</span> <br>
+                      &lt;time datetime="1914-12-20"&gt;  <span class="text-success">&lt;!-- means 20 December 1914 --&gt;</span> <br>
+                      &lt;time datetime="12-20"&gt;  <span class="text-success">&lt;!-- means 20 December any year --&gt;</span> <br>
+                      &lt;time datetime="1914-W15"&gt;  <span class="text-success">&lt;!-- means week 15 of year 1914 --&gt;</span> <br><br>
+                      Date and Times: <br>
+                      &lt;time datetime="1914-12-20T08:00"&gt;  <span class="text-success">&lt;!-- means 20 December 1914 at 8am --&gt;</span> <br>
+                      &lt;time datetime="1914-12-20 08:00"&gt;  <span class="text-success">&lt;!-- also means 20 December 1914 at 8am --&gt;</span> <br>
+                      &lt;time datetime="1914-12-20 08:30:45"&gt;  <span class="text-success">&lt;!-- with minutes and seconds --&gt;</span> <br>
+                      &lt;time datetime="1914-12-20 08:30:45.687"&gt;  <span class="text-success">&lt;!-- with minutes, seconds, and milliseconds --&gt;</span> <br><br>
+                      Times: <br>
+                      &lt;time datetime="08:00"&gt;  <span class="text-success">&lt;!-- means 8am --&gt;</span> <br>
+                      &lt;time datetime="08:00-03:00"&gt;  <span class="text-success">&lt;!-- means 8am in Rio de Janeiro (UTC-3 hours)  --&gt;</span> <br>
+                      &lt;time datetime="08:00+03:00"&gt;  <span class="text-success">&lt;!-- means 8am in Madagascar (UTC+3 hours)  --&gt;</span> <br><br>
+                      Durations: <br>
+                      &lt;time datetime="P2D"&gt;  <span class="text-success">&lt;!-- means a duration of 2 days --&gt;</span> <br>
+                      &lt;time datetime="PT15H10M"&gt;  <span class="text-success">&lt;!-- means a duration of 15 hours and 10 minutes --&gt;</span>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
                     
         </div>
 
