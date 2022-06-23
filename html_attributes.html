@@ -1950,7 +1950,7 @@
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
                 dirname
-                <p class="small text-muted text-center text-sm-left mb-1">&lt;input&gt;</p>
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;input&gt;, &lt;textarea&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -2004,6 +2004,181 @@
                     </p>
                     <p class="mb-3"><em class="attribute-name">(name).dir</em> <br>
                       Specifies that the text direction of the textarea will be submitted.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- attribute disabled -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                disabled
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;, &lt;optgroup&gt;, &lt;option&gt;, &lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;</p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;button&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The disabled attribute is a boolean attribute. <br>
+                      When present, it specifies that the button should be disabled. <br>
+                      A disabled button is unusable and un-clickable. <br>
+                      The disabled attribute can be set to keep a user from clicking on the button until some other condition has been met (like selecting a checkbox, etc.).
+                      Then, a JavaScript could remove the disabled value, and make the button clickable again.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The disabled attribute is a boolean attribute.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;fieldset&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The disabled attribute is a boolean attribute. <br>
+                      When present, it specifies that a group of related form elements (a fieldset) should be disabled. <br>
+                      A disabled fieldset is unusable and un-clickable. <br>
+                      The disabled attribute can be set to keep a user from using the fields until some other condition has been met (like selecting a checkbox, etc.).
+                      Then, a JavaScript could remove the disabled value, and make the fieldset usable again.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The disabled attribute is a boolean attribute.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;input&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The disabled attribute is a boolean attribute. <br>
+                      When present, it specifies that the &lt;input&gt; element should be disabled. <br>
+                      A disabled input element is unusable and un-clickable. <br>
+                      The disabled attribute can be set to keep a user from using the &lt;input&gt; element until some other condition has been met (like selecting a checkbox, etc.).
+                      Then, a JavaScript could remove the disabled value, and make the &lt;input&gt; element usable. <br>
+                      <b>Tip:</b> Disabled &lt;input&gt; elements in a form will not be submitted!
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The disabled attribute is a boolean attribute.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;optgroup&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The disabled attribute is a boolean attribute. <br>
+                      When present, it specifies that an option-group should be disabled. <br>
+                      A disabled option-group is unusable and un-clickable. <br>
+                      The disabled attribute can be set to keep a user from selecting the option-group until some other condition has been met (like selecting a checkbox, etc.).
+                      Then, a JavaScript is required to remove the disabled value, and make the option-group selectable.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The disabled attribute is a boolean attribute.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;option&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The disabled attribute is a boolean attribute. <br>
+                      When present, it specifies that an option should be disabled. <br>
+                      A disabled option is unusable and un-clickable. <br>
+                      The disabled attribute can be set to keep a user from selecting the option until some other condition has been met (like selecting a checkbox, etc.).
+                      Then, a JavaScript is required to remove the disabled value, and make the option selectable.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The disabled attribute is a boolean attribute.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;select&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The disabled attribute is a boolean attribute. <br>
+                      When present, it specifies that the drop-down list should be disabled. <br>
+                      A disabled the drop-down list is unusable and un-clickable. <br>
+                      The disabled attribute can be set to keep a user from using the drop-down list until some other condition has been met (like selecting a checkbox, etc.).
+                      Then, a JavaScript is required to remove the disabled value, and make the drop-down list selectable.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The disabled attribute is a boolean attribute.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;textarea&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The disabled attribute is a boolean attribute. <br>
+                      When present, it specifies that the text area should be disabled. <br>
+                      A disabled text area is unusable and the text is not selectable (cannot be copied). <br>
+                      The disabled attribute can be set to keep a user from using the text area until some other condition has been met (like selecting a checkbox, etc.).
+                      Then, a JavaScript is required to remove the disabled value, and make the text area usable.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The disabled attribute is a boolean attribute.
                     </p>
                   </div>
                 </div>
