@@ -2392,8 +2392,8 @@
 
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
-                enctype
-                <p class="small text-muted text-center text-sm-left mb-1">&lt;form&gt;</p>
+                for
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;label&gt;, &lt;output&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -2421,21 +2421,31 @@
                 <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;form&gt;</p>
+                    <p class="">&lt;label&gt;</p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      The enctype attribute specifies how the form-data should be encoded when submitting it to the server. <br>
-                      <b>Note:</b> The enctype attribute can be used only if method="post".
+                      The for attribute specifies which form element a label is bound to.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">application/x-www-form-urlencoded</em> <br>
-                      Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values).
+                    <p class="mb-3"><em class="attribute-name">(element_id)</em> <br>
+                      The id of the element the label is bound to.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">multipart/form-data</em> <br>
-                      This value is necessary if the user will upload a file through the form.
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;output&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The for attribute specifies the relationship between the result of the calculation, and the elements used in the calculation.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">text/plain</em> <br>
-                      Sends data without any encoding at all. Not recommended.
+                    <p class="mb-3"><em class="attribute-name">(element_id)</em> <br>
+                      Specifies a space separated list of ids of one or more elements that specifies the relationship between the result of the calculation,
+                      and the elements used in the calculation.
                     </p>
                   </div>
                 </div>
