@@ -3498,12 +3498,13 @@
         <!-- L -->
         <div id="html-tags-l" class="col-12 html-tags py-3">
 
-          <!-- tag label -->
+          <!-- attribute label -->
           <div class="row mb-5">
 
             <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;label&gt;
+              <p class="element-attribute-name text-center text-sm-left">
+                label
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;track&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -3511,152 +3512,49 @@
             <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
             <div class="tag-collapsable">
-              <!-- tag description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;label&gt; tag defines a label for several elements:
-                  <ul>
-                    <li>&lt;input type="checkbox"&gt;</li>
-                    <li>&lt;input type="color"&gt;</li>
-                    <li>&lt;input type="date"&gt;</li>
-                    <li>&lt;input type="datetime-local"&gt;</li>
-                    <li>&lt;input type="email"&gt;</li>
-                    <li>&lt;input type="file"&gt;</li>
-                    <li>&lt;input type="month"&gt;</li>
-                    <li>&lt;input type="number"&gt;</li>
-                    <li>&lt;input type="password"&gt;</li>
-                    <li>&lt;input type="radio"&gt;</li>
-                    <li>&lt;input type="range"&gt;</li>
-                    <li>&lt;input type="search"&gt;</li>
-                    <li>&lt;input type="tel"&gt;</li>
-                    <li>&lt;input type="text"&gt; (default value)</li>
-                    <li>&lt;input type="time"&gt;</li>
-                    <li>&lt;input type="url"&gt;</li>
-                    <li>&lt;input type="week"&gt;</li>
-                    <li>&lt;meter&gt;</li>
-                    <li>&lt;progress&gt;</li>
-                    <li>&lt;select&gt;</li>
-                    <li>&lt;textarea&gt;</li>
-                  </ul>
-                  <br>
-                  Proper use of labels with the elements above will benefit: <br>
-                  <ul>
-                    <li>Screen reader users (will read out loud the label, when the user is focused on the element)</li>
-                    <li>Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user
-                        clicks the text within the &lt;label&gt; element, it toggles the input (this increases the hit area).</li>
-                  </ul>
-                  <strong>Tip:</strong> The for attribute of &lt;label&gt; must be equal to the id attribute of the related element to bind
-                  them together. A label can also be bound to an element by placing the element inside the &lt;label&gt; element.
-                </p>
-              </div>
 
-              <!-- tag example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;form action="/action_page.php"&gt; <br>
-                  &nbsp;&lt;input type="radio" id="html" name="fav_language" value="HTML"&gt; <br>
-                  &nbsp;&lt;label for="html"&gt;HTML&lt;/label&gt;&lt;br&gt; <br>
-                  &nbsp;&lt;input type="radio" id="css" name="fav_language" value="CSS"&gt; <br>
-                  &nbsp;&lt;label for="css"&gt;CSS&lt;/label&gt;&lt;br&gt; <br>
-                  &nbsp;&lt;input type="radio" id="javascript" name="fav_language" value="JavaScript"&gt; <br>
-                  &nbsp;&lt;label for="javascript"&gt;JavaScript&lt;/label&gt;&lt;br&gt;&lt;br&gt; <br>
-                  &nbsp;&lt;input type="submit" value="Submit"&gt; <br>
-                  &lt;/form&gt;
-                </p>
-              </div>
-
-              <!-- tag attributes -->
+              <!-- attribute applies to + values -->
               <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
               </div>
 
               <div class="col-12">
                 <!-- tag attributes head -->
                 <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
                   </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
                   </div>
                 </div>
 
                 <!-- tag attributes rows -->
                 <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">for</p>
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;track&gt;</p>
                   </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em>(element_id)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the <em>id</em> of the form element the label should be bound to.
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The label attribute specifies the title of the text track, and is used by the browser when listing available text tracks.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(label)</em> <br>
+                      Specifies the title of the text track.
                     </p>
                   </div>
                 </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-5 col-sm-3 p-1">
-                    <p class="attribute-name">form</p>
-                  </div>
-                  <div class="col-7 col-sm-3 p-1">
-                    <p class=""><em>(form_id)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies which form the label belongs to.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;label&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-    
-                  <hr>
-    
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;label&gt;</strong> tag supports the
-                        <a href="html_attributes_event.html" class="link-normal">
-                          Event Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
 
               </div>
             </div>
-
           </div>
 
-          <!-- tag legend -->
+          <!-- attribute lang -->
           <div class="row mb-5">
 
             <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;legend&gt;
+              <p class="element-attribute-name text-center text-sm-left">
+                lang
+                <p class="small text-muted text-center text-sm-left mb-1">Global Attribute</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -3664,430 +3562,45 @@
             <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
             <div class="tag-collapsable">
-              <!-- tag description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;legend&gt; tag defines a caption for the &lt;fieldset&gt; element.
-                </p>
-              </div>
 
-              <!-- tag example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;form action="/action_page.php"&gt; <br>
-                  &nbsp;&lt;fieldset&gt; <br>
-                  &nbsp;&nbsp;&lt;legend&gt;Personalia:&lt;/legend&gt; <br>
-                  &nbsp;&nbsp;&lt;label for="fname"&gt;First name:&lt;/label&gt; <br>
-                  &nbsp;&nbsp;&lt;input type="text" id="fname" name="fname">&lt;br&gt; <br>
-                  &nbsp;&nbsp;&lt;label for="lname"&gt;Last name:&lt;/label&gt; <br>
-                  &nbsp;&nbsp;&lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt; <br>
-                  &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt; <br>
-                  &nbsp;&nbsp;&lt;input type="email" id="email" name="email"&gt;&lt;br&gt; <br>
-                  &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt; <br>
-                  &nbsp;&lt;/fieldset&gt; <br>
-                  &lt;/form&gt;
-                </p>
-              </div>
-
-              <!-- tag attributes -->
+              <!-- attribute applies to + values -->
               <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-
-                <div class="col-12">
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;legend&gt;</strong> tag supports the
-                        <a href="html_attributes_global.html" class="link-normal">
-                          Global Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;legend&gt;</strong> tag supports the
-                        <a href="html_attributes_event.html" class="link-normal">
-                          Event Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-          <!-- tag li -->
-          <div class="row mb-5">
-
-            <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;li&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;li&gt; tag defines a list item. <br>
-                  The &lt;li&gt; tag is used inside ordered lists(&lt;ol&gt;), unordered lists (&lt;ul&gt;), and in menu lists (&lt;menu&gt;). <br>
-                  In &lt;ul&gt; and &lt;menu&gt;, the list items will usually be displayed with bullet points. <br>
-                  In &lt;ol&gt;, the list items will usually be displayed with numbers or letters. <br>
-                  <strong>Tip:</strong> Use CSS to style lists.
-                </p>
-              </div>
-
-              <!-- tag example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;ol&gt; <br>
-                  &nbsp;&lt;li&gt;Coffee&lt;/li&gt; <br>
-                  &nbsp;&lt;li&gt;Tea&lt;/li&gt; <br>
-                  &lt;/ol&gt; <br><br>
-                  &lt;ul&gt; <br>
-                  &nbsp;&lt;li&gt;Coffee&lt;/li&gt; <br>
-                  &nbsp;&lt;li&gt;Tea&lt;/li&gt; <br>
-                  &lt;/ul&gt;
-                </p>
-              </div>
-
-              <!-- tag attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
               </div>
 
               <div class="col-12">
                 <!-- tag attributes head -->
                 <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
                   </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
                   </div>
                 </div>
 
                 <!-- tag attributes rows -->
                 <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">value</p>
-                  </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em>(number)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
+                  <div class="col-4 col-sm-3 p-1">
                     <p class="">
-                      Only for &lt;ol&gt; lists. Specifies the start value of a list item.
-                      The following list items will increment from that number.
+                      <a href="html_attributes_global.html"><u>Global Attribute</u></a> <br>
+                      (can be used on any HTML element)
+                    </p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The lang attribute specifies the language of the element's content. <br>
+                      Common examples are "en" for English, "es" for Spanish, "fr" for French, and so on.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(language_code)</em> <br>
+                      Specifies the language code for the element's content.
+                      <a href="https://www.w3schools.com/tags/ref_language_codes.asp" target="_blank"><u>Language code reference</u></a>.
                     </p>
                   </div>
                 </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;li&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-    
-                  <hr>
-    
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;li&gt;</strong> tag supports the
-                        <a href="html_attributes_event.html" class="link-normal">
-                          Event Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
 
               </div>
             </div>
-
-          </div>
-
-          <!-- tag link -->
-          <div class="row mb-5">
-
-            <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;link&gt;
-                <hr class="hr-dgrey">
-              </p>
-            </div>
-
-            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-
-            <div class="tag-collapsable">
-              <!-- tag description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;link&gt; tag defines the relationship between the current document and an external resource. <br>
-                  The &lt;link&gt; tag is most often used to link to external style sheets or to add a favicon to your website. <br>
-                  The &lt;link&gt; element is an empty element, it contains attributes only.
-                </p>
-              </div>
-
-              <!-- tag example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;head&gt; <br>
-                  &nbsp;&lt;link rel="stylesheet" href="styles.css"&gt; <br>
-                  &lt;/head&gt;
-                </p>
-              </div>
-
-              <!-- tag attributes -->
-              <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
-              </div>
-
-              <div class="col-12">
-                <!-- tag attributes head -->
-                <div class="row mx-2 mb-3">
-                  <div class="col-5 col-sm-3 small border p-1">
-                    <p class="">Attribute:</p>
-                  </div>
-                  <div class="col-7 col-sm-3 small border p-1">
-                    <p class="">Value:</p>
-                  </div>
-                  <div class="col-6 small border p-1 d-none d-sm-inline-block">
-                    <p class="">Description:</p>
-                  </div>
-                </div>
-
-                <!-- tag attributes rows -->
-                <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">crossorigin</p>
-                  </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em>anonymous</em></p>
-                    <p class=""><em>use-credentials</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies how the element handles cross-origin requests.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">href</p>
-                  </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em>(URL)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the location of the linked document.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">hreflang</p>
-                  </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em>(language_code)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the language of the text in the linked document.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">media</p>
-                  </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em>(media_query)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies on what device the linked document will be displayed.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">referrerpolicy</p>
-                  </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em>no-referrer</em></p>
-                    <p class=""><em>no-referrer-when-downgrade</em></p>
-                    <p class=""><em>origin</em></p>
-                    <p class=""><em>origin-when-cross-origin</em></p>
-                    <p class=""><em>unsafe-url</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies which referrer to use when fetching the resource.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">rel</p>
-                  </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em>alternate</em></p>
-                    <p class=""><em>author</em></p>
-                    <p class=""><em>dns-prefetch</em></p>
-                    <p class=""><em>help</em></p>
-                    <p class=""><em>icon</em></p>
-                    <p class=""><em>licence</em></p>
-                    <p class=""><em>next</em></p>
-                    <p class=""><em>pingback</em></p>
-                    <p class=""><em>preconnect</em></p>
-                    <p class=""><em>prefetch</em></p>
-                    <p class=""><em>preload</em></p>
-                    <p class=""><em>prerender</em></p>
-                    <p class=""><em>prev</em></p>
-                    <p class=""><em>search</em></p>
-                    <p class=""><em>stylesheet</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Required. Specifies the relationship between the current document and the linked document.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">sizes</p>
-                  </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em>(HeightxWidth)</em></p>
-                    <p class=""><em>any</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the size of the linked resource. Only for rel="icon".
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">title</p>
-                  </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em></em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Defines a preferred or an alternate stylesheet.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class="attribute-name">type</p>
-                  </div>
-                  <div class="col-6 col-sm-3 p-1">
-                    <p class=""><em>(media_type)</em></p>
-                  </div>
-                  <div class="col-12 col-sm-6 p-1">
-                    <p class="">
-                      Specifies the media type of the linked document.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;link&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
-                    </p>
-                  </div>
-                </div>
-    
-                  <hr>
-    
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 px-1 ">
-                      <p class="">
-                        The <strong>&lt;link&gt;</strong> tag supports the
-                        <a href="html_attributes_event.html" class="link-normal">
-                          Event Attributes
-                        </a>
-                        in HTML.
-                      </p>
-                    </div>
-                  </div>
-
-              </div>
-            </div>
-
           </div>
 
         </div>
