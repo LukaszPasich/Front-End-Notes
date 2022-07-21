@@ -3781,7 +3781,7 @@
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
                 max
-                <p class="small text-muted text-center text-sm-left mb-1">&lt;input&gt;, &lt;meter&gt;,&lt;progress&gt;</p>
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;input&gt;, &lt;meter&gt;, &lt;progress&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -3923,6 +3923,161 @@
                     <p class="mb-3"><em class="attribute-name">(number)</em> <br>
                       The maximum number of characters allowed in the text area.
                     </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- attribute media -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                media
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;a&gt;, &lt;area&gt;, &lt;link&gt;, &lt;source&gt;, &lt;style&gt; </p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;a&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The media attribute specifies what media or device the linked document is optimized for. <br>
+                      This attribute is used to specify that the target URL is designed for special devices (like iPhone), speech or print media. <br>
+                      This attribute can accept several values. <br>
+                      Only used if the href attribute is present. <br>
+                      <b>Note:</b> This attribute is purely advisory.
+                    </p>
+                    <p class="small text-uppercase mt-5">Possible Operators</p> <hr>
+                    <p class="mb-3"><em class="attribute-name">and</em> <br>
+                      Specifies an AND operator.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">not</em> <br>
+                      Specifies a NOT operator.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">,</em> <br>
+                      Specifies an OR operator.
+                    </p>
+
+                    <p class="small text-uppercase mt-5">Devices</p> <hr>
+                    <p class="mb-3"><em class="attribute-name">all</em> <br>
+                      Default. Suitable for all devices.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">aural</em> <br>
+                      Speech synthesizers.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">braille</em> <br>
+                      Braille feedback devices.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">handheld</em> <br>
+                      Handheld devices (small screen, limited bandwidth).
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">projection</em> <br>
+                      Projectors.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">screen</em> <br>
+                      Computer screens.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">tty</em> <br>
+                      Teletypes and similar media using a fixed-pitch character grid.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">tv</em> <br>
+                      Television type devices (low resolution, limited scroll ability).
+                    </p>
+
+                    <p class="small text-uppercase mt-5">Values</p> <hr>
+                    <p class="mb-3"><em class="attribute-name">width</em> <br>
+                      Specifies the width of the targeted display area. <br>
+                      "min-" and "max-" prefixes can be used. <br>
+                      <i>Example: media="screen and (min-width:500px)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">height</em> <br>
+                      Specifies the height of the targeted display area. <br>
+                      "min-" and "max-" prefixes can be used. <br>
+                      <i>Example: media="screen and (max-height:700px)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">device-width</em> <br>
+                      Specifies the width of the target display/paper. <br>
+                      "min-" and "max-" prefixes can be used. <br>
+                      <i>Example: media="screen and (device-width:500px)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">device-height</em> <br>
+                      Specifies the height of the target display/paper. <br>
+                      "min-" and "max-" prefixes can be used. <br>
+                      <i>Example: media="screen and (device-height:500px)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">orientation</em> <br>
+                      Specifies the orientation of the target display/paper. <br>
+                      Possible values: "portrait" or "landscape" <br>
+                      <i>Example: media="all and (orientation: landscape)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">aspect-ratio</em> <br>
+                      Specifies the width/height ratio of the targeted display area. <br>
+                      "min-" and "max-" prefixes can be used. <br>
+                      <i>Example: media="screen and (aspect-ratio:16/9)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">device-aspect-ratio</em> <br>
+                      Specifies the device-width/device-height ratio of the target display/paper. <br>
+                      "min-" and "max-" prefixes can be used. <br>
+                      <i>Example: media="screen and (aspect-ratio:16/9)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">color</em> <br>
+                      Specifies the bits per color of target display. <br>
+                      "min-" and "max-" prefixes can be used. <br>
+                      <i>Example: media="screen and (color:3)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">color-index</em> <br>
+                      Specifies the number of colors the target display can handle. <br>
+                      "min-" and "max-" prefixes can be used. <br>
+                      <i>Example: media="screen and (min-color-index:256)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">monochrome</em> <br>
+                      Specifies the bits per pixel in a monochrome frame buffer. <br>
+                      "min-" and "max-" prefixes can be used. <br>
+                      <i>Example: media="screen and (monochrome:2)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">resolution</em> <br>
+                      Specifies the pixel density (dpi or dpcm) of the target display/paper. <br>
+                      "min-" and "max-" prefixes can be used. <br>
+                      <i>Example: media="print and (resolution:300dpi)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">scan</em> <br>
+                      Specifies scanning method of a tv display. <br>
+                      Possible values are "progressive" and "interlace". <br>
+                      <i>Example: media="tv and (scan:interlace)"</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">grid</em> <br>
+                      Specifies if the output device is grid or bitmap. <br>
+                      Possible values are "1" for grid, and "0" otherwise. <br>
+                      <i>Example: media="handheld and (grid:1)"</i>
+                    </p>
+
                   </div>
                 </div>
 
