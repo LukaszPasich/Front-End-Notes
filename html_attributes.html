@@ -4153,6 +4153,74 @@
             </div>
           </div>
 
+          <!-- attribute method -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                method
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;form&gt;</p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;form&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The method attribute specifies how to send form-data (the form-data is sent to the page specified in the action attribute). <br>
+                      The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post"). <br><br>
+                      Notes on GET:
+                      <ul>
+                        <li>Appends form-data into the URL in name/value pairs</li>
+                        <li>The length of a URL is limited (about 3000 characters)</li>
+                        <li>Never use GET to send sensitive data! (will be visible in the URL)</li>
+                        <li>Useful for form submissions where a user wants to bookmark the result</li>
+                        <li>GET is better for non-secure data, like query strings in Google</li>
+                      </ul>
+                      Notes on POST:
+                      <ul>
+                        <li>Appends form-data inside the body of the HTTP request (data is not shown in URL)</li>
+                        <li>Has no size limitations</li>
+                        <li>Form submissions with POST cannot be bookmarked</li>
+                      </ul>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">get</em> <br>
+                      Default. Appends the form-data to the URL in name/value pairs: URL?name=value&name=value.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">post</em> <br>
+                      Sends the form-data as an HTTP post transaction
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <!-- N -->
