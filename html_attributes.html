@@ -4443,8 +4443,8 @@
 
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
-                -
-                <p class="small text-muted text-center text-sm-left mb-1">&lt;audio&gt;, &lt;video&gt;</p>
+                name
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;button&gt;, &lt;fieldset&gt;, &lt;form&gt;, &lt;iframe&gt;, &lt;input&gt;, &lt;map&gt;, &lt;meta&gt;, &lt;object&gt;, &lt;output&gt;, &lt;param&gt;, &lt;select&gt;, &lt;textarea&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -4472,14 +4472,16 @@
                 <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;audio&gt;</p>
+                    <p class="">&lt;button&gt;</p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      When present, muted attribute specifies that the audio output should be muted.
+                      The name attribute specifies the name for a &lt;button&gt; element. <br>
+                      The name attribute is used to reference form-data after the form has been submitted, or to reference the element in a JavaScript. <br>
+                      <b>Tip:</b> Several &lt;button&gt; elements can share the same name. This allows you to have several buttons with equal names, which can submit different values when used in a form.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
-                      The multiple attribute is a boolean attribute.
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      The name of the button.
                     </p>
                   </div>
                 </div>
@@ -4488,14 +4490,97 @@
 
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;video&gt;</p>
+                    <p class="">&lt;fieldset&gt;</p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      When present, muted attribute specifies that the audio output of the video should be muted.
+                      The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
-                      The multiple attribute is a boolean attribute.
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      Specifies the name of the fieldset.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;form&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      Specifies the name of the form.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;iframe&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      This name attribute can be used to reference the element in a JavaScript,
+                      or as the value of the target attribute of an &lt;a&gt; or &lt;form&gt; element, or the formtarget attribute of an &lt;input&gt; or &lt;button&gt; element.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      Specifies the name for an iframe.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;input&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted. <br>
+                      <b>Note:</b> Only form elements with a name attribute will have their values passed when submitting a form.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      Specifies the name of the &lt;input&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;map&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The required name attribute specifies the name of an image map. <br>
+                      The name attribute is associated with the &lt;img&gt;'s usemap attribute and creates a relationship between the image and the map.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      The name of the image map.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;meta&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      -
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      -
                     </p>
                   </div>
                 </div>
