@@ -4577,10 +4577,125 @@
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      -
+                      The name attribute specifies the name for the metadata. <br>
+                      The name attribute specifies a name for the information/value of the content attribute. <br>
+                      <b>Note:</b> If the http-equiv attribute is set, the name attribute should not be set. <br><br>
+                      HTML5 introduced a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below).
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">application-name</em> <br>
+                      Specifies the name of the Web application that the page represents.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">author</em> <br>
+                      Specifies the name of the author of the document. <br>
+                      Example: <i>&lt;meta name="author" content="John Doe"&gt;</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">description</em> <br>
+                      Specifies a description of the page. Search engines can pick up this description to show with the results of searches. <br>
+                      Example: <i>&lt;meta name="description" content="Free web tutorials"&gt;</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">generator</em> <br>
+                      Specifies one of the software packages used to generate the document (not used on hand-authored pages). <br>
+                      Example: <i>&lt;meta name="generator" content="FrontPage 4.0"&gt;</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">keywords</em> <br>
+                      Specifies a comma-separated list of keywords - relevant to the page (Informs search engines what the page is about). <br>
+                      <b>Tip:</b> Always specify keywords (needed by search engines to catalogize the page). <br>
+                      Example: <i>&lt;meta name="keywords" content="HTML, meta tag, tag reference"&gt;</i>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">viewport</em> <br>
+                      Controls the viewport (the user's visible area of a web page). <br>
+                      The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen. <br><br>
+                      <b>Note:</b> You should include the following &lt;meta&gt; viewport element in all your web pages: <br><br>
+                      <i>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</i> <br><br>
+                      A &lt;meta&gt; viewport element gives the browser instructions on how to control the page's dimensions and scaling. <br>
+                      The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). <br>
+                      The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;object&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The name attribute specifies the name of an &lt;object&gt; element. <br>
+                      The name attribute is used for referencing an &lt;object&gt; element in JavaScript (an alternative, is to reference it by using its id attribute).
                     </p>
                     <p class="mb-3"><em class="attribute-name">(name)</em> <br>
-                      -
+                      The name of the &lt;object&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;output&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The name attribute specifies the name of an &lt;output&gt; element. <br>
+                        The name attribute is used to reference form data after it has been submitted, or to reference the element in a JavaScript.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      Specifies the name of the &lt;output&gt; element.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;param&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The name attribute specifies the name of a &lt;param&gt; element. <br>
+                      The name attribute is used together with the value attribute to specify parameters for the plugin specified with the &lt;object&gt; tag. <br>
+                      The name attribute value can be any name supported by the specified object.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      The name of the parameter.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;select&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The name attribute specifies the name for a drop-down list. <br>
+                      The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      The name of the drop-down list.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;textarea&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The name attribute specifies the name for a text area. <br>
+                      The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(name)</em> <br>
+                      Specifies the name of the text area.
                     </p>
                   </div>
                 </div>
