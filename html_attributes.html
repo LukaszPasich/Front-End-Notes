@@ -4761,11 +4761,11 @@
 
           <!-- attribute onabort -->
           <div class="row mb-5">
-
+            
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
-                -
-                <p class="small text-muted text-center text-sm-left mb-1">&lt;form&gt;</p>
+                onabort
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;audio&gt;, &lt;embed&gt;, &lt;img&gt;, &lt;object&gt;, &lt;video&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -4793,14 +4793,23 @@
                 <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;form&gt;</p>
+                    <p class="">&lt;audio&gt;</p>
+                    <p class="">&lt;video&gt;</p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      When present, it specifies that the form-data (input) should not be validated when submitted.
+                      The abort event occurs when the loading of an audio/video is aborted. <br>
+                      This event occurs when the media data download has been aborted, and not because of an error. <br><br>
+                      <b>Tip:</b> Related events that occurs when there is some kind of disturbance to the media loading process, are:
+                      <ul>
+                        <li>emptied</li>
+                        <li>error</li>
+                        <li>stalled</li>
+                        <li>suspend</li>
+                      </ul>
                     </p>
-                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
-                      The novalidate attribute is a boolean attribute.
+                    <p class="mb-3"><em class="attribute-name">(script)</em> <br>
+                      Script to be run on abort.
                     </p>
                   </div>
                 </div>
