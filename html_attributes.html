@@ -4921,13 +4921,13 @@
             </div>
           </div>
 
-          <!-- attribute onbeforeunload -->
+          <!-- attribute onblur -->
           <div class="row mb-5">
             
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
-                onbeforeunload
-                <p class="small text-muted text-center text-sm-left mb-1">&lt;body&gt;</p>
+                onblur
+                <p class="small text-muted text-center text-sm-left mb-1">All visible elements</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -4955,19 +4955,77 @@
                 <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;body&gt;</p>
+                    <p class="">All visible elements</p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      The onbeforeunload event fires when the document is about to be unloaded. <br>
-                      This event allows you to display a message in a confirmation dialog box to inform the user whether he/she wants to stay or leave the current page. <br>
-                      The default message that appears in the confirmation box, is different in different browsers.
-                      However, the standard message is something like "Are you sure you want to leave this page?". You cannot remove this message.
-                      However, you can write a custom message together with the default message. <br>
-                      <b>Note:</b> In Firefox, only the default message will be displayed (not the custom message (if any)).
+                      The onblur attribute fires the moment that the element loses focus. <br>
+                      Onblur is most often used with form validation code (e.g. when the user leaves a form field). <br>
+                      <b>Tip:</b> The onblur attribute is the opposite of the onfocus attribute.
                     </p>
                     <p class="mb-3"><em class="attribute-name">(script)</em> <br>
-                      Script to be run on onbeforeunload.
+                      Script to be run on onblur.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- attribute oncanplay -->
+          <div class="row mb-5">
+            
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                oncanplay
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;audio&gt;, &lt;embed&gt;, &lt;object&gt;, &lt;video&gt;</p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;audio&gt;</p>
+                    <p class="">&lt;video&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The canplay event occurs when the browser can start playing the specified audio/video (when it has buffered enough to begin). <br><br>
+                      During the loading process of an audio/video, the following events occur, in this order: <br>
+                      <ol>
+                        <li>loadstart</li>
+                        <li>durationchange</li>
+                        <li>loadedmetadata</li>
+                        <li>loadeddata</li>
+                        <li>progress</li>
+                        <li>canplay</li>
+                        <li>canplaythrough</li>
+                      </ol>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(script)</em> <br>
+                      Script to be run on oncanplay.
                     </p>
                   </div>
                 </div>
