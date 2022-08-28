@@ -9773,7 +9773,7 @@
             
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
-                ...
+                sandbox
                 <p class="small text-muted text-center text-sm-left mb-1">&lt;iframe&gt;</p>
                 <hr class="hr-dgrey">
               </p>
@@ -9802,15 +9802,175 @@
                 <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;textarea&gt;</p>
+                    <p class="">&lt;iframe&gt;</p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      The rows attribute specifies the visible height of a text area, in lines. <br>
-                      <b>Note:</b> The size of a textarea can also be specified by the CSS height and width properties.
+                      The sandbox attribute enables an extra set of restrictions for the content in the iframe. <br><br>
+                      When the sandbox attribute is present, and it will:
+                      <ul>
+                        <li>treat the content as being from a unique origin</li>
+                        <li>block form submission</li>
+                        <li>block script execution</li>
+                        <li>disable APIs</li>
+                        <li>prevent links from targeting other browsing contexts</li>
+                        <li>prevent content from using plugins (through &lt;embed&gt;, &lt;object&gt; or other)</li>
+                        <li>prevent the content to navigate its top-level browsing context</li>
+                        <li>block automatically triggered features (such as automatically playing a video or automatically focusing a form control)</li>
+                      </ul>
+                      The value of the sandbox attribute can either be empty (then all restrictions are applied),
+                      or a space-separated list of pre-defined values that will REMOVE the particular restrictions.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">(number)</em> <br>
-                      Specifies the height of the text area (in lines). Default value is 2.
+                    <p class="mb-3"><em class="attribute-name">(no value)</em> <br>
+                      Applies all restrictions.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-forms</em> <br>
+                      Allows form submission.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-modals</em> <br>
+                      Allows to open modal windows.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-orientation-lock</em> <br>
+                      Allows to lock the screen orientation.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-pointer-lock</em> <br>
+                      Allows to use the Pointer Lock API.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-popups</em> <br>
+                      Allows popups.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-popups-to-escape-sandbox</em> <br>
+                      Allows popups to open new windows without inheriting the sandboxing.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-popups-to-escape-sandbox</em> <br>
+                      Allows popups to open new windows without inheriting the sandboxing.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-presentation</em> <br>
+                      Allows to start a presentation session.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-same-origin</em> <br>
+                      Allows the iframe content to be treated as being from the same origin.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-scripts</em> <br>
+                      Allows to run scripts.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-top-navigation</em> <br>
+                      Allows the iframe content to navigate its top-level browsing context.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">allow-top-navigation-by-user-activation</em> <br>
+                      Allows the iframe content to navigate its top-level browsing context, but only if initiated by user.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- attribute scope -->
+          <div class="row mb-5">
+            
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                scope
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;th&gt;</p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;th&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The scope attribute specifies whether a header cell is a header for a column, row, or group of columns or rows. <br>
+                      <b>Note:</b> The scope attribute has no visual effect in ordinary web browsers, but can be used by screen readers. 
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">col</em> <br>
+                      Specifies that the cell is a header for a column.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">row</em> <br>
+                      Specifies that the cell is a header for a row.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">colgroup</em> <br>
+                      Specifies that the cell is a header for a group of columns
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">rowgroup</em> <br>
+                      Specifies that the cell is a header for a group of rows.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- attribute selected -->
+          <div class="row mb-5">
+            
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                selected
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;option&gt;</p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;option&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      When present, it specifies that an option should be pre-selected when the page loads. <br>
+                      The pre-selected option will be displayed first in the drop-down list. <br>
+                      <b>Tip:</b> The selected attribute can also be set after the page loads, with a JavaScript. 
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(boolean)</em> <br>
+                      The selected attribute is a boolean attribute.
                     </p>
                   </div>
                 </div>
