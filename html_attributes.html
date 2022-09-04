@@ -10363,18 +10363,178 @@
 
                 <hr>
 
-                <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;colgroup&gt;</p>
+                    <p class="">&lt;embed&gt;</p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      The span attribute defines the number of columns a &lt;colgroup&gt; element should span. <br>
-                      Tip: To define different properties to a column within a &lt;colgroup&gt;, use the &lt;col&gt; tag within the &lt;colgroup&gt; tag.
+                      The src attribute specifies the address of the external file to embed.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">(number)</em> <br>
-                      Sets the number of columns a column group should span.
+                    <p class="mb-3"><em class="attribute-name">(url)</em> <br>
+                      The URL of the external file to embed. <br><br>
+                      Possible values:
+                      <ul>
+                        <li>An absolute URL - points to another web site (like src="http://www.example.com/horse.ogg")</li>
+                        <li>A relative URL - points to a file within a web site (like src="horse.ogg")</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+                
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;iframe&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The src attribute specifies the address of the document to embed in an iframe.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(url)</em> <br>
+                      The URL of the document to embed in the iframe. <br><br>
+                      Possible values:
+                      <ul>
+                        <li>An absolute URL - points to another web site (like src="http://www.example.com/horse.ogg")</li>
+                        <li>A relative URL - points to a file within a web site (like src="horse.ogg")</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+                
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;img&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The required src attribute specifies the URL of the image. <br>
+                      <b>Tip:</b> It is almost always best to use relative URLs. They will not break if you change domain. <br>
+                      <b>Note:</b> A broken link icon and the alt text are shown if the browser cannot find the image.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(url)</em> <br>
+                      The URL of the image. <br><br>
+                      Possible values:
+                      <ul>
+                        <li>An absolute URL - points to another web site (like src="http://www.example.com/horse.ogg")</li>
+                        <li>A relative URL - points to a file within a web site (like src="horse.ogg")</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+                
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;input&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The src attribute specifies the URL of the image to use as a submit button. <br>
+                      <b>Note:</b> The src attribute can only be used with (and is required for) &lt;input type="image"&gt;.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(url)</em> <br>
+                      The URL of the image to use as a submit button. <br><br>
+                      Possible values:
+                      <ul>
+                        <li>An absolute URL - points to another web site (like src="http://www.example.com/horse.ogg")</li>
+                        <li>A relative URL - points to a file within a web site (like src="horse.ogg")</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+                
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;script&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The src attribute specifies the URL of an external script file. <br>
+                      If you want to run the same JavaScript on several pages in a web site,
+                      you should create an external JavaScript file, instead of writing the same script over and over again.
+                      Save the script file with a .js extension, and then refer to it using the src attribute in the &lt;script&gt; tag. <br>
+                      <b>Note:</b> The external script file cannot contain the &lt;script&gt; tag. <br>
+                      <b>Note:</b> Point to the external script file exactly where you would have written the script.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(url)</em> <br>
+                      The URL of the external script file. <br><br>
+                      Possible values:
+                      <ul>
+                        <li>An absolute URL - points to another web site (like src="http://www.example.com/horse.ogg")</li>
+                        <li>A relative URL - points to a file within a web site (like src="horse.ogg")</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+                
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;source&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The src attribute specifies the URL of the media file to play. <br>
+                      This attribute is required when &lt;source&gt; is used in &lt;audio&gt; and &lt;video&gt;.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(url)</em> <br>
+                      The URL of the media file. <br><br>
+                      Possible values:
+                      <ul>
+                        <li>An absolute URL - points to another web site (like src="http://www.example.com/horse.ogg")</li>
+                        <li>A relative URL - points to a file within a web site (like src="horse.ogg")</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+                
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;track&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The required src attribute specifies the URL of the track file. <br>
+                      Tracks are formatted in WebVTT format (.vtt files).
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(url)</em> <br>
+                      Specifies the URL of the track. <br><br>
+                      Possible values:
+                      <ul>
+                        <li>An absolute URL - points to another web site (like src="http://www.example.com/horse.ogg")</li>
+                        <li>A relative URL - points to a file within a web site (like src="horse.ogg")</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+                
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;video&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The src attribute specifies the location (URL) of the video file.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(url)</em> <br>
+                      Specifies the URL of the video file. <br><br>
+                      Possible values:
+                      <ul>
+                        <li>An absolute URL - points to another web site (like src="http://www.example.com/horse.ogg")</li>
+                        <li>A relative URL - points to a file within a web site (like src="horse.ogg")</li>
+                      </ul>
                     </p>
                   </div>
                 </div>
