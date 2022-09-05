@@ -10757,17 +10757,13 @@
             </div>
           </div>
 
-        </div>
-
-        <!-- T -->
-        <div id="html-tags-t" class="col-12 html-tags py-3">
-
-          <!-- attribute type -->
+          <!-- attribute step -->
           <div class="row mb-5">
-
+            
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
-                type
+                step
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;input&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -10795,269 +10791,137 @@
                 <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;a&gt;</p>
-                  </div>
-                  <div class="col-8 col-sm-9 p-1">
-                    <p class="mb-3">
-                      The type attribute specifies the media type of the linked document:
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
-                      The Internet media type of the linked document. <br>
-                      Look at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a>
-                      for a complete list of standard media types.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;button&gt;</p>
-                  </div>
-                  <div class="col-8 col-sm-9 p-1">
-                    <p class="mb-3">
-                      The type attribute specifies the type of button. <br>
-                      <b>Tip:</b> Always specify the type attribute for the &lt;button&gt; element. Different browsers may use different default types for the &lt;button&gt; element.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">button</em> <br>
-                      The button is a clickable button.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">submit</em> <br>
-                      The button is a submit button (submits form-data).
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">reset</em> <br>
-                      The button is a reset button (resets the form-data to its initial values).
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;embed&gt;</p>
-                  </div>
-                  <div class="col-8 col-sm-9 p-1">
-                    <p class="mb-3">
-                      The type attribute specifies the Internet media type (formerly known as MIME type) of the embedded content.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
-                      The Internet media type of the embedded content. <br>
-                      Look at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a>
-                      for a complete list of standard media types.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-4 col-sm-3 p-1">
                     <p class="">&lt;input&gt;</p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      The type attribute specifies the type of &lt;input&gt; element to display. <br>
-                      If the type attribute is not specified, the default type is "text".
+                      The step attribute specifies the legal number intervals for an &lt;input&gt; element. <br>
+                      Example: if step="3", legal numbers could be -3, 0, 3, 6, etc. <br>
+                      <b>Tip:</b> The step attribute can be used together with the max and min attributes to create a range of legal values. <br>
+                      <b>Note:</b> The step attribute works with the following input types: number, range, date, datetime, datetime-local, month, time and week.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">button</em> <br>
-                      Defines a clickable button (mostly used with a JavaScript to activate a script).
+                    <p class="mb-3"><em class="attribute-name">(number)</em> <br>
+                      Specifies the interval between legal numbers in the input field. Default is 1.
                     </p>
-                    <p class="mb-3"><em class="attribute-name">checkbox</em> <br>
-                      Defines a checkbox.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">color</em> <br>
-                      Defines a color picker.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">date</em> <br>
-                      Defines a date control (year, month, day (no time)).
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">datetime-local</em> <br>
-                      Defines a date and time control (year, month, day, time (no timezone).
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">email</em> <br>
-                      Defines a field for an e-mail address.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">file</em> <br>
-                      Defines a file-select field and a "Browse" button (for file uploads).
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">hidden</em> <br>
-                      Defines a hidden input field.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">image</em> <br>
-                      Defines an image as the submit button.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">month</em> <br>
-                      Defines a month and year control (no timezone).
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">number</em> <br>
-                      Defines a field for entering a number.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">password</em> <br>
-                      Defines a password field.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">radio</em> <br>
-                      Defines a radio button.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">range</em> <br>
-                      Defines a range control (like a slider control).
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">reset</em> <br>
-                      Defines a reset button.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">search</em> <br>
-                      Defines a text field for entering a search string.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">submit</em> <br>
-                      Defines a submit button.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">tel</em> <br>
-                      Defines a field for entering a telephone number.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">text</em> <br>
-                      Default. Defines a single-line text field.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">time</em> <br>
-                      Defines a control for entering a time (no timezone).
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">url</em> <br>
-                      Defines a field for entering a URL.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">week</em> <br>
-                      Defines a week and year control (no timezone).
+                    <p class="mb-3"><em class="attribute-name">any</em> <br>
                     </p>
                   </div>
-
                 </div>
 
-                <hr>
+              </div>
+            </div>
+          </div>
 
+          <!-- attribute style -->
+          <div class="row mb-5">
+
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                style
+                <p class="small text-muted text-center text-sm-left mb-1">Global Attribute</p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
+
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;link&gt;</p>
+                    <p class="">
+                      <a href="html_attributes_global.html"><u>Global Attribute</u></a> <br>
+                      (can be used on any HTML element)
+                    </p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      The type attribute specifies the media type of the linked document/resource. <br>
-                      The most common value of type is "text/css".
-                      If you omit the type attribute, the browser will look at the rel attribute to guess the correct type.
-                      So, if rel="stylesheet", the browser will assume the type is "text/css".
+                      The style attribute specifies an inline style for an element. <br>
+                      The style attribute will override any style set globally, e.g. styles specified in the &lt;style&gt; tag or in an external style sheet. <br>
+                      The style attribute can be used on any HTML element (it will validate on any HTML element. However, it is not necessarily useful).
                     </p>
-                    <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
-                      The media type of the linked document.
-                      Look at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a>
-                      for a complete list of standard media types.
+                    <p class="mb-3"><em class="attribute-name">(style_definitions)</em> <br>
+                      One or more CSS properties and values separated by semicolons (e.g. style="color:blue;text-align:center").
                     </p>
                   </div>
                 </div>
 
-                <hr>
+              </div>
+            </div>
+          </div>
 
-                <div class="row mx-2">
-                  <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;menu&gt;</p>
-                  </div>
-                  <div class="col-8 col-sm-9 p-1">
-                    <p class="mb-3 text-red text-uppercase">
-                      Deprecated
-                    </p>
-                  </div>
-                </div>
+        </div>
 
-                <hr>
+        <!-- T -->
+        <div id="html-tags-t" class="col-12 html-tags py-3">
 
-                <div class="row mx-2">
-                  <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;object&gt;</p>
-                  </div>
-                  <div class="col-8 col-sm-9 p-1">
-                    <p class="mb-3">
-                      The type attribute specifies the Internet media type of the object.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
-                      The Internet media type of the embedded content.
-                      Look at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a>
-                      for a complete list of standard media types.
-                    </p>
-                  </div>
-                </div>
+          <!-- attribute tabindex -->
+          <div class="row mb-5">
 
-                <hr>
+            <div class="col-12">
+              <p class="element-attribute-name text-center text-sm-left">
+                ---
+                <p class="small text-muted text-center text-sm-left mb-1">Global Attribute</p>
+                <hr class="hr-dgrey">
+              </p>
+            </div>
 
-                <div class="row mx-2">
-                  <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;script&gt;</p>
+            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+            <div class="tag-collapsable">
+
+              <!-- attribute applies to + values -->
+              <div class="col-12 mt-3">
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
+              </div>
+
+              <div class="col-12">
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
                   </div>
-                  <div class="col-8 col-sm-9 p-1">
-                    <p class="mb-3">
-                      The type attribute specifies the Internet media type of the object.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">(scripttype)</em> <br>
-                      Specifies the type of the script. <br>
-                      Some common values:
-                      <ul>
-                        <li>A JavaScript MIME type like: <span class="attribute-name"> application/javascript (default)</span> or <span class="attribute-name">application/ecmascript</span></li>
-                        <li>module:</li>
-                        <li>Another MIME type. src attribute will be ignored</li>
-                      </ul>
-                      Look at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a>
-                      for a complete list of standard media types.
-                    </p>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
                   </div>
                 </div>
 
-                <hr>
-
+                <!-- tag attributes rows -->
                 <div class="row mx-2">
                   <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;source&gt;</p>
+                    <p class="">
+                      <a href="html_attributes_global.html"><u>Global Attribute</u></a> <br>
+                      (can be used on any HTML element)
+                    </p>
                   </div>
                   <div class="col-8 col-sm-9 p-1">
                     <p class="mb-3">
-                      The type attribute specifies the Internet media type (formerly known as MIME type) of the media resource.
+                      The style attribute specifies an inline style for an element. <br>
+                      The style attribute will override any style set globally, e.g. styles specified in the &lt;style&gt; tag or in an external style sheet. <br>
+                      The style attribute can be used on any HTML element (it will validate on any HTML element. However, it is not necessarily useful).
                     </p>
-                    <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
-                      Specifies the Internet media type of the media resource. <br>
-                      Common media types: <br>
-                      For video:
-                      <ul>
-                        <li class="attribute-name">video/ogg</li>
-                        <li class="attribute-name">video/mp4</li>
-                        <li class="attribute-name">video/webm</li>
-                      </ul>
-                      For audio:
-                      <ul>
-                        <li class="attribute-name">audio/ogg</li>
-                        <li class="attribute-name">audio/mpeg</li>
-                      </ul>
-                      Look at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a>
-                      for a complete list of standard media types.
+                    <p class="mb-3"><em class="attribute-name">(style_definitions)</em> <br>
+                      One or more CSS properties and values separated by semicolons (e.g. style="color:blue;text-align:center").
                     </p>
                   </div>
                 </div>
-
-                <hr>
-
-                <div class="row mx-2">
-                  <div class="col-4 col-sm-3 p-1">
-                    <p class="">&lt;style&gt;</p>
-                  </div>
-                  <div class="col-8 col-sm-9 p-1">
-                    <p class="mb-3">
-                      The type attribute specifies the Internet media type (formerly known as MIME type) of the &lt;style&gt; tag. <br>
-                      The type attribute identifies the content between the &lt;style&gt; and &lt;/style&gt; tags. <br>
-                      The default value is "text/css", which indicates that the content is CSS.
-                    </p>
-                    <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
-                      The Internet media type of the style sheet. For now, the only supported value is <span class="attribute-name">"text/css"</span>. <br>
-                      Look at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a>
-                      for a complete list of standard media types.
-                    </p>
-                  </div>
-                </div>
-
-                <hr>
 
               </div>
             </div>
