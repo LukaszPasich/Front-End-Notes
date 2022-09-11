@@ -11663,12 +11663,13 @@
         <!-- W -->
         <div id="html-tags-w" class="col-12 html-tags py-3">
           
-          <!-- tag wbr -->
+          <!-- attribute width -->
           <div class="row mb-5">
-
+            
             <div class="col-12">
-              <p class="element-name text-center text-sm-left">
-                &lt;wbr&gt;
+              <p class="element-attribute-name text-center text-sm-left">
+                width
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;, &lt;object&gt;, &lt;video&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -11676,60 +11677,157 @@
             <i class="fas fa-caret-down ml-3 tag-collapse"></i>
 
             <div class="tag-collapsable">
-              <!-- tag description -->
-              <div class="col-12">
-                <p class="">
-                  The &lt;wbr&gt; (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break. <br>
-                  <b>Tip:</b> When a word is too long, the browser might break it at the wrong place. <br>
-                  You can use the &lt;wbr&gt; element to add word break opportunities.
-                </p>
-              </div>
 
-              <!-- tag example -->
-              <div class="col-12">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Example:</p>
-              </div>
-              <div class="col-12">
-                <p class="py-2 px-4 mx-1 bg-grey-eee monospace">
-                  &lt;p&gt;To learn AJAX, you must be familiar with the XML&lt;wbr&gt;Http&lt;wbr&gt;Request Object.&lt;/p&gt;
-                </p>
-              </div>
-
-              <!-- tag attributes -->
+              <!-- attribute applies to + values -->
               <div class="col-12 mt-3">
-                <p class="border-bottom pb-1 mb-2 mt-4 small">Attributes:</p>
+                <p class="border-bottom pb-1 mb-2 mt-4 small">Attribute applies to:</p>
               </div>
 
               <div class="col-12">
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;wbr&gt;</strong> tag supports the
-                      <a href="html_attributes_global.html" class="link-normal">
-                        Global Attributes
-                      </a>
-                      in HTML.
+                <!-- tag attributes head -->
+                <div class="row mx-2 mb-3">
+                  <div class="col-4 col-sm-3 small border p-1">
+                    <p class="">HTML Tag:</p>
+                  </div>
+                  <div class="col-8 col-sm-9 small border p-1">
+                    <p class="">Attribute Value:</p>
+                  </div>
+                </div>
+
+                <!-- tag attributes rows -->
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;canvas&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The width attribute specifies the width of the &lt;canvas&gt; element, in pixels. <br>
+                      <b>Tip:</b> Use the height attribute to specify the height of the &lt;canvas&gt; element, in pixels. <br>
+                      <b>Tip:</b> Each time the height or width of a canvas is re-set, the canvas content will be cleared (see example at bottom of page). <br>
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(pixels)</em> <br>
+                      Specifies the width of the canvas, in pixels (e.g. "100"). Default value is 300.
                     </p>
                   </div>
                 </div>
 
                 <hr>
 
-                <div class="row mx-2 py-3">
-                  <div class="col-12 px-1 ">
-                    <p class="">
-                      The <strong>&lt;wbr&gt;</strong> tag supports the
-                      <a href="html_attributes_event.html" class="link-normal">
-                        Event Attributes
-                      </a>
-                      in HTML.
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;embed&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The width attribute specifies the width of the embedded content, in pixels. <br>
+                      <b>Tip:</b> Use the height attribute to specify the height of the embedded content.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(pixels)</em> <br>
+                      The width of the embedded content, in pixels (i.e. width="100").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;iframe&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The width attribute specifies the width of an iframe, in pixels.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(pixels)</em> <br>
+                      The width in pixels (like "100px" or just "100"). The default width is 300 pixels.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;img&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The width attribute specifies the width of an image, in pixels. <br>
+                      <b>Tip:</b> Always specify both the height and width attributes for images.
+                      If height and width are set, the space required for the image is reserved when the page is loaded.
+                      However, without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it.
+                      The effect will be that the page layout will change during loading (while the images load). <br>
+                      <b>Tip:</b> Downsizing a large image with the height and width attributes forces a user to download the large image (even if it looks small on the page).
+                      To avoid this, rescale the image with a program before using it on a page.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(pixels)</em> <br>
+                      The width in pixels (e.g. width="100").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;input&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The width attribute specifies the width of the &lt;input&gt; element. <br>
+                      <b>Note:</b> The width attribute is used only with &lt;input type="image"&gt;. <br>
+                      <b>Tip:</b> Always specify both the height and width attributes for images.
+                      If height and width are set, the space required for the image is reserved when the page is loaded.
+                      However, without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it.
+                      The effect will be that the page layout will change during loading (while the images load).
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(pixels)</em> <br>
+                      The width in pixels (e.g. width="100").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;object&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The width attribute specifies the width of the object, in pixels.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(pixels)</em> <br>
+                      The width of the object, in pixels (i.e. width="100").
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;video&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The width attribute specifies the width of a video player, in pixels. <br>
+                      <b>Tip:</b> Always specify both the height and width attributes for videos.
+                      If these attributes are set, the required space for the video is reserved when the page is loaded.
+                      However, without these attributes, the browser does not know the size of the video, and cannot reserve the appropriate space to it.
+                      The effect will be that the page layout will change during loading (while the video loads). <br>
+                      <b>Note:</b> Do not rescale video with the height and width attributes!
+                      Downsizing a large video with these attributes forces a user to download the original video (even if it looks small on the page).
+                      The correct way to rescale a video is with a program, before using it on a web page.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(pixels)</em> <br>
+                      The width of the video, in pixels (i.e. width="100").
                     </p>
                   </div>
                 </div>
 
               </div>
             </div>
-
           </div>
 
         </div>
@@ -11741,12 +11839,12 @@
 
         <!-- Y -->
         <div id="html-tags-y" class="col-12 html-tags py-3">
-          <p class="text-uppercase text-muted text-center">No tags starting with letter "Y"</p>
+          <p class="text-uppercase text-muted text-center">No attributes starting with letter "Y"</p>
         </div>
 
         <!-- Z -->
         <div id="html-tags-z" class="col-12 html-tags py-3">
-          <p class="text-uppercase text-muted text-center">No tags starting with letter "Z"</p>
+          <p class="text-uppercase text-muted text-center">No attributes starting with letter "Z"</p>
         </div>
 
       </div>
