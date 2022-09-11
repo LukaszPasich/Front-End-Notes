@@ -11134,7 +11134,7 @@
             <div class="col-12">
               <p class="element-attribute-name text-center text-sm-left">
                 type
-                <p class="small text-muted text-center text-sm-left mb-1">&lt;a&gt;, &lt;button&gt;, &lt;embed&gt;, &lt;input&gt;, &lt;link&gt;, &lt;menu&gt;, &lt;object&gt;, &lt;script&gt;, &lt;source&gt;, &lt;style&gt;</p>
+                <p class="small text-muted text-center text-sm-left mb-1">&lt;a&gt;, &lt;button&gt;, &lt;embed&gt;, &lt;input&gt;, &lt;link&gt;, &lt;object&gt;, &lt;script&gt;, &lt;source&gt;, &lt;style&gt;</p>
                 <hr class="hr-dgrey">
               </p>
             </div>
@@ -11172,7 +11172,7 @@
                     </p>
                     <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
                       The Internet media type of the linked document. <br>
-                      Look at <a href="http://www.iana.org/assignments/media-types/media-types.xhtml"><u>IANA Media Types</u></a> for a complete list of standard media types.
+                      Look at <a href="http://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a> for a complete list of standard media types.
                     </p>
                   </div>
                 </div>
@@ -11213,7 +11213,7 @@
                     </p>
                     <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
                       The Internet media type of the embeded content. <br>
-                      Look at <a href="http://www.iana.org/assignments/media-types/media-types.xhtml"><u>IANA Media Types</u></a> for a complete list of standard media types.
+                      Look at <a href="http://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a> for a complete list of standard media types.
                     </p>
                   </div>
                 </div>
@@ -11299,10 +11299,117 @@
                   </div>
                 </div>
 
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;link&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The type attribute specifies the media type of the linked document/resource. <br>
+                      The most common value of type is "text/css". If you omit the type attribute, the browser will look at the rel attribute to guess the correct type.
+                      So, if rel="stylesheet", the browser will assume the type is "text/css".
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
+                      The Internet media type of the linked document. <br>
+                      Look at <a href="http://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a> for a complete list of standard media types.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;object&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The type attribute specifies the Internet media type of the object.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
+                      The Internet media type of the embeded document. <br>
+                      Look at <a href="http://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a> for a complete list of standard media types.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;script&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The type attribute specifies the type of the script. <br>
+                      The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(scripttype)</em> <br>
+                      Specifies the type of the script. <br><br>
+                      Some common values:
+                      <ul>
+                        <li>A JavaScript MIME type like: application/javascript (default) or application/ecmascript</li>
+                        <li>module:</li>
+                        <li>Another MIME type. src attribute will be ignored</li>
+                      </ul>
+                      Look at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a> for a complete list of standard media types.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;source&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The type attribute specifies the Internet media type (formerly known as MIME type) of the media resource.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
+                      Specifies the Internet media type of the media resource. <br><br>
+                      Common media types: <br>
+                      For video:
+                      <ul>
+                        <li>video/ogg</li>
+                        <li>video/mp4</li>
+                        <li>video/webm</li>
+                      </ul>
+                      For audio:
+                      <ul>
+                        <li>audio/ogg</li>
+                        <li>audio/mpeg</li>
+                      </ul>
+                      Look at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a> for a complete list of standard media types.
+                    </p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row mx-2">
+                  <div class="col-4 col-sm-3 p-1">
+                    <p class="">&lt;style&gt;</p>
+                  </div>
+                  <div class="col-8 col-sm-9 p-1">
+                    <p class="mb-3">
+                      The type attribute specifies the Internet media type (formerly known as MIME type) of the &lt;style&gt; tag. <br>
+                      The type attribute identifies the content between the &lt;style&gt; and &lt;/style&gt; tags. <br>
+                      The default value is "text/css", which indicates that the content is CSS.
+                    </p>
+                    <p class="mb-3"><em class="attribute-name">(media_type)</em> <br>
+                      The Internet media type of the style sheet. For now, the only supported value is "text/css". <br>
+                      Look at <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><u>IANA Media Types</u></a> for a complete list of standard media types.
+                    </p>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
-
 
         </div>
 
