@@ -221,7 +221,8 @@ section > div > div {
 }
 
 .element-name,
-.element-attribute-name {
+.element-attribute-name,
+.property-name {
     font-size: 1.875rem;
     color: #111;
     font-weight: 600;

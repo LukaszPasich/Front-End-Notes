@@ -131,3 +131,8 @@ console.log('HTML tags count: ' + allElementsCount);
 allAttributes = $('.element-attribute-name');
 allAttributesCount = allAttributes.length;
 console.log('HTML attributes count: ' + allAttributesCount);
+
+// count number of CSS properties
+allProperties = $('.property-name');
+allPropertiesCount = allProperties.length;
+console.log('CSS properties count: ' + allPropertiesCount);
