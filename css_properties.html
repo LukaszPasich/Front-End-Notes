@@ -1220,6 +1220,220 @@
               </div>
   
             </div>
+
+            <!-- property animation-duration -->
+            <div class="row mb-5">
+
+              <div class="col-12">
+                <p class="property-name text-center text-sm-left">
+                  animation-duration
+                  <hr class="hr-grey">
+                </p>
+              </div>
+  
+              <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+  
+              <div class="tag-collapsable mt-1">
+                <!-- property description -->
+                <div class="col-12">
+                  <p class="">
+                    The animation-duration property defines how long an animation should take to complete one cycle.
+                  </p>
+                </div>
+  
+                <!-- property values -->
+  
+                <div class="col-12 mt-4">
+                  <!-- property values head -->
+                  <div class="row mx-2 mb-3">
+                    <div class="col-12 col-sm-3 small border p-1">
+                      <p class="">Value:</p>
+                    </div>
+                    <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
+                      <p class="">Description:</p>
+                    </div>
+                  </div>
+  
+                  <!-- property values rows -->
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">(time)</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Specifies the length of time an animation should take to complete one cycle.
+                        This can be specified in seconds or milliseconds. Default value is 0, which means that no animation will occur.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">initial</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Sets this property to its default value.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">inherit</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Inherits this property from its parent element.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+  
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 p-1 ">
+                      <p class="">
+                        Animatable: <b>NO</b>
+                      </p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+            </div>
+
+            <!-- property animation-fill-mode -->
+            <div class="row mb-5">
+
+              <div class="col-12">
+                <p class="property-name text-center text-sm-left">
+                  animation-fill-mode
+                  <hr class="hr-grey">
+                </p>
+              </div>
+  
+              <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+  
+              <div class="tag-collapsable mt-1">
+                <!-- property description -->
+                <div class="col-12">
+                  <p class="">
+                    The animation-fill-mode property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both).
+                    CSS animations do not affect the element before the first keyframe is played or after the last keyframe is played.
+                    The animation-fill-mode property can override this behavior.
+                  </p>
+                </div>
+  
+                <!-- property values -->
+  
+                <div class="col-12 mt-4">
+                  <!-- property values head -->
+                  <div class="row mx-2 mb-3">
+                    <div class="col-12 col-sm-3 small border p-1">
+                      <p class="">Value:</p>
+                    </div>
+                    <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
+                      <p class="">Description:</p>
+                    </div>
+                  </div>
+  
+                  <!-- property values rows -->
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">none</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Default value. Animation will not apply any styles to the element before or after it is executing.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">forwards</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count).
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">backwards</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">both</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">initial</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Sets this property to its default value.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">inherit</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Inherits this property from its parent element.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+  
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 p-1 ">
+                      <p class="">
+                        Animatable: <b>NO</b>
+                      </p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+            </div>
             
           </div>
 
