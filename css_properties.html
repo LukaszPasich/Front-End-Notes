@@ -845,7 +845,7 @@
                       <li>animation-fill-mode <span class="text-muted small">(default: none)</span></li>
                       <li>animation-play-state <span class="text-muted small">(default: running)</span></li>
                     </ul>
-                    <b>Default value:</b>	none 0 ease 0 1 normal none running <br>
+                    <b>Default value:</b>	<code>animation: none 0 ease 0 1 normal none running;</code> <br>
                     <b>Note:</b> Always specify the animation-duration property, otherwise the duration is 0, and will never be played.
                   </p>
                 </div>
@@ -2001,6 +2001,191 @@
                     <div class="col-12 col-sm-9 p-1">
                       <p class="">
                         The backside is not visible.
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">initial</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Sets this property to its default value.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">inherit</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Inherits this property from its parent element.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+  
+                  <div class="row mx-2 py-3">
+                    <div class="col-12 p-1 ">
+                      <p class="">
+                        Animatable: <b>NO</b>
+                      </p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+            </div>
+
+            <!-- property background -->
+            <div class="row mb-5">
+
+              <div class="col-12">
+                <p class="property-name text-center text-sm-left">
+                  background
+                  <hr class="hr-grey">
+                </p>
+              </div>
+  
+              <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+  
+              <div class="tag-collapsable mt-1">
+                <!-- property description -->
+                <div class="col-12">
+                  <p class="">
+                    The background property is a shorthand property for:
+                    <ul>
+                      <li>background-color <span class="text-muted small">(default:)</span></li>
+                      <li>background-image <span class="text-muted small">(default:)</span></li>
+                      <li>background-position <span class="text-muted small">(default:)</span></li>
+                      <li>background-size <span class="text-muted small">(default:)</span></li>
+                      <li>background-repeat <span class="text-muted small">(default:)</span></li>
+                      <li>background-origin <span class="text-muted small">(default:)</span></li>
+                      <li>background-clip <span class="text-muted small">(default:)</span></li>
+                      <li>background-attachment <span class="text-muted small">(default:)</span></li>
+                    </ul>
+                    It does not matter if one of the values above are missing, e.g. <code>background: #ff0000 url(smiley.gif);</code> is allowed.<br>
+                    <b>CSS Syntax:</b> <code>background: bg-color bg-image bg-position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;</code> <br>
+                    <b>Note:</b> If one of the properties in the shorthand declaration is the bg-size property, you must use a / (slash) to separate it from the bg-position property, e.g. background:url(smiley.gif) 10px 20px/50px 50px;
+                    will result in a background image, positioned 10 pixels from the left, 20 pixels from the top, and the size of the image will be 50 pixels wide and 50 pixels high. <br>
+                    <b>Note:</b> If using multiple background-image sources but also want a background-color, the background-color parameter needs to be last in the list.
+                  </p>
+                </div>
+  
+                <!-- property values -->
+  
+                <div class="col-12 mt-4">
+                  <!-- property values head -->
+                  <div class="row mx-2 mb-3">
+                    <div class="col-12 col-sm-3 small border p-1">
+                      <p class="">Value:</p>
+                    </div>
+                    <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
+                      <p class="">Description:</p>
+                    </div>
+                  </div>
+  
+                  <!-- property values rows -->
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">(background-color)</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Specifies the background color to be used.
+                      </p>
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">(background-image)</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Specifies ONE or MORE background images to be used.
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">(background-position)</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Specifies the position of the background images.
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">(background-size)</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Specifies the size of the background images.
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">(background-repeat)</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Specifies how to repeat the background images.
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">(background-origin)</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Specifies the positioning area of the background images.
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">(background-clip)</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Specifies the painting area of the background images.
+                    </div>
+                  </div>
+  
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">(background-attachment)</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Specifies whether the background images are fixed or scrolls with the rest of the page.
                     </div>
                   </div>
   
