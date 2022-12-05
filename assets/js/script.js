@@ -152,4 +152,7 @@ console.log('CSS properties count: ' + allPropertiesCount);
 // Time
 var today = new Date();
 $('#today-example').text(today);
+$('#current-time').text(today);
+
+
 
