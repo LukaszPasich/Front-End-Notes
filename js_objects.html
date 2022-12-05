@@ -264,23 +264,44 @@
               <i class="fas fa-caret-down ml-3 tag-collapse"></i>
   
               <div class="tag-collapsable mt-1">
-                <!-- property description -->
+                <!-- object description -->
                 <div class="col-12">
                   <p class="">
-                    The Date object works with dates and times. <br>
-                    Date objects are created with <code>new Date()</code>. <br>
+                    The Date object works with dates and times.
+                    Date objects are created with <code>new Date()</code>. <br><br>
                     There are four ways of instantiating (creating) a date: <br>
                     <ul>
-                      <li>new Date() - creates a new date object with the current date and time: <p class="text-secondary"></p> Mon Dec 05 2022 01:47:17 GMT+0000 (Greenwich Mean Time)</li>
-                      <li>new Date(milliseconds);</li>
+                      <li>
+                        new Date(); <br>
+                        Creates a new date object with the current date and time:
+                        <p id="today-example"class="text-grey-555 font-italic"></p>
+                      </li> <br>
+                      <li>
+                        new Date<i>(milliseconds)</i>; <br>
+                        <code>new Date(100000000000);</code> <br>
+                        JavaScript stores dates as milliseconds from Jan 1, 1970. <br>
+                        100000000000 milliseconds from Jan 1, 1970, is approximately Mar 3, 1973.
+                      </li> <br>
+                      <li>
+                        new Date<i>(datestring)</i>; <br>
+                        <code>new Date("2015-03-25");</code> <br>
+                        Create a date using ISO notation.
+                      </li> <br>
+                      <li>
+                        new Date(year, month, day, hours, minutes, seconds, milliseconds); <br>
+                        <code>new Date(2018, 11, 24, 10, 33, 30, 0);</code> <br>
+                        new Date(7 numbers) creates a date object with the specified date and time: <br>
+                        <p class="text-grey-555 font-italic">Mon Dec 24 2018 10:33:30 GMT+0000 (Greenwich Mean Time)</p>
+                      </li>
                     </ul>
                   </p>
                 </div>
   
-                <!-- property values -->
+                <!-- object properties and methods -->
   
                 <div class="col-12 mt-4">
-                  <!-- property values head -->
+                  <!-- properties head -->
+                  <h3 class="mb-3 mt-5">Properties</h3>
                   <div class="row mx-2 mb-3">
                     <div class="col-12 col-sm-3 small border p-1">
                       <p class="">Value:</p>
@@ -290,133 +311,74 @@
                     </div>
                   </div>
   
-                  <!-- property values rows -->
+                  <!-- properties rows -->
                   <div class="row mx-2">
                     <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">stretch</p>
+                      <p class="attribute-name">constructor</p>
                     </div>
                     <div class="col-12 col-sm-9 p-1">
                       <p class="">
-                        Default value. Lines stretch to take up the remaining space.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">center</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Lines are packed toward the center of the flex container.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">flex-start</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Lines are packed toward the start of the flex container.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">flex-end</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Lines are packed toward the end of the flex container.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">space-between</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Lines are evenly distributed in the flex container.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">space-around</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Lines are evenly distributed in the flex container, with half-size spaces on either end.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">space-evenly</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Lines are evenly distributed in the flex container, with equal space around them.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">initial</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Sets this property to its default value.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">inherit</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Inherits this property from its parent element.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-  
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 p-1 ">
-                      <p class="">
-                        Animatable: <b>NO</b>
+                        Returns the function that created the Date object's prototype.
+                      </p> <br>
+                      <p>
+                        <span class="small">Example:</span> <br>
+                        <hr>
+                        <code>
+                          const d = new Date(); <br>
+                          let text = d.constructor; <br>
+                          console.log(text;)
+                        </code> <br><br>
+                        <span class="small">Return value:</span> <br>
+                        <hr>
+                        <code>
+                          function Date() { [native code] }
+                        </code>
                       </p>
                     </div>
                   </div>
   
                 </div>
+
+                <div class="col-12 mt-4">
+                  <!-- methods head -->
+                  <h3 class="mb-3 mt-5">Methods</h3>
+                  <div class="row mx-2 mb-3">
+                    <div class="col-12 col-sm-3 small border p-1">
+                      <p class="">Value:</p>
+                    </div>
+                    <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
+                      <p class="">Description:</p>
+                    </div>
+                  </div>
+  
+                  <!-- methods rows -->
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">constructor</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Returns the function that created the Date object's prototype.
+                      </p> <br>
+                      <p>
+                        <span class="small">Example:</span> <br>
+                        <hr>
+                        <code>
+                          const d = new Date(); <br>
+                          let text = d.constructor; <br>
+                          console.log(text;)
+                        </code> <br><br>
+                        <span class="small">Return value:</span> <br>
+                        <hr>
+                        <code>
+                          function Date() { [native code] }
+                        </code>
+                      </p>
+                    </div>
+                  </div>
+  
+                </div>
+
               </div>
   
             </div>

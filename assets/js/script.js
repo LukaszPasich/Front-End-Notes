@@ -147,3 +147,9 @@ console.log('HTML attributes count: ' + allAttributesCount);
 allProperties = $('.property-name');
 allPropertiesCount = allProperties.length;
 console.log('CSS properties count: ' + allPropertiesCount);
+
+
+// Time
+var today = new Date();
+$('#today-example').text(today);
+
