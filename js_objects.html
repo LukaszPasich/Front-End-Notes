@@ -127,10 +127,10 @@
     <!-- a-z navbar -->
     <div class="alphabet-outer">
       <div id='html-tags' class="alphabet-inner mt-2 p-3">
-        <p class="alpha-nav-button non-alpha-nav-button-active p-2" data-page="html-tags-">JS Objects</p>
-        <p class="alpha-nav-button non-alpha-nav-button-inactive p-2" data-page="html-tags-">Window Objects</p>
-        <p class="alpha-nav-button non-alpha-nav-button-inactive p-2" data-page="html-tags-">DOM Objects</p>
-        <p class="alpha-nav-button non-alpha-nav-button-inactive p-2" data-page="html-tags-">Web APIs</p>
+        <p class="alpha-nav-button non-alpha-nav-button-active py-2 px-3" data-page="html-tags-">JS Objects</p>
+        <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">Window Objects</p>
+        <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">DOM Objects</p>
+        <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">Web APIs</p>
       </div>
     </div>
 
@@ -150,12 +150,12 @@
           <!-- JS Objects -->
           <div id="html-tags-js-objects" class="col-12 html-tags py-3">
 
-            <!-- property accent-color -->
+            <!-- array object -->
             <div class="row mb-5">
 
               <div class="col-12">
                 <p class="property-name text-center text-sm-left">
-                  accent-color
+                  Array
                   <hr class="hr-grey">
                 </p>
               </div>
@@ -251,12 +251,12 @@
   
             </div>
 
-            <!-- property align-content -->
+            <!-- date object -->
             <div class="row mb-5">
 
               <div class="col-12">
                 <p class="property-name text-center text-sm-left">
-                  align-content
+                  Date
                   <hr class="hr-grey">
                 </p>
               </div>
@@ -267,10 +267,13 @@
                 <!-- property description -->
                 <div class="col-12">
                   <p class="">
-                    The align-content property modifies the behavior of the flex-wrap property.
-                    It is similar to align-items, but instead of aligning flex items, it aligns flex lines. <br>
-                    <b>Note:</b> There must be multiple lines of items for this property to have any effect! <br>
-                    <b>Tip:</b> Use the justify-content property to align the items on the main-axis (horizontally).
+                    The Date object works with dates and times. <br>
+                    Date objects are created with <code>new Date()</code>. <br>
+                    There are four ways of instantiating (creating) a date: <br>
+                    <ul>
+                      <li>new Date() - creates a new date object with the current date and time: <p class="text-secondary"></p> Mon Dec 05 2022 01:47:17 GMT+0000 (Greenwich Mean Time)</li>
+                      <li>new Date(milliseconds);</li>
+                    </ul>
                   </p>
                 </div>
   
@@ -377,145 +380,6 @@
                     </div>
                   </div>
   
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">initial</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Sets this property to its default value.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">inherit</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Inherits this property from its parent element.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-  
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 p-1 ">
-                      <p class="">
-                        Animatable: <b>NO</b>
-                      </p>
-                    </div>
-                  </div>
-  
-                </div>
-              </div>
-  
-            </div>
-
-            <!-- property align-items -->
-            <div class="row mb-5">
-
-              <div class="col-12">
-                <p class="property-name text-center text-sm-left">
-                  align-items
-                  <hr class="hr-grey">
-                </p>
-              </div>
-  
-              <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-  
-              <div class="tag-collapsable mt-1">
-                <!-- property description -->
-                <div class="col-12">
-                  <p class="">
-                    The align-items property specifies the default alignment for items inside the flexible container. <br>
-                    <b>Tip:</b> Use the align-self property of each item to override the align-items property.
-                  </p>
-                </div>
-  
-                <!-- property values -->
-  
-                <div class="col-12 mt-4">
-                  <!-- property values head -->
-                  <div class="row mx-2 mb-3">
-                    <div class="col-12 col-sm-3 small border p-1">
-                      <p class="">Value:</p>
-                    </div>
-                    <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
-                      <p class="">Description:</p>
-                    </div>
-                  </div>
-  
-                  <!-- property values rows -->
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">stretch</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Default value. Items are stretched to fit the container.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">center</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Items are positioned at the center of the container.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">flex-start</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Items are positioned at the beginning of the container.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">flex-end</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Items are positioned at the end of the container.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">baseline</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Items are positioned at the baseline of the container.
-                      </p>
-                    </div>
-                  </div>
-
                   <hr>
 
                   <div class="row mx-2">
