@@ -16,9 +16,17 @@ $.fn.hideJsSubmenus = function(){
 
 
 // hide all tabs and show letter A first
+var alphaNavChildrenLength = $('.alphabet-inner').children().length;
+
 $('.html-tags').hide();
-$('#html-tags-a').show();
-$('div > p.alpha-nav-button:first').addClass('alpha-nav-button-active').removeClass('alpha-nav-button-inactive');
+
+if (alphaNavChildrenLength == 4) {
+    $('#html-tags-js-objects').show();
+    $('div > p.alpha-nav-button:first').addClass('non-alpha-nav-button-active').removeClass('non-alpha-nav-button-inactive');
+} else {
+    $('#html-tags-a').show();
+    $('div > p.alpha-nav-button:first').addClass('alpha-nav-button-active').removeClass('alpha-nav-button-inactive');
+};
 
 
 // hide all tag descriptions
@@ -92,18 +100,21 @@ $('#nav-button-js').on('click', function() {
 $('.alpha-nav-button').on('click', function(e) {
 
     // get the letter (text) and attribute from the alpha-nav button
-    var $alphaLetter = $(this).text().toLowerCase();
+    var $alphaLetter = $(this).text().toLowerCase().replaceAll(' ', '-');
     var $dataPage = $(this).attr('data-page');   // !POSSIBLY REDUNDANT LINE
 
     // reset all buttons to inactive, then add active class to the clicked on button
     $('.alpha-nav-button').addClass('alpha-nav-button-inactive').removeClass('alpha-nav-button-active');
+    $('.alpha-nav-button').addClass('non-alpha-nav-button-inactive').removeClass('non-alpha-nav-button-active');
     $(this).addClass('alpha-nav-button-active').removeClass('alpha-nav-button-inactive');
+    $(this).addClass('non-alpha-nav-button-active').removeClass('non-alpha-nav-button-inactive');
 
     // reset all html tags pages, then show the page by the letter selected from alpha-nav
     $('.html-tags').hide();
     $('#html-tags-' + $alphaLetter).show();
 
 });
+
 
 // collapse tags
 $('.tag-collapse').on('click', function() {
