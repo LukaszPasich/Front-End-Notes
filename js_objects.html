@@ -769,18 +769,68 @@
 
                   <div class="row mx-2">
                     <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">Date.parse()</p>
+                      <p class="attribute-name">setDate()</p>
                     </div>
                     <div class="col-12 col-sm-9 p-1">
                       <p class="">
-                        Parses a date string and returns the time difference (in milliseconds) since January 1, 1970.
+                         Sets the day of the month of a date. <br>
+                         Returns number of milliseconds between the date and January 1, 1970 00:00:00 UTC.
                       </p>
                       <p class="mt-3">
                         <span class="small">Parameters:</span>
                       </p>
                       <hr>
-                      <p class=""><i>(datestring)</i></p>
-                      <p>	Required. A string representing a date (ex. "March 21, 2012").</p>
+                      <p class=""><i>(day)</i></p>
+                      <p>	An integer representing the day (1 to 31). <br><br>
+                        Higher and lower values are handeled with date maths:
+                        <ul>
+                          <li>0 gives the last day of the previous month</li>
+                          <li>-1 gives the day before the last day of the previous month</li>
+                          <li>32 gives the first day of the next month (if 31 days)</li>
+                          <li>41 gives the tenth day of the next month (if 31 days)</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">setFullYear()</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                         Sets the year of a date. Can also set month and day. <br>
+                         <code>Date.setFullYear(<i>year, month, day</i>);</code>
+                      </p>
+                      <p class="mt-3">
+                        <span class="small">Parameters:</span>
+                      </p>
+                      <hr>
+                      <p class=""><i>(year)</i></p>
+                      <p>	Required. The year. Negative values are allowed.</p>
+                      <hr class="mt-3">
+                      <p class=""><i>(month)</i></p>
+                      <p>	Optional. The month (0 to 11). <br><br>
+                        Higher and lower values are handeled with date maths:
+                        <ul>
+                          <li>-1 will result in the last month of the previous year</li>
+                          <li>12 will result in the first month of the next year</li>
+                          <li>13 will result in the second month of the next year</li>
+                        </ul>
+                      </p>
+                      <hr class="mt-3">
+                      <p class=""><i>(day)</i></p>
+                      <p>	Optional. The day (0 to 31). <br><br>
+                        Higher and lower values are handeled with date maths:
+                        <ul>
+                          <li>0 gives the last day of the previous month</li>
+                          <li>-1 gives the day before the last day of the previous month</li>
+                          <li>32 gives the first day of the next month (if 31 days)</li>
+                          <li>41 gives the tenth day of the next month (if 31 days)</li>
+                        </ul>
+                      </p>
                     </div>
                   </div>
 
