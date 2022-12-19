@@ -970,6 +970,55 @@
                     </div>
                   </div>
 
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">The setMonth()</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                         Sets the month of a date object. <br>
+                         <b>Note:</b> January is 0, February is 1, and so on. <br>
+                         This method can also be used to set the day of the month.
+                        <code>Date.setMonth(month, day)</code>
+                      </p>
+                      <p class="mt-3">
+                        <span class="small">Parameters:</span>
+                      </p>
+                      <hr>
+                      <p class=""><i>(month)</i></p>
+                      <p>
+                        Required. An integer representing the month. <br>
+                        Returns a number, representing the number of milliseconds between the date object and midnight January 1 1970. <br><br>
+                        Expected values are 0-11, but other values are allowed:
+                        <ul>
+                          <li>-1 will result in the last month of the previous year</li>
+                          <li>12 will result in the first month of the next year</li>
+                          <li>13 will result in the second month of the next year</li>
+                        </ul>
+                      </p>
+                      <hr class="mt-3">
+                      <p class=""><i>(day)</i></p>
+                      <p>
+                        Optional. An integer representing the day of month. <br><br>
+                        Expected values are 1-31, but other values are allowed:
+                        <ul>
+                          <li>0 will result in the last day of the previous month</li>
+                          <li>-1 will result in the day before the last day of the previous month</li>
+                        </ul>
+                        If the month has 31 days:
+                        <ul>
+                          <li>32 will result in the first day of the next month</li>
+                        </ul>
+                        If the month has 30 days:
+                        <ul>
+                          <li>32 will result in the second day of the next month</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+
                 </div>
 
               </div>
