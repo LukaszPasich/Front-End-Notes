@@ -160,9 +160,37 @@ var year = today.getFullYear();
 let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let yearMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-$('#today-example').text(today);   // used in Date() object definition
+// Slices week days and months names to their first 3 letters
+function firstThreeLetters(array) {
+    let slicedArray = [];
+    for (let a in array) {
+        let aSliced = array[a].slice(0,3);
+        slicedArray.push(aSliced);
+    }
+    return slicedArray;
+};
 
-$('#current-time').text(weekDays[day] + " " + date + ' of ' + yearMonths[month] + ", " + year);
+let weekDaysSliced = firstThreeLetters(weekDays);
+let yearMonthsSliced = firstThreeLetters(yearMonths);
+
+console.log(yearMonthsSliced[11]);
+
+
+var dateTh;
+if (date === 1 || date === 21 || date === 31) {
+    dateTh = "st";
+} else if (date === 2 || date === 22) {
+    dateTh = "nd";
+} else if (date === 3) {
+    dateTh = "rd";
+} else {
+    dateTh = "th";
+}
+
+
+$('#today-example').text(today);   // used in Date() object definition
+// $('#current-time').text(weekDays[day] + ", " + date + dateTh + " " + yearMonths[month] + " " + year);
+$('#current-time').text(weekDaysSliced[day] + ", " + date + dateTh + " " + yearMonthsSliced[month] + " " + year);
 
 
 
