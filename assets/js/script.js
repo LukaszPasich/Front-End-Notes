@@ -151,8 +151,19 @@ console.log('CSS properties count: ' + allPropertiesCount);
 
 // Time
 var today = new Date();
-$('#today-example').text(today);
-$('#current-time').text(today);
+
+var day = today.getDay();
+var date = today.getDate();
+var month = today.getMonth();
+var year = today.getFullYear();
+
+let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let yearMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+$('#today-example').text(today);   // used in Date() object definition
+
+$('#current-time').text(weekDays[day] + " " + date + ' of ' + yearMonths[month] + ", " + year);
+
 
 
 
