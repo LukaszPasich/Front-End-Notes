@@ -136,8 +136,8 @@ a:hover {
 
 .clock {
     position: fixed;
-    top: 12px;
-    right: 24px;
+    top: .25rem;
+    right: .25rem;
     font-size: .75rem;
     z-index: 9;
     background-color: rgba(255, 255, 255, 0.75);

@@ -173,9 +173,6 @@ function firstThreeLetters(array) {
 let weekDaysSliced = firstThreeLetters(weekDays);
 let yearMonthsSliced = firstThreeLetters(yearMonths);
 
-console.log(yearMonthsSliced[11]);
-
-
 var dateTh;
 if (date === 1 || date === 21 || date === 31) {
     dateTh = "st";
@@ -187,10 +184,9 @@ if (date === 1 || date === 21 || date === 31) {
     dateTh = "th";
 }
 
-
 $('#today-example').text(today);   // used in Date() object definition
-// $('#current-time').text(weekDays[day] + ", " + date + dateTh + " " + yearMonths[month] + " " + year);
-$('#current-time').text(weekDaysSliced[day] + ", " + date + dateTh + " " + yearMonthsSliced[month] + " " + year);
+$('#current-time').text(weekDays[day] + ", " + date + dateTh + " " + yearMonths[month] + " " + year);
+$('#current-time-mobile').text(weekDaysSliced[day] + ", " + date + dateTh + " " + yearMonthsSliced[month] + " " + year);
 
 
 
