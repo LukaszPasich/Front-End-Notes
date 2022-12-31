@@ -159,6 +159,8 @@ var year = today.getFullYear();
 
 let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let yearMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let weekDaysSliced = firstThreeLetters(weekDays);
+let yearMonthsSliced = firstThreeLetters(yearMonths);
 
 // Slices week days and months names to their first 3 letters
 function firstThreeLetters(array) {
@@ -169,9 +171,6 @@ function firstThreeLetters(array) {
     }
     return slicedArray;
 };
-
-let weekDaysSliced = firstThreeLetters(weekDays);
-let yearMonthsSliced = firstThreeLetters(yearMonths);
 
 var dateTh;
 if (date === 1 || date === 21 || date === 31) {
