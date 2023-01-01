@@ -306,17 +306,21 @@
                   <!-- methods rows -->
                   <div class="row mx-2">
                     <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">getDate()</p>
+                      <p class="attribute-name">concat()</p>
                     </div>
                     <div class="col-12 col-sm-9 p-1">
                       <p class="">
-                        Returns the day of the month (from 1-31).
+                        Concatenates (joins) two or more arrays. <br>
+                        Returns a new array, containing the joined arrays. <br>
+                        Does not change the existing arrays. <br>
+                        <code>array1.concat(array2, array3, ..., arrayX)</code>
                       </p>
                       <p class="mt-3">
                         <span class="small">Parameters:</span>
                       </p>
                       <hr>
-                      <p class="">-</p>
+                      <p class="">(array1, ...)</p>
+                      <p class="">Required. The array(s) to be concatenated.</p>
                     </div>
                   </div>
 
@@ -324,31 +328,26 @@
 
                   <div class="row mx-2">
                     <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">UTC()</p>
+                      <p class="attribute-name">copyWithin()</p>
                     </div>
                     <div class="col-12 col-sm-9 p-1">
                       <p class="">
-                        Returns the number of milliseconds between a specified date and midnight of January 1, 1970, according to UTC. <br>
-                        Pass the specified date as the parameters. <br>
-                        <code>Date.UTC(year, month, day, hours, minutes, seconds, millisec)</code>
+                        Copies array elements to another position in the array and returns the changed array. <br>
+                        Overwrites the existing values. Does not add items to the array (the array will always be the same length). <br>
+                        <code>array.copyWithin(target, start, end)</code>
                       </p>
                       <p class="mt-3">
                         <span class="small">Parameters:</span>
                       </p>
                       <hr>
-                      <p class=""><i>(year)</i></p>
+                      <p class=""><i>(target)</i></p>
+                      <p>Required. The index (position) to copy the elements to.</p>
                       <hr class="mt-3">
-                      <p class=""><i>(month)</i></p>
+                      <p class=""><i>(start)</i></p>
+                      <p>Optional. The start index (position) of the items to be copied. Default is 0.</p>
                       <hr class="mt-3">
-                      <p class=""><i>(day)</i></p>
-                      <hr class="mt-3">
-                      <p class=""><i>(hours)</i></p>
-                      <hr class="mt-3">
-                      <p class=""><i>(minutes)</i></p>
-                      <hr class="mt-3">
-                      <p class=""><i>(seconds)</i></p>
-                      <hr class="mt-3">
-                      <p class=""><i>(millisec)</i></p>
+                      <p class=""><i>(end)</i></p>
+                      <p>	Optional. The end index (position) of the items to be copied. Default is the array length.</p>
                     </div>
                   </div>
 
