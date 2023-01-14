@@ -828,6 +828,73 @@
 
                   <hr>
 
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">push()</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Returns a number - the new length of array. <br>
+                        Adds new items to the end of an array (modifies that original array). <br>
+                        Changes the length of the array. <br>
+                        <code>array.push(item1, item2, ... itemX)</code>
+                      </p>
+                      <p class="mt-3">
+                        <span class="small">Parameters:</span>
+                      </p>
+                      <hr>
+                      <p class="">(item1, item 2, ... itemX)</p>
+                      <p class="">The item(s) to add to the array. Minimum one item is required.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">reduce()</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Returns a single value: the accumulated result from the last call of the callback function. <br>
+                        Executes a reducer function for array element. <br>
+                        Does not execute the function for empty array elements. <br>
+                        Does not change the original array. <br>
+                        <b>Note:</b> <br>
+                        At the first callback, there is no return value from the previous callback. <br>
+                        Normally, array element 0 is used as initial value, and the iteration starts from array element 1. <br>
+                        If an initial value is supplied, this is used, and the iteration starts from array element 0. <br>
+                        <code>array.reduce(function(total, currentValue, currentIndex, arr), initialValue)</code>
+                      </p>
+                      <p class="mt-3">
+                        <span class="small">Parameters:</span>
+                      </p>
+                      <hr>
+                      <p class="">(function())</p>
+                      <p class="">Required. A function to be run for each element in the array.</p>
+                      <div class="ml-3">
+                        <p class="mt-3">
+                          <span class="small">Reducer function parameters:</span>
+                        </p>
+                        <hr>
+                        <p class="">(total)</p>
+                        <p class="">Required. The <i>initialValue</i>, or the previously returned value of the function.</p>
+                        <hr class="mt-3">
+                        <p class="">(currentValue)</p>
+                        <p class="">Required. The value of the current element.</p>
+                        <hr class="mt-3">
+                        <p class="">(currentIndex)</p>
+                        <p class="">Optional. The index of the current element.</p>
+                        <hr class="mt-3">
+                        <p class="">(arr)</p>
+                        <p class="">Optional. The array the current element belongs to.</p>
+                      </div>
+                      <hr class="mt-3">
+                      <p class="">(initialValue)</p>
+                      <p class="">Optional. A value to be passed to the function as the initial value.</p>
+                    </div>
+                  </div>
+
                 </div>
 
               </div>
