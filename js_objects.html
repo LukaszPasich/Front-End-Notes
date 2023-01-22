@@ -706,7 +706,7 @@
                     </div>
                     <div class="col-12 col-sm-9 p-1">
                       <p class="">
-                        Returns boolean. <br>
+                        Returns a string - the array values, separated by the specified separator. <br>
                         Returns an array as a string. <br>
                         Does not change the original array. <br>
                         Any separator can be specified. The default is comma (,). <br>
@@ -1050,6 +1050,42 @@
                       <hr class="mt-3">
                       <p class="">(this)</p>
                       <p class="">Optional. Default undefined. A value passed to the function to be used as its <i>"this"</i> value.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">sort()</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        Returns the array with items sorted. <br>
+                        The sort() sorts the elements of an array. <br>
+                        The sort() overwrites the original array. <br>
+                        The sort() sorts the elements as strings in alphabetical and ascending order. <br>
+                        <b>Note:</b> <br>
+                        Sorting alphabetically works well for strings ("Apple" comes before "Banana"). <br>
+                        But, sorting numbers can produce incorrect results. <br>
+                        "25" is bigger than "100", because "2" is bigger than "1". <br>
+                        You can fix this by providing a "compare function" (See examples below). <br>
+                        <code>array.sort(compareFunction)</code>
+                      </p>
+                      <p class="mt-3">
+                        <span class="small">Parameters:</span>
+                      </p>
+                      <hr>
+                      <p class="">(compareFunction())</p>
+                      <p class="">Optional. A function that defines a sort order. The function should return a negative, zero, or positive value, depending on the arguments:</p>
+                      <ul>
+                        <li>function(a, b){return a-b}</li>
+                      </ul>
+                      <p>When sort() compares two values, it sends the values to the compare function, and sorts the values according to the returned (negative, zero, positive) value.</p>
+                      <p class="small mt-4">Example:</p>
+                      <hr>
+                      <code>const points = [40, 100, 1, 5, 25, 10];</code> <br>
+                      <code>points.sort(function(a, b){return a-b});</code>
                     </div>
                   </div>
 
