@@ -161,6 +161,7 @@ let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 let yearMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let weekDaysSliced = firstThreeLetters(weekDays);
 let yearMonthsSliced = firstThreeLetters(yearMonths);
+let yearSliced = year.toString().slice(2,4);
 
 // Slices week days and months names to their first 3 letters
 function firstThreeLetters(array) {
@@ -185,7 +186,7 @@ if (date === 1 || date === 21 || date === 31) {
 
 $('#today-example').text(today);   // used in Date() object definition
 $('#current-time').text(weekDays[day] + ", " + date + dateTh + " " + yearMonths[month] + " " + year);
-$('#current-time-mobile').text(weekDaysSliced[day] + ", " + date + dateTh + " " + yearMonthsSliced[month] + " " + year);
+$('#current-time-mobile').text(weekDaysSliced[day] + ", " + date + dateTh + " " + yearMonthsSliced[month] + " '" + yearSliced);
 
 
 
