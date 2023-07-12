@@ -174,20 +174,11 @@ function firstThreeLetters(array) {
 };
 
 var dateTh;
-if (date === 1 || date === 21 || date === 31) {
-    dateTh = "st";
-} else if (date === 2 || date === 22) {
-    dateTh = "nd";
-} else if (date === 3) {
-    dateTh = "rd";
-} else {
-    dateTh = "th";
-}
+date === 1 || date === 21 || date === 31 ? dateTh = "st"
+    : date === 2 || date === 22 ? dateTh = "nd"
+    : date === 3 ? dateTh = "rd"
+    : dateTh = "th"
 
 $('#today-example').text(today);   // used in Date() object definition
 $('#current-time').text(weekDays[day] + ", " + date + dateTh + " " + yearMonths[month] + " " + year);
 $('#current-time-mobile').text(weekDaysSliced[day] + ", " + date + dateTh + " " + yearMonthsSliced[month] + " '" + yearSliced);
-
-
-
-

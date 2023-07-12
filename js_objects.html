@@ -134,8 +134,8 @@
     <div class="alphabet-outer">
       <div id='html-tags' class="alphabet-inner mt-2 p-3">
         <p class="alpha-nav-button non-alpha-nav-button-active py-2 px-3" data-page="html-tags-">JS Objects</p>
-        <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">Window Objects</p>
-        <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">DOM Objects</p>
+        <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">Window Object</p>
+        <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">DOM Object</p>
         <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">Web APIs</p>
       </div>
     </div>
@@ -3063,17 +3063,17 @@
   
             </div>
             
+            </div>
           </div>
 
-          <!-- Window Objects -->
-          <div id="html-tags-window-objects" class="col-12 html-tags py-3">
-
-            <!-- property accent-color -->
+          <!-- Window Object -->
+          <div id="html-tags-window-object" class="col-12 html-tags py-3">
+            <!-- window object -->
             <div class="row mb-5">
 
               <div class="col-12">
                 <p class="property-name text-center text-sm-left">
-                  accent-color
+                  !!! Window
                   <hr class="hr-grey">
                 </p>
               </div>
@@ -3081,18 +3081,19 @@
               <i class="fas fa-caret-down ml-3 tag-collapse"></i>
   
               <div class="tag-collapsable mt-1">
-                <!-- property description -->
+                <!-- object description -->
                 <div class="col-12">
                   <p class="">
-                    The accent-color property specifies the accent color for user-interface controls like: <br>
-                    &lt;input type="checkbox"&gt;, &lt;input type="radio"&gt;, &lt;input type="range"&gt; and &lt;progress&gt;.
+                    The window object represents an open window in a browser. <br>
+                    If a document contain frames (&lt;iframe&gt; tags), the browser creates one window object for the HTML document, and one additional window object for each frame.
                   </p>
                 </div>
   
-                <!-- property values -->
+                <!-- object properties -->
   
                 <div class="col-12 mt-4">
-                  <!-- property values head -->
+                  <!-- properties head -->
+                  <h3 class="mb-3 mt-5">Properties</h3>
                   <div class="row mx-2 mb-3">
                     <div class="col-12 col-sm-3 small border p-1">
                       <p class="">Value:</p>
@@ -3102,100 +3103,27 @@
                     </div>
                   </div>
   
-                  <!-- property values rows -->
+                  <!-- properties rows -->
                   <div class="row mx-2">
                     <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">auto</p>
+                      <p class="attribute-name">property 1</p>
                     </div>
                     <div class="col-12 col-sm-9 p-1">
                       <p class="">
-                        Default value. The browser choose the accent color.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">(color)</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Specifies the color to be used as the accent color.
-                        All legal color values can be used (rgb, hex, named-color, etc).
+                        -
                       </p>
                     </div>
                   </div>
 
                   <hr>
 
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">initial</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Sets this property to its default value.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">inherit</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Inherits this property from its parent element.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-  
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 p-1 ">
-                      <p class="">
-                        Animatable: <b>NO</b>
-                      </p>
-                    </div>
-                  </div>
-  
                 </div>
-              </div>
-  
-            </div>
 
-            <!-- property align-content -->
-            <div class="row mb-5">
+                <!-- object methods -->
 
-              <div class="col-12">
-                <p class="property-name text-center text-sm-left">
-                  align-content
-                  <hr class="hr-grey">
-                </p>
-              </div>
-  
-              <i class="fas fa-caret-down ml-3 tag-collapse"></i>
-  
-              <div class="tag-collapsable mt-1">
-                <!-- property description -->
-                <div class="col-12">
-                  <p class="">
-                    The align-content property modifies the behavior of the flex-wrap property.
-                    It is similar to align-items, but instead of aligning flex items, it aligns flex lines. <br>
-                    <b>Note:</b> There must be multiple lines of items for this property to have any effect! <br>
-                    <b>Tip:</b> Use the justify-content property to align the items on the main-axis (horizontally).
-                  </p>
-                </div>
-  
-                <!-- property values -->
-  
                 <div class="col-12 mt-4">
-                  <!-- property values head -->
+                  <!-- methods head -->
+                  <h3 class="mb-3 mt-5">Methods</h3>
                   <div class="row mx-2 mb-3">
                     <div class="col-12 col-sm-3 small border p-1">
                       <p class="">Value:</p>
@@ -3205,28 +3133,20 @@
                     </div>
                   </div>
   
-                  <!-- property values rows -->
+                  <!-- methods rows -->
                   <div class="row mx-2">
                     <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">stretch</p>
+                      <p class="attribute-name">alert()</p>
                     </div>
                     <div class="col-12 col-sm-9 p-1">
                       <p class="">
-                        Default value. Lines stretch to take up the remaining space.
+                        -
                       </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">center</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Lines are packed toward the center of the flex container.
+                      <p class="mt-3">
+                        <span class="small">Parameters:</span>
                       </p>
+                      <hr>
+                      <p class="">-</p>
                     </div>
                   </div>
 
@@ -3234,12 +3154,17 @@
 
                   <div class="row mx-2">
                     <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">flex-start</p>
+                      <p class="attribute-name">confirm()</p>
                     </div>
                     <div class="col-12 col-sm-9 p-1">
                       <p class="">
-                        Lines are packed toward the start of the flex container.
+                        -
                       </p>
+                      <p class="mt-3">
+                        <span class="small">Parameters:</span>
+                      </p>
+                      <hr>
+                      <p class="">-</p>
                     </div>
                   </div>
 
@@ -3247,97 +3172,122 @@
 
                   <div class="row mx-2">
                     <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">flex-end</p>
+                      <p class="attribute-name">prompt()</p>
                     </div>
                     <div class="col-12 col-sm-9 p-1">
                       <p class="">
-                        Lines are packed toward the end of the flex container.
+                        -
                       </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">space-between</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Lines are evenly distributed in the flex container.
+                      <p class="mt-3">
+                        <span class="small">Parameters:</span>
                       </p>
+                      <hr>
+                      <p class="">-</p>
                     </div>
                   </div>
 
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">space-around</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Lines are evenly distributed in the flex container, with half-size spaces on either end.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">space-evenly</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Lines are evenly distributed in the flex container, with equal space around them.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">initial</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Sets this property to its default value.
-                      </p>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row mx-2">
-                    <div class="col-12 col-sm-3 p-1">
-                      <p class="attribute-name">inherit</p>
-                    </div>
-                    <div class="col-12 col-sm-9 p-1">
-                      <p class="">
-                        Inherits this property from its parent element.
-                      </p>
-                    </div>
-                  </div>
-  
-                  <hr>
-  
-                  <div class="row mx-2 py-3">
-                    <div class="col-12 p-1 ">
-                      <p class="">
-                        Animatable: <b>NO</b>
-                      </p>
-                    </div>
-                  </div>
-  
-                </div>
               </div>
   
             </div>
             
+            </div>
+         
           </div>
-   
+
+          <!-- DOM Object -->
+          <div id="html-tags-dom-object" class="col-12 html-tags py-3">
+            <!-- dom object -->
+            <div class="row mb-5">
+
+              <div class="col-12">
+                <p class="property-name text-center text-sm-left">
+                  !!! DOM
+                  <hr class="hr-grey">
+                </p>
+              </div>
+  
+              <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+  
+              <div class="tag-collapsable mt-1">
+                <!-- object description -->
+                <div class="col-12">
+                  <p class="">
+                    The window object represents an open window in a browser. <br>
+                    If a document contain frames (&lt;iframe&gt; tags), the browser creates one window object for the HTML document, and one additional window object for each frame.
+                  </p>
+                </div>
+  
+                <!-- object properties -->
+  
+                <div class="col-12 mt-4">
+                  <!-- properties head -->
+                  <h3 class="mb-3 mt-5">Properties</h3>
+                  <div class="row mx-2 mb-3">
+                    <div class="col-12 col-sm-3 small border p-1">
+                      <p class="">Value:</p>
+                    </div>
+                    <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
+                      <p class="">Description:</p>
+                    </div>
+                  </div>
+  
+                  <!-- properties rows -->
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">property 1</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        -
+                      </p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                </div>
+
+                <!-- object methods -->
+
+                <div class="col-12 mt-4">
+                  <!-- methods head -->
+                  <h3 class="mb-3 mt-5">Methods</h3>
+                  <div class="row mx-2 mb-3">
+                    <div class="col-12 col-sm-3 small border p-1">
+                      <p class="">Value:</p>
+                    </div>
+                    <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
+                      <p class="">Description:</p>
+                    </div>
+                  </div>
+  
+                  <!-- methods rows -->
+                  <div class="row mx-2">
+                    <div class="col-12 col-sm-3 p-1">
+                      <p class="attribute-name">method 1</p>
+                    </div>
+                    <div class="col-12 col-sm-9 p-1">
+                      <p class="">
+                        -
+                      </p>
+                      <p class="mt-3">
+                        <span class="small">Parameters:</span>
+                      </p>
+                      <hr>
+                      <p class="">-</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+              </div>
+  
+            </div>
+            
+            </div>
+         
+          </div>
+
         </div>
       </div>
     </div>
