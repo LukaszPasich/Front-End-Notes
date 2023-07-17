@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>JS - JS Basics</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- NAVBAR   -->
+    <nav class="">
+
+        <!-- home button -->
+        <div class="fixed-top">
+            <a class="text-decoration-none" href="index.html">
+                <i class="fas fa-home icon-home p-5"></i>
+            </a>
+        </div>
+
+        <!-- clock -->
+        <div class="clock py-2 text-right">
+            <p id="current-time" class="pr-5 pl-2 d-none d-sm-inline">Current Time</p>
+            <p id="current-time-mobile" class="px-2 d-sm-none">Current Time</p>
+        </div>
+
+        <!-- BIG NAVBAR (contains SMALL NAVBAR for mobiles) -->
+        <div class="row justify-content-center mt-2">
+
+            <!-- html button -->
+            <div id="nav-button-html" class="nav-button col-10 col-md-3 col-lg-2 bg-grey-ddd m-1 py-2">
+                <p class="nav-button-text text-center">
+                    HTML
+                </p>
+            </div>
+
+            <!-- html small navbar mobile -->
+            <div id="collapsable-navbar-html-mobile" class="col-10 mb-3">
+                <a class="text-decoration-none" href="html_tags.html">
+                    <p class="sub-nav-button bg-grey-eee p-1 my-1 text-center text-grey-555">
+                        HTML Tags
+                    </p>
+                </a>
+                <a class="text-decoration-none" href="html_attributes.html">
+                    <p class="sub-nav-button bg-grey-eee p-1 my-1 text-center text-grey-555">
+                        HTML Attributes
+                    </p>
+                </a>
+            </div>
+
+            <!-- css button -->
+            <div id="nav-button-css" class="nav-button col-10 col-md-3 col-lg-2 bg-grey-ddd m-1 py-2">
+                <a class="text-center text-decoration-none" href="#">
+                    <p class="nav-button-text">
+                        CSS
+                    </p>
+                </a>
+            </div>
+
+            <!-- css small navbar mobile -->
+            <div id="collapsable-navbar-css-mobile" class="col-10 mb-3">
+                <a class="text-decoration-none" href="css_properties.html">
+                    <p class="sub-nav-button bg-grey-eee p-1 my-1 text-center text-grey-555">
+                        CSS Properties
+                    </p>
+                </a>
+            </div>
+
+            <!-- js button -->
+            <div id="nav-button-js" class="nav-button-active col-10 col-md-3 col-lg-2 bg-grey-111 m-1 py-2">
+                <p class="nav-button-text-active text-center">
+                    JS
+                </p>
+            </div>
+
+            <!-- js small navbar mobile -->
+            <div id="collapsable-navbar-js-mobile" class="col-10 mb-3">
+
+                <a class="text-decoration-none" href="js_basics.html">
+                    <p class="sub-nav-button bg-grey-eee p-1 my-1 text-center text-grey-555">
+                        JS Basics
+                    </p>
+                </a>
+
+                <a class="text-decoration-none" href="js_objects.html">
+                    <p class="sub-nav-button bg-grey-eee p-1 my-1 text-center text-grey-555">
+                        JS Objects
+                    </p>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SMALL NAVBAR (only for desktop) -->
+        <!-- html small navbar -->
+        <div class="row justify-content-center">
+            <div id="collapsable-navbar-html" class="col-10 col-md-9 col-lg-6">
+
+                <a class="text-decoration-none" href="html_tags.html">
+                    <p class="sub-nav-button bg-grey-eee p-1 my-1 text-center text-grey-555">
+                        HTML Tags
+                    </p>
+                </a>
+
+                <a class="text-decoration-none" href="html_attributes.html">
+                    <p class="sub-nav-button bg-grey-eee p-1 my-1 text-center text-grey-555">
+                        HTML Attributes
+                    </p>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- css small navbar -->
+        <div class="row justify-content-center">
+            <div id="collapsable-navbar-css" class="col-10 col-md-9 col-lg-6">
+                <a class="text-decoration-none" href="css_properties.html">
+                    <p class="sub-nav-button bg-grey-eee p-1 my-1 text-center text-grey-555">
+                        CSS Properties
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <!-- js small navbar -->
+        <div class="row justify-content-center">
+            <div id="collapsable-navbar-js" class="col-10 col-md-9 col-lg-6">
+
+                <a class="text-decoration-none" href="js_basics.html">
+                    <p class="sub-nav-button bg-grey-eee p-1 my-1 text-center text-grey-555">
+                        JS Basics
+                    </p>
+                </a>
+
+                <a class="text-decoration-none" href="js_objects.html">
+                    <p class="sub-nav-button bg-grey-eee p-1 my-1 text-center text-grey-555">
+                        JS Objects
+                    </p>
+                </a>
+
+            </div>
+        </div>
+
+
+        <!-- a-z navbar -->
+        <div class="alphabet-outer">
+            <div id='html-tags' class="alphabet-inner mt-2 p-3">
+                <p class="alpha-nav-button non-alpha-nav-button-active py-2 px-3" data-page="html-tags-">JS Objects</p>
+                <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">Window Object
+                </p>
+                <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">DOM Object
+                </p>
+                <p class="alpha-nav-button non-alpha-nav-button-inactive py-2 px-3" data-page="html-tags-">Web APIs</p>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- CONTENT -->
+    <section id="page-top">
+        <div class="row justify-content-center my-4">
+            <div class="col-10 col-md-9 col-lg-6">
+
+                <div class="row justify-content-center">
+                    <div class="col-12 py-3">
+                        <h1>JS Basics</h1>
+                    </div>
+
+                    <!-- Data types -->
+                    <div id="html-tags-dom-object" class="col-12 html-tags py-3">
+                        <!-- dom object -->
+                        <div class="row mb-5">
+
+                            <div class="col-12">
+                                <p class="property-name text-center text-sm-left">
+                                    Data types
+                                    <hr class="hr-grey">
+                                </p>
+                            </div>
+
+                            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+                            <div class="tag-collapsable mt-1">
+                                <!-- object description -->
+                                <div class="col-12">
+                                    <p class="">
+                                        Data types...
+                                    </p>
+                                </div>
+
+                                <!-- object properties -->
+
+                                <div class="col-12 mt-4">
+                                    <!-- properties head -->
+                                    <h3 class="mb-3 mt-5">Properties</h3>
+                                    <div class="row mx-2 mb-3">
+                                        <div class="col-12 col-sm-3 small border p-1">
+                                            <p class="">Value:</p>
+                                        </div>
+                                        <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
+                                            <p class="">Description:</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- properties rows -->
+                                    <div class="row mx-2">
+                                        <div class="col-12 col-sm-3 p-1">
+                                            <p class="attribute-name">property 1</p>
+                                        </div>
+                                        <div class="col-12 col-sm-9 p-1">
+                                            <p class="">
+                                                -
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                </div>
+
+                                <!-- object methods -->
+
+                                <div class="col-12 mt-4">
+                                    <!-- methods head -->
+                                    <h3 class="mb-3 mt-5">Methods</h3>
+                                    <div class="row mx-2 mb-3">
+                                        <div class="col-12 col-sm-3 small border p-1">
+                                            <p class="">Value:</p>
+                                        </div>
+                                        <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
+                                            <p class="">Description:</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- methods rows -->
+                                    <div class="row mx-2">
+                                        <div class="col-12 col-sm-3 p-1">
+                                            <p class="attribute-name">method 1</p>
+                                        </div>
+                                        <div class="col-12 col-sm-9 p-1">
+                                            <p class="">
+                                                -
+                                            </p>
+                                            <p class="mt-3">
+                                                <span class="small">Parameters:</span>
+                                            </p>
+                                            <hr>
+                                            <p class="">-</p>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Comments -->
+                    <div id="html-tags-web-apis" class="col-12 html-tags py-3">
+                        <!-- dom object -->
+                        <div class="row mb-5">
+
+                            <div class="col-12">
+                                <p class="property-name text-center text-sm-left">
+                                    Comments
+                                    <hr class="hr-grey">
+                                </p>
+                            </div>
+
+                            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+                            <div class="tag-collapsable mt-1">
+                                <!-- object description -->
+                                <div class="col-12">
+                                    <p class="">
+                                        Comments...
+                                    </p>
+                                </div>
+
+                                <!-- object properties -->
+
+                                <div class="col-12 mt-4">
+                                    <!-- properties head -->
+                                    <h3 class="mb-3 mt-5">Properties</h3>
+                                    <div class="row mx-2 mb-3">
+                                        <div class="col-12 col-sm-3 small border p-1">
+                                            <p class="">Value:</p>
+                                        </div>
+                                        <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
+                                            <p class="">Description:</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- properties rows -->
+                                    <div class="row mx-2">
+                                        <div class="col-12 col-sm-3 p-1">
+                                            <p class="attribute-name">property 1</p>
+                                        </div>
+                                        <div class="col-12 col-sm-9 p-1">
+                                            <p class="">
+                                                -
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                </div>
+
+                                <!-- object methods -->
+
+                                <div class="col-12 mt-4">
+                                    <!-- methods head -->
+                                    <h3 class="mb-3 mt-5">Methods</h3>
+                                    <div class="row mx-2 mb-3">
+                                        <div class="col-12 col-sm-3 small border p-1">
+                                            <p class="">Value:</p>
+                                        </div>
+                                        <div class="col-12 col-sm-9 small border p-1 d-none d-sm-inline-block">
+                                            <p class="">Description:</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- methods rows -->
+                                    <div class="row mx-2">
+                                        <div class="col-12 col-sm-3 p-1">
+                                            <p class="attribute-name">method 1</p>
+                                        </div>
+                                        <div class="col-12 col-sm-9 p-1">
+                                            <p class="">
+                                                -
+                                            </p>
+                                            <p class="mt-3">
+                                                <span class="small">Parameters:</span>
+                                            </p>
+                                            <hr>
+                                            <p class="">-</p>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="fixed-bottom">
+            <a class="text-decoration-none" href="#page-top">
+                <i class="fas fa-arrow-alt-circle-up icon-go-top"></i>
+            </a>
+        </div>
+
+        <div class="row">
+            <div class="col-12 bg-grey-eee p-5 footer">
+                <p class="text-center small">Created by Lukasz Pasich &copy; 2022</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
