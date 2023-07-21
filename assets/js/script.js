@@ -16,12 +16,14 @@ $.fn.hideJsSubmenus = function(){
 
 
 // hide all tabs and show letter A first
-var alphaNavChildrenLength = $('.alphabet-inner').children().length;
+var alphaNavChildren = $('.alphabet-inner').children();
+var alphaNavChildrenLength = alphaNavChildren.length;
+var alphaNavFirstChildText = alphaNavChildren.slice(0,1).text().toLowerCase().replace(" ","-");
 
 $('.html-tags').hide();
 
-if (alphaNavChildrenLength == 4) {
-    $('#html-tags-js-objects').show();
+if (alphaNavChildrenLength !== 26) {
+    $('#html-tags-' + alphaNavFirstChildText).show();
     $('div > p.alpha-nav-button:first').addClass('non-alpha-nav-button-active').removeClass('non-alpha-nav-button-inactive');
 } else {
     $('#html-tags-a').show();
