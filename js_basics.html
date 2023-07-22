@@ -172,9 +172,9 @@
                         <h1>JS Basics</h1>
                     </div>
 
-                    <!-- Data types -->
+                    <!-- js basics -->
                     <div id="html-tags-js-basics" class="col-12 html-tags py-3">
-                        <!-- dom object -->
+                        <!-- data types -->
                         <div class="row mb-5">
 
                             <div class="col-12">
@@ -189,7 +189,7 @@
                             <div class="tag-collapsable mt-1">
                                 <!-- content here -->
                                 <div class="col-12">
-                                    <h3 class="">
+                                    <h3 class="mt-3">
                                         JavaScript has 8 Datatypes:
                                     </h3>
                                     <ol>
@@ -209,10 +209,92 @@
                                     </ol>
                                     <p class="mt-3">
                                         You can use the JavaScript <code>typeof</code> operator to find the type of a JavaScript variable. <br>
-                                        The typeof operator returns the type of a variable or an expression: <br><br>
+                                        The typeof operator returns the type of a variable or an expression:
+                                    </p>
+                                    <p class="py-2 px-4 mx-1 mt-3 bg-grey-eee monospace">
                                         <span class="text-code text-blue">typeof</span> <span class="text-code text-red">"John"</span> <span class="text-code text-green pl-5">// Returns "string"</span> <br>
                                         <span class="text-code text-blue">typeof</span> <span class="text-code text-red">3</span> <span class="text-code text-green pl-5">// Returns "number"</span>
                                     </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- comments -->
+                        <div class="row mb-5">
+
+                            <div class="col-12">
+                                <p class="property-name text-center text-sm-left">
+                                    Comments
+                                    <hr class="hr-grey">
+                                </p>
+                            </div>
+
+                            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+                            <div class="tag-collapsable mt-1">
+                                <!-- content here -->
+                                <div class="col-12">
+                                    <h3 class="mt-3">
+                                        Single line comments
+                                    </h3>
+                                    <p>
+                                        Single line comments start with <span class="text-red text-code">// </span>. <br>
+                                        Any text between <span class="text-red text-code">// </span> and the end of the line will be ignored by JavaScript (will not be executed).
+                                    </p>
+                                    <p class="mt-4">Single line comment before the code line:</p>
+                                    <p class="py-2 px-4 mx-1 mt-2 bg-grey-eee monospace text-code">
+                                        <span class="text-green">// Change heading:</span> <br>
+                                        document.getElementById("myH").innerHTML = "My First Page";
+                                    </p>
+                                    <p class="mt-4">Single line comment at the end of the line to explain the code:</p>
+                                    <p class="py-2 px-4 mx-1 mt-2 bg-grey-eee monospace text-code">
+                                        let x = 5; <span class="text-green ml-5">// Declare x, give it the value of 5</span> <br>
+                                    </p>
+
+                                    <h3 class="mt-5">
+                                        Multi-line comments
+                                    </h3>
+                                    <p>
+                                        Multi-line comments start with <span class="text-red text-code">/*</span> and end with <span class="text-red text-code">*/</span>. <br>
+                                        Any text between <span class="text-red text-code">/* </span> and <span class="text-red text-code">*/ </span> will be ignored by JavaScript.
+                                    </p>
+                                    <p class="py-2 px-4 mx-1 mt-2 bg-grey-eee monospace text-code">
+                                        <span class="text-green">
+                                            /* <br>
+                                            The code below will change <br>
+                                            the heading with id = "myH" <br>
+                                            and the paragraph with id = "myP" <br>
+                                            in my web page: <br>
+                                            */ <br>
+                                        </span>
+                                        document.getElementById("myH").innerHTML = "My First Page"; <br>
+                                        document.getElementById("myP").innerHTML = "My first paragraph.";
+                                    </p>
+
+                                    <h3 class="mt-5">
+                                        Docstrings
+                                    </h3>
+                                    <p>
+                                        Docstrings are used to describe the JavaScript function. 
+                                        Docstrings are contained between <span class="text-red text-code">/** </span> and <span class="text-red text-code">*/ </span>. <br>
+                                        You can just type <span class="text-red text-code">/** </span> on the line right above the function and hit Return/Enter.
+                                        This will bring up the generic docstring for that function, that you can then complete with detailed descriptions and specifications.
+                                    </p>
+                                    <p class="py-2 px-4 mx-1 mt-2 bg-grey-eee monospace text-code">
+                                        <span class="text-green">
+                                           /** <br>
+                                            * Description of what the function does <br>
+                                            * @param {*} array <br>
+                                            * @returns <br>
+                                            */ <br>
+                                        </span>
+                                        function foo(bar, optionalArg) { <br>
+                                        &nbsp;&nbsp;return 'baz'; <br>
+                                        }
+                                    </p>
+
                                 </div>
 
                             </div>

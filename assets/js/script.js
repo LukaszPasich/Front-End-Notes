@@ -173,7 +173,7 @@ function firstThreeLetters(array) {
         slicedArray.push(aSliced);
     }
     return slicedArray;
-};
+}
 
 var dateTh;
 date === 1 || date === 21 || date === 31 ? dateTh = "st"
