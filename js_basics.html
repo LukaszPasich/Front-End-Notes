@@ -221,7 +221,7 @@
 
                         </div>
 
-                        <!-- comments -->
+                        <!-- Comments -->
                         <div class="row mb-5">
 
                             <div class="col-12">
@@ -293,6 +293,76 @@
                                         function foo(bar, optionalArg) { <br>
                                         &nbsp;&nbsp;return 'baz'; <br>
                                         }
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Variables -->
+                        <div class="row mb-5">
+
+                            <div class="col-12">
+                                <p class="property-name text-center text-sm-left">
+                                    Variables
+                                    <hr class="hr-grey">
+                                </p>
+                            </div>
+
+                            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+                            <div class="tag-collapsable mt-1">
+                                <!-- content here -->
+                                <div class="col-12">
+                                    <h3 class="mt-3">
+                                        Declaring variables
+                                    </h3>
+                                    <p>
+                                        JavaScript variables can be declared in 4 ways:
+                                        <ul>
+                                            <li>Automatically</li>
+                                            <li>Using <span class="text-red">var</span></li>
+                                            <li>Using <span class="text-red">let</span></li>
+                                            <li>Using <span class="text-red">const</span></li>
+                                        </ul>
+                                    </p>
+
+                                    <h3 class="mt-3">
+                                        let
+                                    </h3>
+                                    <p>
+                                        Variables defined with <span class="text-red">let</span> have <b>Block Scope</b>. <br>
+                                        Variables defined with <span class="text-red">let</span> cannot be <b>Redeclared</b>. <br>
+                                        Variables defined with <span class="text-red">let</span> can be <b>Reasigned</b>. <br>
+                                        Variables defined with <span class="text-red">let</span> must be <b>Declared</b> before use. <br>
+                                        Variables defined with <span class="text-red">let</span> are <b>not hoisted</b>. <br>
+                                        <span class="text-red">let</span> does <b>not bind</b> to <span class="text-red">this</span>.
+                                    </p>
+
+                                    <h3 class="mt-3">
+                                        const
+                                    </h3>
+                                    <p>
+                                        Variables defined with <span class="text-red">const</span> have <b>Block Scope</b>. <br>
+                                        Variables defined with <span class="text-red">const</span> cannot be <b>Redeclared</b>. <br>
+                                        Variables defined with <span class="text-red">const</span> cannot be <b>Reasigned</b>. <br>
+                                        Variables defined with <span class="text-red">const</span> must be <b>assigned value</b> when they are declared. <br>
+                                        Variables defined with <span class="text-red">const</span> are <b>not hoisted</b>. <br>
+                                        <span class="text-red">const</span> does <b>not bind</b> to <span class="text-red">this</span>. <br>
+                                    </p>
+                                    <p class="mt-3">
+                                        Always declare variable with <span class="text-red">const</span> when you know that the value should not be changed.
+                                    </p>
+                                    <p class="mt-3">
+                                        Use <span class="text-red">const</span>  when you declare:
+                                        <ul>
+                                            <li>A new Array</li>
+                                            <li>A new Object</li>
+                                            <li>A new Function</li>
+                                            <li>A new RegExp</li>
+                                        </ul>
                                     </p>
 
                                 </div>

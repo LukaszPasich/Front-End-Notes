@@ -16,9 +16,9 @@ $.fn.hideJsSubmenus = function(){
 
 
 // hide all tabs and show letter A first
-var alphaNavChildren = $('.alphabet-inner').children();
-var alphaNavChildrenLength = alphaNavChildren.length;
-var alphaNavFirstChildText = alphaNavChildren.slice(0,1).text().toLowerCase().replace(" ","-");
+let alphaNavChildren = $('.alphabet-inner').children();
+let alphaNavChildrenLength = alphaNavChildren.length;
+let alphaNavFirstChildText = alphaNavChildren.slice(0,1).text().toLowerCase().replace(" ","-");
 
 $('.html-tags').hide();
 
@@ -152,12 +152,12 @@ console.log('CSS properties count: ' + allPropertiesCount);
 
 
 // Time
-var today = new Date();
+let today = new Date();
 
-var day = today.getDay();
-var date = today.getDate();
-var month = today.getMonth();
-var year = today.getFullYear();
+let day = today.getDay();
+let date = today.getDate();
+let month = today.getMonth();
+let year = today.getFullYear();
 
 let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let yearMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -175,7 +175,7 @@ function firstThreeLetters(array) {
     return slicedArray;
 }
 
-var dateTh;
+let dateTh;
 date === 1 || date === 21 || date === 31 ? dateTh = "st"
     : date === 2 || date === 22 ? dateTh = "nd"
     : date === 3 ? dateTh = "rd"
