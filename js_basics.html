@@ -197,8 +197,8 @@
                                         <li>Number</li>
                                         <li>BigInt</li>
                                         <li>Boolean</li>
-                                        <li>Undefined</li>
-                                        <li>Null</li>
+                                        <li>Undefined <span class="text-red">(falsy)</span></li>
+                                        <li>Null <span class="text-red">(falsy)</span></li>
                                         <li>Symbol</li>
                                         <li>Object</li>
                                         <ul>
@@ -365,6 +365,97 @@
                                         </ul>
                                     </p>
 
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Template literals -->
+                        <div class="row mb-5">
+
+                            <div class="col-12">
+                                <p class="property-name text-center text-sm-left">
+                                    Template literals
+                                    <hr class="hr-grey">
+                                </p>
+                            </div>
+
+                            <i class="fas fa-caret-down ml-3 tag-collapse"></i>
+
+                            <div class="tag-collapsable mt-1">
+                                <!-- content here -->
+                                <div class="col-12">
+                                    <p class="mt-3">
+                                        Synonyms:
+                                    </p>
+                                    <ul>
+                                        <li>Template literals</li>
+                                        <li>Template strings</li>
+                                        <li>String templates</li>
+                                        <li>Back-tics syntax</li>
+                                    </ul>
+
+                                    <h3 class="mt-5">
+                                        Quotes Inside Strings
+                                    </h3>
+                                    <p>
+                                        With <b>template literals</b>, you can use both single and double quotes inside a string:
+                                    </p>
+                                    <p class="py-2 px-4 mx-1 mt-2 bg-grey-eee monospace text-code">
+                                        let text = `He's often called "Johnny"`;
+                                    </p>
+
+                                    <h3 class="mt-5">
+                                        Multiline Strings
+                                    </h3>
+                                    <p>
+                                        <b>Template literals</b> allows multiline string:
+                                    </p>
+                                    <p class="py-2 px-4 mx-1 mt-2 bg-grey-eee monospace text-code">
+                                        let text = <br>
+                                        `The quick <br>
+                                        brown fox <br>
+                                        jumps over <br>
+                                        the lazy dog`; <br>
+                                    </p>
+
+                                    <h3 class="mt-5">
+                                        Variable Substitution
+                                    </h3>
+                                    <p>
+                                        <b>Template literals</b> allows variables in strings:
+                                    </p>
+                                    <p class="py-2 px-4 mx-1 mt-2 bg-grey-eee monospace text-code">
+                                        let firstName = "John"; <br>
+                                        let lastName = "Doe";<br>
+                                        let text = `Welcome ${firstName}, ${lastName}!`; <br>
+                                    </p>
+
+                                    <h3 class="mt-5">
+                                        Expression Substitution
+                                    </h3>
+                                    <p>
+                                        <b>Template literals</b> allows expressions in strings:
+                                    </p>
+                                    <p class="py-2 px-4 mx-1 mt-2 bg-grey-eee monospace text-code">
+                                        let price = 10; <br>
+                                        let VAT = 0.25;<br>
+                                        let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`; <br>
+                                    </p>
+
+                                    <h3 class="mt-5">
+                                        HTML Templates
+                                    </h3>
+                                    <p class="py-2 px-4 mx-1 mt-2 bg-grey-eee monospace text-code">
+                                        let header = "Templates Literals"; <br>
+                                        let tags = ["template literals", "javascript", "es6"]; <br><br>
+                                        let html = `&lt;h2&gt;${header}&lt;/h2&gt;&lt;ul&gt;`; <br>
+                                        for (const x of tags) { <br>
+                                        &nbsp; &nbsp; html += `&lt;li&gt;${x}&lt;/li&gt;`; <br>
+                                        } <br><br>
+                                        html += `&lt;/ul&gt;`; <br>
+                                    </p>
                                 </div>
 
                             </div>
